@@ -1,1 +1,1 @@
-Aqui ficam todos os artefatos de modelagem do projeto 
+Aqui ficam todos os artefatos de desenvolvimento do projeto 
