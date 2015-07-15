@@ -29,3 +29,6 @@ img{float: left; border: none; width: 100%; max-width: 100%;}
 small{font-size: 0.75em; color: #555;}
 a{text-decoration: none;}
 a img{border: 0;}
+
+/* clear */
+.clear{clear: both;}
