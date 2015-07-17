@@ -25,7 +25,7 @@
                 </div>
                 <div>
                     <img src="" alt="">                        
-                    <ul>
+                    <ul class="font font-menu">
                         <li><a src="" alt="">INÍCIO</a></li>
                         <li><a src="" alt="">SOBRE</a></li>
                         <li><a src="" alt="">EVENTOS</a></li>
