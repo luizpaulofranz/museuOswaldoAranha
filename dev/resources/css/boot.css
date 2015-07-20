@@ -27,13 +27,87 @@ body{background: #fbfbfb;}
 p:last-child{margin-bottom: 0;}
 mark{padding: 5px 10px; background-color: #eee;}
 ul{list-style: none;}
-img{float: left; border: none; width: 100%; max-width: 100%;}
+img{float: left; border: none;}
 a{text-decoration: none;}
 a img{border: 0;}
 
+/* PALETA */
+/* BACKGROUND */
+.bg-black{background-color: #000000; color: #ffffff;}
+.bg-white-grey{background-color: #ffffff; color: #666666;}
+.bg-brown-white{background-color: #493b36; color: #ffffff;}
+
 /* fonts */
 .font{font-family: Oswald;}
-.font-menu{font-size: 26px}
+.font-oswald-light{font-family: Oswald Light;}
+.font-georgia{font-family: Georgia, "Times New Roman", serif;}
+
+/*font size*/
+.fontzero{font-size: 0em !important;}
+.fontsize090{font-size: .90em;}
+.fontsize1{font-size: 1em;}
+.fontsize1b{font-size: 1.4em;}
+
+/* font weight */
+.font-thin{font-weight: 100 !important;}
+.font-light{font-weight: 300 !important;}
+.font-normal{font-weight: 400 !important;}
+.font-bold{font-weight: 700 !important;}
+
+/*text*/
+.text-uppercase{text-transform: uppercase;}
+
+/*text align*/
+.al-left{text-align: left;}
+.al-right{text-align: right;}
+.al-center{text-align: center;}
+
+/*float*/
+.fl-left{float: left;}
+.fl-right{float: right !important;}
+.fl-none{float: none;}
+
+/*display*/
+.ds-block{display: block;}
+.ds-inblock{display: inline-block;}
+.ds-inline{display: inline;}
+.ds-none{display: none;}
 
 /* clear */
 .clear{clear: both;}
+
+/*images*/
+.img-micro{padding: 3px 10px 0 0}
+
+/*helpers*/
+.transparence-85{background-color: rgba(0,0,0,.85) !important;}
+.transparence-70{background-color: rgba(73,59,54,.70) !important;}
+
+/*sections*/
+.section-1{
+    height: 560px;
+    background: url(../images/home/img-topo.jpg) no-repeat center;
+    background-size: cover;
+    position: absolute;
+    top: 35px;
+}
+
+.section-header {
+    z-index: 1;
+    position: relative
+}
+
+.posiion_image_text_info {
+    padding: 31px 0 31px 0;
+    position: absolute;
+    top: 495px;
+}
+
+.regulates_position {
+    position: absolute;
+    top: 595px;
+}
+
+.menu-height{height: 90px; padding-top: 7px;}
+.menu-item{display: inline-block; margin-left: 18px; margin-top: 20px; padding-top: 2px;}
+.list-info{display: inline-block; margin-left: 75px;}
