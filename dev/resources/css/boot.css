@@ -137,6 +137,20 @@ a:visited{text-decoration: none;}
     position: absolute;
     top: 35px;
 }
+.section-Sobre-1{
+    height: 560px;
+    background: url(../images/sobre/cabecalhoSobre.jpg) no-repeat center;
+    background-size: cover;
+    position: absolute;
+    top: 35px;
+}
+.section-Contato-1{
+    height: 460px;
+    background: url(../images/contato/contatocabecalho.jpg) no-repeat center;
+    background-size: cover;
+    position: absolute;
+    top: 35px;
+}
 
 .section-header {
     z-index: 1;
@@ -240,4 +254,13 @@ a:visited{text-decoration: none;}
     top: -12px; position: relative;
     -webkit-box-shadow: 0px 0px 0px 20px rgba(255,102,102,1), inset 0px 0px 0px 20px rgba(255,102,102,1);
     box-shadow: 0px 0px 0px 20px rgba(255,102,102,1), inset 0px 0px 0px 20px rgba(255,102,102,1);
+}
+#posicao-imagens-sobre {
+    background-image: url(../images/sobre/oswaldoAranhaSobre.jpg);
+    width:40%;
+    height:40%;
+    
+    position: absolute;
+    
+   
 }
