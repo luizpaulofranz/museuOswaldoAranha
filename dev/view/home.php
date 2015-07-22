@@ -57,7 +57,7 @@
                 </div>
             </div>
         </section>
-        
+
         <div class="regulates_position">
             <section class="container container-padding-60 font-oswald-light font-light">
                 <div class="content">
@@ -93,71 +93,114 @@
                 </div>
             </section>
 
-            <section>
-                <blockquote class="quote-externo">
-                    <p>"A tradição é a experiência dos povos consagrada pelo tempo."</p>
-                    <cite>Oswaldo Aranha</cite>
-                </blockquote>
+            <section class="container container-padding-60 section-2">
+                <div class="content al-center">
+                    <blockquote class="font-georgia" style="color: #ffffff;">
+                        <p class="fontsize1b" style="margin-bottom: 20px;">"A tradição é a experiência dos povos consagrada pelo tempo."</p>
+                        <cite>Oswaldo Aranha</cite>
+                    </blockquote>
+                </div>
             </section>
 
-            <section>
-                <header>
-                    <h2>NOVIDADES</h2>
-                </header>
+            <section class="container container-padding-60 al-center" style="background: #ffffff;">
+                <div class="content">
+                    <header class="content" style="background: #ff6666; height: 5px">
+                        <h2 class="fontsize25 font-pink font-oswald-light al-center ds-inblock news_style">NOVIDADES</h2>;
+                    </header>
 
-                <article>
-                    <img src="" alt="">
-                    <p></p>
-                </article>
-                <article>
-                    <img src="" alt="">
-                    <p></p>
-                </article>
-                <article>
-                    <img src="" alt="">
-                    <p></p>
-                </article>
-                <article>
-                    <img src="" alt="">
-                    <p></p>
-                </article>
-                <article>
-                    <img src="" alt="">
-                    <p></p>
-                </article>
-                <article>
-                    <img src="" alt="">
-                    <p></p>
-                </article>
-
+                    <div style="margin-top: 40px; width: 100%">
+                        <article class="grid-1-3">
+                            <a href="#">
+                                <div class="box-news border-pink" style="background: url(../resources/images/home/img.jpg) no-repeat center; background-size: cover;"></div>
+                                <p class="al-left font-oswald-light font-pink news_description fontsize18 ds-block border-grey">ALUNOS DA APAE VISITAM MUSEU OSWALDO ARANHA</p>
+                            </a>
+                        </article>
+                        <article class="grid-1-3">
+                            <a href="#">
+                                <div class="box-news border-pink" style="background: url(../resources/images/home/img.jpg) no-repeat center; background-size: cover;"></div>
+                                <p class="al-left font-oswald-light font-pink news_description fontsize18 ds-block border-grey">ALUNOS DA APAE VISITAM MUSEU OSWALDO ARANHA</p>
+                            </a>
+                        </article>
+                        <article class="grid-1-3">
+                            <a href="#">
+                                <div class="box-news border-pink" style="background: url(../resources/images/home/img.jpg) no-repeat center; background-size: cover;"></div>
+                                <p class="al-left font-oswald-light font-pink news_description fontsize18 ds-block border-grey">ALUNOS DA APAE VISITAM MUSEU OSWALDO ARANHA</p>
+                            </a>
+                        </article>
+                    </div>
+                    <div style="margin-top: 40px;" class="fl-left">
+                        <article class="grid-1-3">
+                            <a href="#">
+                                <div class="box-news border-pink" style="background: url(../resources/images/home/img.jpg) no-repeat center; background-size: cover;"></div>
+                                <p class="al-left font-oswald-light font-pink news_description fontsize18 ds-block border-grey">ALUNOS DA APAE VISITAM MUSEU OSWALDO ARANHA</p>
+                            </a>
+                        </article>
+                        <article class="grid-1-3">
+                            <a href="#">
+                                <div class="box-news border-pink" style="background: url(../resources/images/home/img.jpg) no-repeat center; background-size: cover;"></div>
+                                <p class="al-left font-oswald-light font-pink news_description fontsize18 ds-block border-grey">ALUNOS DA APAE VISITAM MUSEU OSWALDO ARANHA</p>
+                            </a>
+                        </article>
+                        <article class="grid-1-3">
+                            <a href="#">
+                                <div class="box-news border-pink" style="background: url(../resources/images/home/img.jpg) no-repeat center; background-size: cover;"></div>
+                                <p class="al-left font-oswald-light font-pink news_description fontsize18 ds-block border-grey">ALUNOS DA APAE VISITAM MUSEU OSWALDO ARANHA</p>
+                            </a>
+                        </article>
+                    </div>
+                </div>
             </section>
 
-            <section>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
+            <section class="container container-padding-60 bg-pink-white">
+                <div class="content al-center">
+                    <header style="background: #ffffff; height: 5px">
+                        <h2 class="fontsize25 font-oswald-light al-center ds-inblock shadow_parceiros">PARCEIROS</h2>;
+                    </header>
+
+                    <div style="margin-top: 40px;">
+                        <div class="grid-8 al-center" style="height: 180px;">
+                            <div class="border-red" style="height: 180px; background: #ffffff;">
+                                <img class="ds-inline fl-none" style="margin-top: 20px;" src="../resources/images/home/unipampa.png" alt="Logotipo Unipampa">
+                            </div>
+                        </div>
+                        <div class="grid-8 al-center" style="height: 180px;">
+                            <div class="border-red" style="height: 180px; background: #ffffff;">
+                                <img class="ds-inline fl-none" style="margin-top: 40px;" src="../resources/images/home/prefeitura.png" alt="Logotipo Unipampa">
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </section>
 
-            <footer>
-                <div>
-                    <ul>
-                        <li><a href="">INÍCIO</a></li>
-                        <li><a href="">SOBRE</a></li>
-                        <li><a href="">EVENTOS</a></li>
-                        <li><a href="">CONTATO</a></li>
-                        <li><a href="">NOTÍCIAS</a></li>
-                        <li><a href="">APRENDA</a></li>
-                        <li><a href="">AMIGOS DO MUSEU</a></li>
-                        <li><a href="">VISITE</a></li>
-                        <li><a href="">MAPA DO SITE</a></li>
+            <footer class="container container-padding-60 bg-black">
+                <div class="content">
+                    <ul class="font-oswald-light font-light fontsize1b grid-16 al-center">
+                        <li class="menu-item2 fontsize18"><a src="" alt="">INÍCIO</a></li>
+                        <li class="menu-separador fontsize1">/</li>
+                        <li class="menu-item2 fontsize18"><a src="" alt="">SOBRE</a></li>
+                        <li class="menu-separador fontsize1">/</li>
+                        <li class="menu-item2 fontsize18"><a src="" alt="">EVENTOS</a></li>
+                        <li class="menu-separador fontsize1">/</li>
+                        <li class="menu-item2 fontsize18"><a src="" alt="">CONTATO</a></li>
+                        <li class="menu-separador fontsize1">/</li>
+                        <li class="menu-item2 fontsize18"><a src="" alt="">NOTÍCIAS</a></li>
+                        <li class="menu-separador fontsize1">/</li>
+                        <li class="menu-item2 fontsize18"><a src="" alt="">APRENDA</a></li>
+                        <li class="menu-separador fontsize1">/</li>
+                        <li class="menu-item2 fontsize18"><a src="" alt="">AMIGOS DO MUSEU</a></li>
+                        <li class="menu-separador fontsize1">/</li>
+                        <li class="menu-item2 fontsize18"><a src="" alt="">VISITE</a></li>
+                        <li class="menu-separador fontsize1">/</li>
+                        <li class="menu-item2 fontsize18"><a src="" alt="">MAPA DO SITE</a></li>
                     </ul>
                 </div>
-
-                <div>
-                    <p>MOA - Museu Oswaldo Aranha - 2015</p>
-                </div>
             </footer>
+
+            <div class="container" style="padding-top: 15px; padding-bottom: 15px;">
+                <div class="content al-center">
+                    <p class="font-georgia fontsize1">MOA - Museu Oswaldo Aranha - 2015</p>
+                </div>
+            </div>
         </div>
     </body>
 </html>
