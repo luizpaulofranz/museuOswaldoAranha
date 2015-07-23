@@ -56,11 +56,53 @@
                 </div>
             </div>
         </section>      
-        
-        
+
+
         <div class="regulates_position">
 
-<p>oiiiiiiiiiiiiiiiiiiiiiiiiiii</p>
+
+            <section class="container container-padding-60 font-oswald-light font-light">
+                <div class="content">
+                    <div>
+                        <h2 class="font-oswald-light fontsize30 " style="text-align: center; padding-bottom: 3em" >ENTRE EM CONTATO</h2>
+
+
+
+
+
+
+                        <body> <form name="meu_form">
+                                
+                                <p class="nome">
+                                    <input type="text" id="nomeid" placeholder="Tiago Vale" required="required" name="nome" />
+                                    <label for="nome">Nome</label> 
+                                </p> <p class="fone"> 
+                                    <input type="text" id="foneid" placeholder="(xx)xx-xx-xx-xx" name="fone" /> 
+                                    <label for="fone">Fone</label> 
+                                </p> 
+                                <p> <input type="email" id="emailid" placeholder="fulano@mail.com" name="email" /> 
+                                    <label for="email">Email</label>
+                                </p> 
+                                <p> <textarea placeholder="Deixe sua opnião">
+                                    
+                                    </textarea> </p> <p class="submit"> <input type="submit" onclick="Enviar();" value="Enviar" /> 
+                                </p> 
+                            </form>
+                        </body>
+
+
+
+
+
+
+
+
+
+                    </div>
+
+
+                </div>
+            </section>
 
             <section class="container container-padding-60 bg-pink-white">
                 <div class="content al-center">
