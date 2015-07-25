@@ -258,9 +258,18 @@ a:visited{text-decoration: none;}
 #posicao-imagens-sobre {
     background-image: url(../images/sobre/oswaldoAranhaSobre.jpg);
     width:40%;
-    height:40%;
-    
-    position: absolute;
-    
-   
+    height:40%;    
+    position: absolute;       
+}
+a:link, a:visited {
+    text-decoration: none;
+    color: white;
+
+}
+a:hover {
+    text-decoration: underline; 
+    color: white;
+}
+a:active {
+    text-decoration: none
 }

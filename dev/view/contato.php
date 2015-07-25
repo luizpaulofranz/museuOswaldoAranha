@@ -26,13 +26,13 @@
             <div class="content">
                 <h1 class="fontzero">
                     Portal Museu Oswaldo Aranha
-                    <img src="../resources/images/home/logo-museu.png" alt="Museu Oswaldo Aranha" class="ds-block fl-left grid-2">                        
+                    <img src="../resources/images/home/logo-museu.png" alt="Museu Oswaldo Aranha logo" class="ds-block fl-left grid-2">                        
                 </h1>
                 <ul class="font-oswald-light font-light fontsize1b fl-right">
-                    <li class="menu-item"><a src="" alt="">INÍCIO</a></li>
-                    <li class="menu-item"><a src="" alt="">SOBRE</a></li>
+                    <li class="menu-item"><a href="../view/home.php" alt="">INÍCIO</a></li>
+                    <li class="menu-item"><a href="../view/sobre.php" alt="">SOBRE</a></li>
                     <li class="menu-item"><a src="" alt="">EVENTOS</a></li>
-                    <li class="menu-item"><a src="" alt="">CONTATO</a></li>
+                    <li class="menu-item"><a href="../view/contato.php" alt="">CONTATO</a></li>
                     <li class="menu-item"><a src="" alt="">NOTÍCIAS</a></li>
                     <li class="menu-item"><a src="" alt="">APRENDA</a></li>
                     <li class="menu-item"><a src="" alt="">AMIGOS DO MUSEU</a></li>

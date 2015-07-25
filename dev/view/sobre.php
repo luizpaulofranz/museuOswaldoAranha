@@ -15,24 +15,24 @@
         <div class="container bg-white-grey menu-height2">
             <div class="content">
                 <ul class="font-oswald-light font-bold fontsize090 fl-right text-uppercase">
-                    <li class="list-info"><a src="" alt=""><img src="../resources/images/home/endereco-icon.png" class="fl-left img-micro" alt="Icone Encereço">Praça Getúlio Vargas nº 585 - centro - Alegrete RS</a></li>
+                    <li class="list-info"><a src="" alt=""><img src="../resources/images/home/endereco-icon.png" class="fl-left img-micro" alt="Icone Encereço" >Praça Getúlio Vargas nº 585 - centro - Alegrete RS</a></li>
                     <li class="list-info"><a src="" alt=""><img src="../resources/images/home/telefone-icon.png" class="fl-left img-micro" alt="Icone Telefone">(55) 3422 xxxx</a></li>
-                    <li class="list-info"><a src="" alt=""><img src="../resources/images/home/facebook-icon.png" alt="Nossa Página no Facebook"></a></li>
+                    <li class="list-info"><a src="" alt=""><img src="../resources/images/home/facebook-icon.png" alt="Nossa Página no Facebook" ></a></li>
                 </ul>
             </div>
         </div>
 
         <header class="container bg-black menu-height section-header transparence-85">
             <div class="content">
-                <h1 class="fontzero">
+                <h1 class="fontzero" >
                     Portal Museu Oswaldo Aranha
                     <img src="../resources/images/home/logo-museu.png" alt="Museu Oswaldo Aranha" class="ds-block fl-left grid-2">                        
                 </h1>
                 <ul class="font-oswald-light font-light fontsize1b fl-right">
-                    <li class="menu-item"><a src="" alt="">INÍCIO</a></li>
-                    <li class="menu-item"><a src="" alt="">SOBRE</a></li>
+                    <li class="menu-item"><a href="../view/home.php" alt="">INÍCIO</a></li>
+                    <li class="menu-item"><a href="../view/sobre.php" alt="" >SOBRE</a></li>
                     <li class="menu-item"><a src="" alt="">EVENTOS</a></li>
-                    <li class="menu-item"><a src="" alt="">CONTATO</a></li>
+                    <li class="menu-item"><a href="../view/contato.php" alt="">CONTATO</a></li>
                     <li class="menu-item"><a src="" alt="">NOTÍCIAS</a></li>
                     <li class="menu-item"><a src="" alt="">APRENDA</a></li>
                     <li class="menu-item"><a src="" alt="">AMIGOS DO MUSEU</a></li>
@@ -65,21 +65,40 @@
                     <div>
                         <h2 class="font-oswald-light fontsize30 " style="text-align: center; padding-bottom: 3em" >SOBRE</h2>
                         <img src="../resources/images/sobre/oswaldoAranhaSobre.jpg" alt="lalala" style="width: 20em; height: 25em">
-                        
-                        <blockquote class="font-georgia">
-                    
-                        <p class="fontsize1b" style="a">
-                            Na primeira sessão especial da Assembléia Geral da ONU, em 1947, Oswaldo Aranha inaugurou a tradição -que se mantém até hoje- de ser um brasileiro o primeiro orador daquele foro internacional.
 
-                            Oswaldo Euclides de Souza Aranha era um dos 11 filhos do coronel Euclides de Souza Aranha e de Luiza de Freitas Valle Aranha, proprietários da estância Alto Uruguai, no município gaúcho de Itaqui.
+                        <blockquote class="font-georgia" >
 
-                            Freqüentou a faculdade de direito, aproximando-se dos colegas que se ligavam às oposições, embora o pai fosse do partido situacionista. Manteve também intensa atividade política contra o então presidente da República, marechal Hermes da Fonseca.
+                            <p class="fontsize1b" style="padding-left: 15em;">
+                                Na primeira sessão especial da Assembléia Geral da ONU, em 1947, Oswaldo Aranha inaugurou a tradição -que se mantém até hoje- de ser um brasileiro o primeiro orador daquele foro internacional.
 
-                            Em princípios de 1917, instalou banca em Uruguaiana. Até 1923, dedicou-se quase exclusivamente à advocacia, obtendo alto conceito profissional. Getúlio Vargas (também advogado, formado em 1907) costumava consultá-lo, e os dois chegaram a ter clientes em comum.
+                                Oswaldo Euclides de Souza Aranha era um dos 11 filhos do coronel Euclides de Souza Aranha e de Luiza de Freitas Valle Aranha, proprietários da estância Alto Uruguai, no município gaúcho de Itaqui.
 
-                            Pouco depois de haver fixado residência em Uruguaiana, Aranha casou com Delminda Benvinda Gudolle, com quem teria quatro filhos.
-                        </p>
+                                Freqüentou a faculdade de direito, aproximando-se dos colegas que se ligavam às oposições, embora o pai fosse do partido situacionista. Manteve também intensa atividade política contra o então presidente da República, marechal Hermes da Fonseca.
+                                Em princípios de 1917, instalou banca em Uruguaiana. Até 1923, dedicou-se quase exclusivamente à advocacia, obtendo alto conceito profissional. Getúlio Vargas (também advogado, formado em 1907) costumava consultá-lo, e os dois chegaram a ter clientes em comum.
+
+                                Pouco depois de haver fixado residência em Uruguaiana, Aranha casou com Delminda Benvinda Gudolle, com quem teria quatro filhos.
+                            </p>
                         </blockquote>
+
+                        <img src="../resources/images/sobre/museusobre.jpg" alt="lalala" style="width: 20em; height: 25em; padding-top:2em">
+                        <blockquote class="font-georgia" >
+
+                            <p class="fontsize1b" style="padding-left: 15em; padding-top: 1em">
+                                
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tincidunt turpis ut massa aliquam,
+                                in vestibulum elit venenatis. In hac habitasse platea dictumst. Suspendisse at aliquam erat.
+                                Fusce nisi elit, luctus a tristique at, gravida sed purus. Ut congue, elit quis molestie commodo, 
+                                ante quam sodales nunc, nec tempor erat ipsum nec tellus. Etiam volutpat sed tellus vitae euismod. 
+                                Suspendisse potenti. Pellentesque rutrum non arcu sed malesuada. Vestibulum ante ipsum primis in 
+                                faucibus orci luctus et ultrices posuere cubilia Curae; Fusce eget tempor nisl, nec porttitor odio. 
+                                Integer et ultrices metus, ut pellentesque leo. Aenean sit amet sollicitudin nibh.
+                                Cras ut lectus ac dolor malesuada egestas. Mauris at justo sem. Maecenas fermentum diam congue varius 
+                                pretium. Morbi ut gravida lectus, eu mattis risus. Aenean vitae pellentesque diam. Pellentesque viverra,
+                                Aenean ultrices dui dolor, a laoreet dui egestas eget. 
+                                Praesent tristique felis porta blandit vehicula
+                            </p>
+                        </blockquote>
+
                     </div>
 
                 </div>
