@@ -10,33 +10,32 @@
 
         <link rel="shortcut icon" href="../resources/images/favicon.png"/>
     </head>
-    <body>
-
+    <body>     
         <div class="container bg-white-grey menu-height2">
             <div class="content">
                 <ul class="font-oswald-light font-bold fontsize090 fl-right text-uppercase">
-                    <li class="list-info"><a src="" alt=""><img src="../resources/images/home/endereco-icon.png" class="fl-left img-micro" alt="Icone Encereço">Praça Getúlio Vargas nº 585 - centro - Alegrete RS</a></li>
-                    <li class="list-info"><a src="" alt=""><img src="../resources/images/home/telefone-icon.png" class="fl-left img-micro" alt="Icone Telefone">(55) 3422 xxxx</a></li>
-                    <li class="list-info"><a src="" alt=""><img src="../resources/images/home/facebook-icon.png" alt="Nossa Página no Facebook"></a></li>
+                    <li class="list-info"><a src="" alt=""><img src="../resources/images/home/endereco-icon.png" class="fl-left img-micro" alt="Icone Encereço" title="Endereço do Museu">Praça Getúlio Vargas nº 585 - centro - Alegrete RS</a></li>
+                    <li class="list-info"><a src="" alt=""><img src="../resources/images/home/telefone-icon.png" class="fl-left img-micro" alt="Icone Telefone" title="Telefone para Contato">(55) 3422 xxxx</a></li>
+                    <li class="list-info"><a src="" alt=""><img src="../resources/images/home/facebook-icon.png" alt="Nossa Página no Facebook" title="Facebook"></a></li>
                 </ul>
             </div>
         </div>
 
         <header class="container bg-black menu-height section-header transparence-85">
             <div class="content">
-                <h1 class="fontzero">
+                <h1 class="fontzero" >
                     Portal Museu Oswaldo Aranha
                     <img src="../resources/images/home/logo-museu.png" alt="Museu Oswaldo Aranha" class="ds-block fl-left grid-2">                        
                 </h1>
                 <ul class="font-oswald-light font-light fontsize1b fl-right">
-                    <li class="menu-item"><a src="" alt="">INÍCIO</a></li>
-                    <li class="menu-item"><a src="" alt="">SOBRE</a></li>
-                    <li class="menu-item"><a src="" alt="">EVENTOS</a></li>
-                    <li class="menu-item"><a src="" alt="">CONTATO</a></li>
-                    <li class="menu-item"><a src="" alt="">NOTÍCIAS</a></li>
-                    <li class="menu-item"><a src="" alt="">APRENDA</a></li>
-                    <li class="menu-item"><a src="" alt="">AMIGOS DO MUSEU</a></li>
-                    <li class="menu-item"><a src="" alt="">VISITE</a></li>
+                    <li class="menu-item"><a href="../view/home.php" title="Página Inícial">INÍCIO</a></li>
+                    <li class="menu-item"><a href="../view/sobre.php" alt="" title="Sobre o Museu">SOBRE</a></li>
+                    <li class="menu-item"><a src="" alt="" title="Eventos do Museu">EVENTOS</a></li>
+                    <li class="menu-item"><a href="../view/contato.php" alt="" title="Fale Conosco">CONTATO</a></li>
+                    <li class="menu-item"><a src="" alt="" title="Notícias">NOTÍCIAS</a></li>
+                    <li class="menu-item"><a src="" alt=""title="Aprenda">APRENDA</a></li>
+                    <li class="menu-item"><a src="" alt=""title="Amigos do Museu">AMIGOS DO MUSEU</a></li>
+                    <li class="menu-item"><a src="" alt="" title="Visite o Museu">VISITE</a></li>
                 </ul>
             </div>
         </header>
