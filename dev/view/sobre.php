@@ -68,7 +68,7 @@
 
                         <blockquote class="font-georgia" >
 
-                            <p class="fontsize1b" style="padding-left: 15em;">
+                            <p class="fontsize1b" style="padding-left: 15em;" >
                                 Na primeira sessão especial da Assembléia Geral da ONU, em 1947, Oswaldo Aranha inaugurou a tradição -que se mantém até hoje- de ser um brasileiro o primeiro orador daquele foro internacional.
 
                                 Oswaldo Euclides de Souza Aranha era um dos 11 filhos do coronel Euclides de Souza Aranha e de Luiza de Freitas Valle Aranha, proprietários da estância Alto Uruguai, no município gaúcho de Itaqui.
