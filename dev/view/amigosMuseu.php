@@ -2,7 +2,7 @@
 <html lang="pt-br">
     <head>
         <meta charset="UTF-8">
-        <title>Visite</title>
+        <title>Amigos do Museu</title>
 
         <link rel="stylesheet" href="../resources/css/normalize.css">
         <link rel="stylesheet" href="../resources/css/boot.css">
@@ -41,14 +41,19 @@
         </header>
 
         <section>
-            <div class="section-Visite-1">
+            <div class="section-AmigosMuseu-1">
                 <div class="content">
 
                 </div>
             </div>
 
             <div class="container al-center bg-brown-white position_image_text_info transparence-70 font-georgia fontsize1">
-
+                <div class="content">
+                    <p class="grid-16">
+                        It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. 
+                        The point of using Lorem Ipsum  is that it has a more-or-less normal distribution of letters, as opposed to using.
+                    </p>
+                </div>
             </div>
         </section>
 
@@ -56,21 +61,32 @@
             <section class="container container-padding-60 font-oswald-light font-light">
                 <div class="content">
                     <article class="grid-4 game_box">
-                        <h2 class="al-center fontsize25"><p>COMO CHEGAR</p></h2>
-                        <p class="al-center fontsize1b" style="margin-top: 30px;">Alguma coisa, alguma coisa e alguma coisa...Alguma coisa, alguma coisa e alguma coisa...</p>
+                        <h2 class="al-center fontsize25"><p>DIRETORIA:</p></h2>
+                        <p class="al-center fontsize1b" style="margin-top: 10px;">Presidente <br> Vice-Presidente <br>Diretor-Secretário<br>Vice-Diretor Secretário<br>Diretor Tesoureiro<br>Vice-Diretor Financeiro</p>
+                        <h2 class="al-center fontsize25"><p>ESTATUTO:</p></h2>
+                        <p class="al-center fontsize1b" style="margin-top: 10px;">link pdf ou ...</p>
                     </article>
-                    <article class="grid-4 game_box">
-                        <h2 class="al-center fontsize25"><p>REGRAS</p></h2>
-                        <p class="al-center fontsize1b" style="margin-top: 30px;">Alguma coisa, alguma coisa e alguma coisa...Alguma coisa, alguma coisa e alguma coisa...</p>
+
+
+                    <article class="grid-1-3">
+                        <a href="#">
+                            <div class="box-news border-vinho" style="background: url(../resources/images/amigosMuseu/amigosEvento.jpg) no-repeat center; background-size: cover;"></div>
+                            <p class="al-left font-oswald-light font-bluee news_description fontsize18 ds-block border-grey">ALGUMA COISA...ALGUMA COISA...</p>
+                        </a>
                     </article>
-                    <article class="grid-4 game_box">
-                        <h2 class="al-center fontsize25"><p>HORÁRIO</p></h2>
-                        <p class="al-center fontsize1b" style="margin-top: 30px;">Alguma coisa, alguma coisa e alguma coisa...Alguma coisa, alguma coisa e alguma coisa...</p>
-                    </article>                    
-                    <article class="grid-4 game_box">
-                        <h2 class="al-center fontsize25"><p>AGENDE SUA VISITA</p></h2>
-                        <p class="al-center fontsize1b" style="margin-top: 30px;">Alguma coisa, alguma coisa e alguma coisa...Alguma coisa, alguma coisa e alguma coisa...</p>
+                    <article class="grid-1-3">
+                        <a href="#">
+                            <div class="box-news border-vinho" style="background: url(../resources/images/amigosMuseu/amigosEvento1.jpg) no-repeat center; background-size: cover;"></div>
+                            <p class="al-left font-oswald-light font-bluee news_description fontsize18 ds-block border-grey">ALGUMA COISA...ALGUMA COISA...</p>
+                        </a>
                     </article>
+
+                    <!--<article class="grid-3 game_box">
+                        <h2 class="al-center fontsize25"><p>ESTATUTO:</p></h2>
+                        <p class="al-center fontsize1b" style="margin-top: 30px;">link...</p>
+                    </article>-->
+
+
                 </div>
             </section>
 
@@ -127,3 +143,5 @@
         </div>
     </body>
 </html>
+
+
