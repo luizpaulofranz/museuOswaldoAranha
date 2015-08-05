@@ -35,7 +35,7 @@
                     <li class="menu-item"><a src="" alt="" title="Notícias">NOTÍCIAS</a></li>
                     <li class="menu-item"><a src="" alt=""title="Aprenda">APRENDA</a></li>
                     <li class="menu-item"><a src="" alt=""title="Amigos do Museu">AMIGOS DO MUSEU</a></li>
-                    <li class="menu-item"><a src="" alt="" title="Visite o Museu">VISITE</a></li>
+                    <li class="menu-item"><a href="../view/visite.php" alt="" title="Visite o Museu">VISITE</a></li>
                 </ul>
             </div>
         </header>
