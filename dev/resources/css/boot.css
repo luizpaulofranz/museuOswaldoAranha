@@ -92,6 +92,11 @@ a:visited{text-decoration: none;}
 .font-light{font-weight: 300 !important;}
 .font-normal{font-weight: 400 !important;}
 .font-bold{font-weight: 700 !important;}
+/*formatacao fonte visite*/
+.fontvisite{
+   top:10%;
+}
+
 
 /*text*/
 .text-uppercase{text-transform: uppercase;}
@@ -151,7 +156,14 @@ a:visited{text-decoration: none;}
     position: absolute;
     top: 35px;
 }
-
+.section-Visite-1{
+    height: 560px;
+    background: url(../images/visite/mapaCabecalho.jpg) no-repeat center;
+    background-size: contain;
+    position: absolute;
+    top: 50px;
+    width: 100%;
+}
 .section-header {
     z-index: 1;
     position: relative
