@@ -30,7 +30,7 @@
                 <ul class="font-oswald-light font-light fontsize1b fl-right">
                     <li class="menu-item"><a href="../view/home.php" title="Página Inícial">INÍCIO</a></li>
                     <li class="menu-item"><a href="../view/sobre.php" alt="" title="Sobre o Museu">SOBRE</a></li>
-                    <li class="menu-item"><a src="" alt="" title="Eventos do Museu">EVENTOS</a></li>
+                    <li class="menu-item"><a href="../view/eventos.php" alt="" title="Eventos do Museu">EVENTOS</a></li>
                     <li class="menu-item"><a href="../view/contato.php" alt="" title="Fale Conosco">CONTATO</a></li>
                     <li class="menu-item"><a src="" alt="" title="Notícias">NOTÍCIAS</a></li>
                     <li class="menu-item"><a src="" alt=""title="Aprenda">APRENDA</a></li>
@@ -71,13 +71,13 @@
                     <article class="grid-1-3">
                         <a href="#">
                             <div class="box-news border-vinho" style="background: url(../resources/images/amigosMuseu/amigosEvento.jpg) no-repeat center; background-size: cover;"></div>
-                            <p class="al-left font-oswald-light font-bluee news_description fontsize18 ds-block border-grey">ALGUMA COISA...ALGUMA COISA...</p>
+                            <p class="al-left font-oswald-light font-vinho news_description fontsize18 ds-block border-grey">ALGUMA COISA...ALGUMA COISA...</p>
                         </a>
                     </article>
                     <article class="grid-1-3">
                         <a href="#">
                             <div class="box-news border-vinho" style="background: url(../resources/images/amigosMuseu/amigosEvento1.jpg) no-repeat center; background-size: cover;"></div>
-                            <p class="al-left font-oswald-light font-bluee news_description fontsize18 ds-block border-grey">ALGUMA COISA...ALGUMA COISA...</p>
+                            <p class="al-left font-oswald-light font-vinho news_description fontsize18 ds-block border-grey">ALGUMA COISA...ALGUMA COISA...</p>
                         </a>
                     </article>
 

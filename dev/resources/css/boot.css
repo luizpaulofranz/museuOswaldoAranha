@@ -68,7 +68,7 @@ a:visited{text-decoration: none;}
 /* PALETA */
 /* FONTES */
 .font-pink{color: #ff6666;}
-.font-bluee{color:#993333;}
+.font-vinho{color:#993333;}
 
 /* fonts */
 .font{font-family: Oswald;}
@@ -173,6 +173,13 @@ a:visited{text-decoration: none;}
     position: absolute;
     top: 35px;
     width: 100%;
+}
+.section-Evento-1{
+    height: 560px;
+    background: url(../images/eventos/eventoCabecalho.jpg) no-repeat center;
+    background-size: cover;
+    position: absolute;
+    top: 35px;
 }
 .section-header {
     z-index: 1;

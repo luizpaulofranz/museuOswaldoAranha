@@ -31,7 +31,7 @@
                 <ul class="font-oswald-light font-light fontsize1b fl-right">
                     <li class="menu-item"><a href="../view/home.php" title="Página Inícial">INÍCIO</a></li>
                     <li class="menu-item"><a href="../view/sobre.php" alt="" title="Sobre o Museu">SOBRE</a></li>
-                    <li class="menu-item"><a src="" alt="" title="Eventos do Museu">EVENTOS</a></li>
+                    <li class="menu-item"><a href="../view/eventos.php" alt="" title="Eventos do Museu">EVENTOS</a></li>
                     <li class="menu-item"><a href="../view/contato.php" alt="" title="Fale Conosco">CONTATO</a></li>
                     <li class="menu-item"><a src="" alt="" title="Notícias">NOTÍCIAS</a></li>
                     <li class="menu-item"><a src="" alt=""title="Aprenda">APRENDA</a></li>
