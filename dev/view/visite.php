@@ -34,7 +34,7 @@
                     <li class="menu-item"><a href="../view/contato.php" alt="" title="Fale Conosco">CONTATO</a></li>
                     <li class="menu-item"><a src="" alt="" title="Notícias">NOTÍCIAS</a></li>
                     <li class="menu-item"><a src="" alt=""title="Aprenda">APRENDA</a></li>
-                    <li class="menu-item"><a href="../view/amigosMuseu.php" alt=""title="Amigos do Museu">AMIGOS DO MUSEU</a></li>
+                    <li class="menu-item"><a href="../view/amigosDoMuseu.php" alt=""title="Amigos do Museu">AMIGOS DO MUSEU</a></li>
                     <li class="menu-item"><a href="../view/visite.php" alt="" title="Visite o Museu">VISITE</a></li>
                 </ul>
             </div>
