@@ -181,6 +181,20 @@ a:visited{text-decoration: none;}
     position: absolute;
     top: 35px;
 }
+.section-Aprenda-1{
+    height: 560px;
+    background: url(../images/aprenda/aprendaCabecalho.jpg) no-repeat center;
+    background-size: cover;
+    position: absolute;
+    top: 35px;
+}
+.section-Noticia-1{
+    height: 560px;
+    background: url(../images/noticias/noticiaCabecalho.jpg) no-repeat center;
+    background-size: cover;
+    position: absolute;
+    top: 35px;
+}
 .section-header {
     z-index: 1;
     position: relative
@@ -219,6 +233,13 @@ a:visited{text-decoration: none;}
     height: 63px;
     padding: 15px;
     margin: 40px 15px 20px 15px;
+}
+
+.btn_game2 {
+    width: 190px;
+    height: 63px;
+    padding: 15px;
+    margin: 40px 15px 20px 55px;
 }
 
 .position_image_text_info {
@@ -304,4 +325,8 @@ a:active {
 }
 .form {
     line-height:200%;
+}
+
+form label {
+    padding-right: 5o0px;
 }

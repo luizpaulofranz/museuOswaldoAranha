@@ -2,7 +2,7 @@
 <html lang="pt-br">
     <head>
         <meta charset="UTF-8">
-        <title>Sobre</title>
+        <title>Notícias</title>
 
         <link rel="stylesheet" href="../resources/css/normalize.css">
         <link rel="stylesheet" href="../resources/css/boot.css">
@@ -10,8 +10,7 @@
 
         <link rel="shortcut icon" href="../resources/images/favicon.png"/>
     </head>
-    <body>
-
+    <body>     
         <div class="container bg-white-grey menu-height2">
             <div class="content">
                 <ul class="font-oswald-light font-bold fontsize090 fl-right text-uppercase">
@@ -36,12 +35,13 @@
                     <li class="menu-item"><a href="../view/noticias.php" alt="" title="Notícias">NOTÍCIAS</a></li>
                     <li class="menu-item"><a href="../view/aprendaMenu.php" alt=""title="Aprenda">APRENDA</a></li>
                     <li class="menu-item"><a href="../view/amigosDoMuseu.php" alt=""title="Amigos do Museu">AMIGOS DO MUSEU</a></li>
-                    <li class="menu-item"><a href="../view/visite.php" alt="" title="Visite o Museu">VISITE</a></li>
+                    <li class="menu-item"><a href="../view/visite.php"alt="" title="Visite o Museu">VISITE</a></li>
                 </ul>
             </div>
         </header>
+
         <section>
-            <div class="container section-Sobre-1">
+            <div class="container section-Noticia-1">
                 <div class="content">
 
                 </div>
@@ -58,54 +58,57 @@
         </section>
 
         <div class="regulates_position">
-
-
             <section class="container container-padding-60 font-oswald-light font-light">
                 <div class="content">
+                    
+                    <header class="content" style="background: #993333; height: 5px">
+                        <h2 class="fontsize25 font-vinho font-oswald-light al-center ds-inblock news_style">NOTÍCIAS</h2>;
+                    </header>
+                    <br><br><br>
+
                     <div>
-                        <h2 class="font-oswald-light fontsize30 " style="text-align: center; padding-bottom: 40px" >SOBRE</h2>
-                        <img src="../resources/images/sobre/oswaldoAranhaSobre.jpg" alt="lalala" style="width: 20em; height: 25em">
+                        <img alt=""  src="../resources/images/acervoDoMuseu/acervoDoMuseu.jpg" class="ds-block grid-4">
+                        <div class="grid-12">
+                            <h2 class="ds-inblock">Título qualquer</h2> <br>
+                            <p class="ds-inblock">05/08/2015</p>
+                            <p>Texto texto Texto texto Texto texto Texto texto Texto texto Texto texto Texto texto </p>
+                        </div>
+                        <div style="margin-top: 110px;" class="fl-left grid-9 border-grey">
 
-                        <blockquote class="font-georgia" >
+                            <a href="" class="font-oswald-light font-bold fontsize1b" style="color: #993333">Leia mais...</a>
+                        </div>
 
-                            <p class="fontsize1b" style="padding-left: 15em; color: #666666" >
-                                Na primeira sessão especial da Assembléia Geral da ONU, em 1947, Oswaldo Aranha inaugurou a tradição -que se mantém até hoje- de ser um brasileiro o primeiro orador daquele foro internacional.
+                    </div>
+                    <div>
+                        <img alt=""  src="../resources/images/acervoDoMuseu/acervoDoMuseu.jpg" class="ds-block grid-4">
+                        <div class="grid-12">
+                            <h2 class="ds-inblock">Título qualquer</h2> <br>
+                            <p class="ds-inblock">05/08/2015</p>
+                            <p>Texto texto Texto texto Texto texto Texto texto Texto texto Texto texto Texto texto </p>
+                        </div>
+                        <div style="margin-top: 110px;" class="fl-left grid-9 border-grey">
 
-                                Oswaldo Euclides de Souza Aranha era um dos 11 filhos do coronel Euclides de Souza Aranha e de Luiza de Freitas Valle Aranha, proprietários da estância Alto Uruguai, no município gaúcho de Itaqui.
+                            <a href="" class="font-oswald-light font-bold fontsize1b" style="color: #993333">Leia mais...</a>
+                        </div>
+                    </div>
 
-                                Freqüentou a faculdade de direito, aproximando-se dos colegas que se ligavam às oposições, embora o pai fosse do partido situacionista. Manteve também intensa atividade política contra o então presidente da República, marechal Hermes da Fonseca.
-                                Em princípios de 1917, instalou banca em Uruguaiana. Até 1923, dedicou-se quase exclusivamente à advocacia, obtendo alto conceito profissional. Getúlio Vargas (também advogado, formado em 1907) costumava consultá-lo, e os dois chegaram a ter clientes em comum.
+                    <div>
+                        <img alt=""  src="../resources/images/acervoDoMuseu/acervoDoMuseu.jpg" class="ds-block grid-4">
+                        <div class="grid-12">
+                            <h2 class="ds-inblock">Título qualquer</h2> <br>
+                            <p class="ds-inblock">05/08/2015</p>
+                            <p>Texto texto Texto texto Texto texto Texto texto Texto texto Texto texto Texto texto </p>
+                        </div>
+                        <div style="margin-top: 110px;" class="fl-left grid-9 border-grey">
 
-                                Pouco depois de haver fixado residência em Uruguaiana, Aranha casou com Delminda Benvinda Gudolle, com quem teria quatro filhos.
-                            </p>
-                        </blockquote>
-
-                        <img src="../resources/images/sobre/museusobre.jpg" alt="lalala" style="width: 20em; height: 25em; padding-top:2em">
-                        <blockquote class="font-georgia" >
-
-                            <p class="fontsize1b" style="padding-left: 15em; padding-top: 1em;  color: #666666">
-                                
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tincidunt turpis ut massa aliquam,
-                                in vestibulum elit venenatis. In hac habitasse platea dictumst. Suspendisse at aliquam erat.
-                                Fusce nisi elit, luctus a tristique at, gravida sed purus. Ut congue, elit quis molestie commodo, 
-                                ante quam sodales nunc, nec tempor erat ipsum nec tellus. Etiam volutpat sed tellus vitae euismod. 
-                                Suspendisse potenti. Pellentesque rutrum non arcu sed malesuada. Vestibulum ante ipsum primis in 
-                                faucibus orci luctus et ultrices posuere cubilia Curae; Fusce eget tempor nisl, nec porttitor odio. 
-                                Integer et ultrices metus, ut pellentesque leo. Aenean sit amet sollicitudin nibh.
-                                Cras ut lectus ac dolor malesuada egestas. Mauris at justo sem. Maecenas fermentum diam congue varius 
-                                pretium. Morbi ut gravida lectus, eu mattis risus. Aenean vitae pellentesque diam. Pellentesque viverra,
-                                Aenean ultrices dui dolor, a laoreet dui egestas eget. 
-                                Praesent tristique felis porta blandit vehicula
-                            </p>
-                        </blockquote>
-
+                            <a href="" class="font-oswald-light font-bold fontsize1b" style="color: #993333">Leia mais...</a>
+                        </div>
                     </div>
 
                 </div>
             </section>
 
             <section class="container container-padding-60 bg-pink-white">
-
                 <div class="content al-center">
                     <header style="background: #ffffff; height: 5px">
                         <h2 class="fontsize25 font-oswald-light al-center ds-inblock shadow_parceiros">PARCEIROS</h2>;
@@ -158,3 +161,8 @@
         </div>
     </body>
 </html>
+
+
+
+
+
