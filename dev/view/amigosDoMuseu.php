@@ -62,7 +62,7 @@
                 <div class="content">
                     <article class="grid-1-3 game_box">
                         <h2 class="al-center fontsize25"><p>DIRETORIA:</p></h2>
-                        <p class="al-center fontsize1b" style="margin-top: 10px;">Presidente <br> Vice-Presidente <br>Diretor-Secretário<br>Vice-Diretor Secretário<br>Diretor Tesoureiro<br>Vice-Diretor Financeiro</p>
+                        <p class="al-center fontsize1b" style="margin-top: 10px;">Presidente - Anderson Corrêa<br> Vice-Presidente - Anderson Corrêa <br>Diretor-Secretário - Anderson Corrêa<br>Vice-Diretor Secretário - Anderson <br>Diretor Tesoureiro - Anderson Corrêa<br>Vice-Diretor Financeiro - Anderson </p>
                         <h2 class="al-center fontsize25"><p>ESTATUTO:</p></h2>
                         <p class="al-center fontsize1b" style="margin-top: 10px;">link pdf ou ...</p>
                     </article>

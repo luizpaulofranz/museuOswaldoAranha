@@ -67,6 +67,7 @@
                     <br><br><br>
 
                     <div>
+                        <div style="background-color: rgba(198, 198, 198, 0.0); border-radius: 2px; height: 230px; padding-top: 16px;">
                         <img alt=""  src="../resources/images/acervoDoMuseu/acervoDoMuseu.jpg" class="ds-block grid-4">
                         <div class="grid-12">
                             <h2 class="ds-inblock">Título qualquer</h2> <br>
@@ -76,10 +77,12 @@
                         <div style="margin-top: 110px;" class="fl-left grid-9 border-grey">
 
                             <a href="" class="font-oswald-light font-bold fontsize1b" style="color: #993333">Leia mais...</a>
+                        </div>
                         </div>
 
                     </div>
                     <div>
+                        <div style="background-color: rgba(198, 198, 198, 0.0); border-radius: 2px; height: 230px; padding-top: 16px;">
                         <img alt=""  src="../resources/images/acervoDoMuseu/acervoDoMuseu.jpg" class="ds-block grid-4">
                         <div class="grid-12">
                             <h2 class="ds-inblock">Título qualquer</h2> <br>
@@ -89,10 +92,12 @@
                         <div style="margin-top: 110px;" class="fl-left grid-9 border-grey">
 
                             <a href="" class="font-oswald-light font-bold fontsize1b" style="color: #993333">Leia mais...</a>
+                        </div>
                         </div>
                     </div>
 
                     <div>
+                        <div style="background-color: rgba(198, 198, 198, 0.0); border-radius: 2px; height: 230px; padding-top: 16px;">
                         <img alt=""  src="../resources/images/acervoDoMuseu/acervoDoMuseu.jpg" class="ds-block grid-4">
                         <div class="grid-12">
                             <h2 class="ds-inblock">Título qualquer</h2> <br>
@@ -102,6 +107,7 @@
                         <div style="margin-top: 110px;" class="fl-left grid-9 border-grey">
 
                             <a href="" class="font-oswald-light font-bold fontsize1b" style="color: #993333">Leia mais...</a>
+                        </div>
                         </div>
                     </div>
 
