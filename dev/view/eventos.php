@@ -68,19 +68,19 @@
 
                     <div style="margin-top: 40px; width: 100%">
                         <article class="grid-1-3">
-                            <a href="#">
+                            <a href="vizualizarEvento.php">
                                 <div class="box-news border-vinho" style="background: url(../resources/images/eventos/evento1.jpg) no-repeat center; background-size: cover;"></div>
                                 <p class="al-left font-oswald-light font-vinho news_description fontsize18 ds-block border-grey">ALGUM EVENTO...ALGUM EVENTO...</p>
                             </a>
                         </article>
                         <article class="grid-1-3">
-                            <a href="#">
+                            <a href="vizualizarEvento.php">
                                 <div class="box-news border-vinho" style="background: url(../resources/images/eventos/evento1.jpg) no-repeat center; background-size: cover;"></div>
                                 <p class="al-left font-oswald-light font-vinho news_description fontsize18 ds-block border-grey">ALGUM EVENTO...ALGUM EVENTO...</p>
                             </a>
                         </article>
                         <article class="grid-1-3">
-                            <a href="#">
+                            <a href="vizualizarEvento.php">
                                 <div class="box-news border-vinho" style="background: url(../resources/images/eventos/evento1.jpg) no-repeat center; background-size: cover;"></div>
                                 <p class="al-left font-oswald-light font-vinho news_description fontsize18 ds-block border-grey">ALGUM EVENTO...ALGUM EVENTO...</p>
                             </a>

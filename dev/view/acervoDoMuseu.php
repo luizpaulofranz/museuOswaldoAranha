@@ -81,7 +81,6 @@
                             <img alt="" src="../resources/images/acervoDoMuseu/acervoDoMuseu.jpg" class="ds-block grid-4">
                             <div class="grid-12">
                                 <h2 class="ds-inblock">Título qualquer</h2>
-                                <p class="ds-inblock">Data</p>
                                 <p>Texto texto Texto texto Texto texto Texto texto Texto texto Texto texto Texto texto </p>
                             </div>
                         </div>
@@ -92,7 +91,6 @@
                             <img alt="" src="../resources/images/acervoDoMuseu/acervoDoMuseu.jpg" class="ds-block grid-4">
                             <div class="grid-12">
                                 <h2 class="ds-inblock">Título qualquer</h2>
-                                <p class="ds-inblock">Data</p>
                                 <p>Texto texto Texto texto Texto texto Texto texto Texto texto Texto texto Texto texto </p>
                             </div>
                         </div>

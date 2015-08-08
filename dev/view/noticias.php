@@ -76,7 +76,7 @@
                         </div>
                         <div style="margin-top: 110px;" class="fl-left grid-9 border-grey">
 
-                            <a href="" class="font-oswald-light font-bold fontsize1b" style="color: #993333">Leia mais...</a>
+                            <a href="vizualizarNoticia.php" class="font-oswald-light font-bold fontsize1b" style="color: #993333">Leia mais...</a>
                         </div>
                         </div>
 
@@ -91,7 +91,7 @@
                         </div>
                         <div style="margin-top: 110px;" class="fl-left grid-9 border-grey">
 
-                            <a href="" class="font-oswald-light font-bold fontsize1b" style="color: #993333">Leia mais...</a>
+                            <a href="vizualizarNoticia.php" class="font-oswald-light font-bold fontsize1b" style="color: #993333">Leia mais...</a>
                         </div>
                         </div>
                     </div>
@@ -106,7 +106,7 @@
                         </div>
                         <div style="margin-top: 110px;" class="fl-left grid-9 border-grey">
 
-                            <a href="" class="font-oswald-light font-bold fontsize1b" style="color: #993333">Leia mais...</a>
+                            <a href="vizualizarNoticia.php" class="font-oswald-light font-bold fontsize1b" style="color: #993333">Leia mais...</a>
                         </div>
                         </div>
                     </div>
