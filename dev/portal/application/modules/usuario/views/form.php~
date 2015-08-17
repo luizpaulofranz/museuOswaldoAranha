@@ -1,0 +1,192 @@
+<div class="area-cliente contato">
+    <div>
+        <div class="page-header">
+            <h1>Cadastre-se</h1>
+            <h2>Preencha os campos abaixo para obter um cadastro gratuito: </h2>
+        </div>
+    </div>
+
+
+    <div class="col-md-12">
+        <!-- Reg-Form -->
+        <form action="" id="sky-form4" class="sky-form" novalidate="novalidate">
+            <header>Formulário de Cadastro</header>
+
+            <fieldset>
+                <header>Dados Pessoais</header>
+                <section>
+                    <label class="input <?php if (form_error('nome') != "") echo "state-error"; ?>">
+                        <i class="icon-prepend fa fa-user"></i>
+                        <input type="text" name="nome" placeholder="Nome Completo" id="nome">
+                        <b class="tooltip tooltip-bottom-left">Informe seu nome completo.</b>
+                    </label>
+                </section>
+
+                <section>
+                    <label class="input <?php if (form_error('email') != "") echo "state-error"; ?>">
+                        <i class="icon-prepend fa fa-envelope"></i>
+                        <input type="email" name="email" placeholder="Email" id="email">
+                        <b class="tooltip tooltip-bottom-left">Necessário para verificar sua conta.</b>
+                    </label>
+                </section>
+                <div class="row">
+
+                    <section class="col col-6">
+                        <label class="input <?php if (form_error('senha') != "") echo "state-error"; ?>">
+                            <i class="icon-prepend fa fa-lock"></i>
+                            <input type="password" name="senha" placeholder="Senha" id="senha">
+                            <b class="tooltip tooltip-bottom-left">Não esqueça sua senha.</b>
+                        </label>
+                    </section>
+
+                    <section class="col col-6">
+                        <label class="input <?php if (form_error('senha2') != "") echo "state-error"; ?>">
+                            <i class="icon-prepend fa fa-lock"></i>
+                            <input type="password" name="senha2" placeholder="Confirmar senha" id="senha2">
+                            <b class="tooltip tooltip-bottom-left">Verificação da senha.</b>
+                        </label>
+                    </section>
+
+
+<<<<<<< HEAD
+                    <section class="col col-6">
+                        <label class="input <?php if (form_error('celular') != "") echo "state-error"; ?>">
+                            <i class="icon-prepend fa fa-phone"></i>
+                            <input type="tel" name="celular" id="celular" placeholder="Celular">
+                        </label>
+                    </section>
+=======
+                <section class="col-5">
+                    <label class="input">
+                        <i class="icon-prepend fa fa-phone"></i>
+                        <input type="tel" name="phone1" id="phone" placeholder="Celular">
+                    </label>
+                </section>
+>>>>>>> origin/feature_01_controle_de_acessos_frontend
+
+                    <section class="col col-6">
+                        <label class="input <?php if (form_error('telefone') != "") echo "state-error"; ?>">
+                            <i class="icon-prepend fa fa-phone"></i>
+                            <input type="tel" name="telefone" id="telefone" placeholder="Telefone Fixo">
+                        </label>
+                    </section>
+
+                    <section class="col col-6">
+                        <label class="input <?php if (form_error('dataNascimento') != "") echo "state-error"; ?>">
+                            <i class="icon-prepend fa fa-calendar"></i>
+                            <input type="text" class="hasDatepicker" name="dataNascimento" id="dataNascimento" placeholder="Data de Nascimento">
+                        </label>
+                    </section>
+
+                    <section class="col col-6">
+                        <label class="select <?php if (form_error('sexo') != "") echo "state-error"; ?>">
+                            <select name="sexo" id="sexo">
+                                <option value="0" selected="" disabled="">Sexo</option>
+                                <option value="M">Masculino</option>
+                                <option value="F">Feminino</option>
+                                <option value="O">Outro</option>
+                            </select>
+                            <i></i>
+                        </label>
+                    </section>
+                </div>
+
+                <section>
+                    <label class="input <?php if (form_error('formacao') != "") echo "state-error"; ?>">
+                        <i class="icon-prepend fa fa-user"></i>
+                        <input type="text" name="formacao" placeholder="Formação" id="formacao">
+                        <b class="tooltip tooltip-bottom-left">Informe sua formação.</b>
+                    </label>
+                </section>
+
+                <section>
+                    <label class="input <?php if (form_error('profissao') != "") echo "state-error"; ?>">
+                        <i class="icon-prepend fa fa-user"></i>
+                        <input type="text" name="profissao" placeholder="Profissão" id="profissao">
+                        <b class="tooltip tooltip-bottom-left">Informe sua profissão.</b>
+                    </label>
+                </section>
+
+                <section>
+                    <label class="input <?php if (form_error('empresaAtual') != "") echo "state-error"; ?>">
+                        <i class="icon-prepend fa fa-user"></i>
+                        <input type="text" name="empresaAtual" placeholder="Empresa" id="empresaAtual">
+                        <b class="tooltip tooltip-bottom-left">Informe a empresa em que trabalha.</b>
+                    </label>
+                </section>
+
+                <section>
+                    <label class="input <?php if (form_error('setorEmpresaAtual') != "") echo "state-error"; ?>">
+                        <i class="icon-prepend fa fa-user"></i>
+                        <input type="text" name="setorEmpresaAtual" placeholder="Área de atuação" id="setorEmpresaAtual">
+                        <b class="tooltip tooltip-bottom-left">Informe a área de atuação desta empresa.</b>
+                    </label>
+                </section>
+
+                <section>
+                    <label class="input <?php if (form_error('cargo') != "") echo "state-error"; ?>">
+                        <i class="icon-prepend fa fa-user"></i>
+                        <input type="text" name="cargo" placeholder="Cargo" id="cargo">
+                        <b class="tooltip tooltip-bottom-left">Informe seu cargo nesta empresa.</b>
+                    </label>
+                </section>
+            </fieldset>
+            <fieldset>
+                <header>Endereço</header>
+                <section>
+                    <label class="select <?php if (form_error('estado') != "") echo "state-error"; ?>">
+                        <?php echo form_dropdown('estado', $estados, set_value('idEstado', 0), 'id = "estados"'); ?>
+                        <i></i>
+                    </label>
+                </section>
+
+                <section>
+                    <label class="select <?php if (form_error('cidade') != "") echo "state-error"; ?>">
+                        <select name="cidade" id="cidade">
+                            <option value="0" selected="" disabled="">Cidade</option>
+                        </select>
+                        <i></i>
+                    </label>
+                </section>
+
+                <section>
+                    <label class="input <?php if (form_error('logradouro') != "") echo "state-error"; ?>">
+                        <input type="text" name="logradouro" placeholder="Logradouro" id="logradouro">
+                        <b class="tooltip tooltip-bottom-left">Informe sua Rua.</b>
+                    </label>
+                </section>
+                <div class="row">
+                    <section class="col col-6">
+                        <label class="input <?php if (form_error('bairro') != "") echo "state-error"; ?>">
+                            <input type="text" name="bairro" placeholder="Bairro" id="bairro">
+                            <b class="tooltip tooltip-bottom-left">Informe seu bairro.</b>
+                        </label>
+                    </section>
+
+                    <section class="col col-6">
+                        <label class="input <?php if (form_error('numero') != "") echo "state-error"; ?>">
+                            <input type="number" name="numero" placeholder="Número" id="numero">
+                            <b class="tooltip tooltip-bottom-left">Informe seu número.</b>
+                        </label>
+                    </section>
+                </div>
+
+                <section>
+                    <label class="input <?php if (form_error('complemento') != "") echo "state-error"; ?>">
+                        <input type="text" name="complemento" placeholder="Complemento" id="complemento">
+                        <b class="tooltip tooltip-bottom-left">Informe o complemento de seu endereço.</b>
+                    </label>
+                </section>
+
+                <div class="row">
+                    <section class="col col-6">
+                        <label class="input <?php if (form_error('cep') != "") echo "state-error"; ?>">
+                            <input type="text" name="cep" placeholder="CEP" id="cep">
+                            <b class="tooltip tooltip-bottom-left">Informe o seu CEP.</b>
+                        </label>
+                    </section>
+                </div>
+            </fieldset>
+        </form>
+    </div>
+</div>
