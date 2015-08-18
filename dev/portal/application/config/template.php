@@ -69,12 +69,8 @@ $template['admin']['parse_template'] = FALSE;
 $template['frontend']['template'] = 'frontend_template';
 $template['frontend']['regions'] = array(
    'menu_superior',
-   'slider',
    'capa',
    'paginacao',
-   'breadCrumbs',
-   'visitante',
-   'modal',
    'conteudo',
 );
 

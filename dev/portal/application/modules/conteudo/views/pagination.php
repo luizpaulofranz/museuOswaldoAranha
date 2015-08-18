@@ -1,9 +1,10 @@
 <?php
 // Paginação
 
-$pg['base_url'] = site_url('noticia/todas/');
+$pg['base_url'] = site_url('conteudo/noticias/');
 $pg['total_rows'] = $total;
-$pg['per_page'] = 9; 
+//var_dump($total);exit();
+$pg['per_page'] = 3; 
 $pg['uri_segment'] = 3;
 $pg['num_links'] = 3;//numero de links antes e depois da pagina atual na paginacao
 $pg['use_page_numbers'] = TRUE;

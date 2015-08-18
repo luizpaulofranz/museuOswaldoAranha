@@ -32,14 +32,15 @@ class Conteudo extends Site_Controller {
      * (segmento 3 é a editoria e 4 a pagina)
      */
     public function noticias() {
-        $limit = 12;
+        $limit = 3;
         //para a paginacao funcionar assim, o parametro $pg['use_page_numbers'] = TRUE no arquivo pagination
-        $offset = ($this->uri->segment(4, 1) - 1) * $limit;
+        $offset = ($this->uri->segment(3, 1) - 1) * $limit;
         $conteudos = $this->conteudo_m->listarNoticia($limit, $offset, true);
         $total = $this->conteudo_m->listarNoticia(null, null, true);
         
         $this->template->write_view('capa', 'conteudo/capa');
         $this->template->write_view('conteudo', 'conteudo/noticias', array('noticias' => $conteudos->result_array()));
+        $this->template->write_view('paginacao', 'conteudo/pagination', array('total' => $total->num_rows()));
         $this->template->render();
     }
 
