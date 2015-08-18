@@ -15,13 +15,12 @@ class Conteudo extends Site_Controller {
      * (segmento 3 é a editoria e 4 a pagina)
      */
     public function listar() {
-        
+
         //$limit = 10;
         //para a paginacao funcionar assim, o parametro $pg['use_page_numbers'] = TRUE no arquivo pagination
         //$offset = ($this->uri->segment(4, 1) - 1) * $limit;
         //$conteudos = $this->conteudo_m->listar($limit, $offset, true);
         //$total = $this->conteudo_m->listar(null, null, true);
-
         //$params = array('noticias' => $conteudos);
         $this->template->write_view('capa', 'conteudo/capa');
         $this->template->write_view('conteudo', 'conteudo/noticias');
@@ -34,24 +33,13 @@ class Conteudo extends Site_Controller {
      */
     public function noticias() {
         $limit = 12;
-        $limitTopNews = 5;
         //para a paginacao funcionar assim, o parametro $pg['use_page_numbers'] = TRUE no arquivo pagination
         $offset = ($this->uri->segment(4, 1) - 1) * $limit;
-        //quando nao passamos a categoria
-        $slug_editoria = $this->uri->segment(3);
-        if ($slug_editoria != 'todos') {
-            $conteudos = $this->conteudo_m->listarByEditoria($limit, $offset, true, $slug_editoria)->result_array();
-            $editoriaSelecionada = $this->editoria_m->getDataBySlug($slug_editoria);
-            $total = $this->conteudo_m->listarByEditoria(null, null, true, $slug_editoria);
-            $conteudosTopNews = $this->conteudo_m->listarTopNewsPorEditoria($limitTopNews, true, $slug_editoria);
-        } else {
-            $slug_editoria = '';
-            $conteudos = $this->conteudo_m->listar($limit, $offset, true);
-            $total = $this->conteudo_m->listar(null, null, true);
-        }
-
-        $this->template->write_view('capa', 'editoria/capa', array('editoria' => $editoriaSelecionada));
-        $this->template->write_view('conteudo', 'conteudo/noticias', array('noticias' => $conteudos, 'topNews' => $conteudosTopNews, 'usuarioLogado' => $this->logado()));
+        $conteudos = $this->conteudo_m->listarNoticia($limit, $offset, true);
+        $total = $this->conteudo_m->listarNoticia(null, null, true);
+        
+        $this->template->write_view('capa', 'conteudo/capa');
+        $this->template->write_view('conteudo', 'conteudo/noticias', array('noticias' => $conteudos->result_array()));
         $this->template->render();
     }
 

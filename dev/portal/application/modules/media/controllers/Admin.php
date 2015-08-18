@@ -201,7 +201,7 @@ class Admin extends Admin_Controller {
                     ->resize_crop(110, 110)
                     ->save($miniatura, true)
                     //fazer a média
-                    ->resize_crop(400, 320)
+                    ->resize_crop(279, 250)
                     //o ultimo parametro eh para preencher o fundo
                     //->resize(400, 300, true)
                     //->round(5)

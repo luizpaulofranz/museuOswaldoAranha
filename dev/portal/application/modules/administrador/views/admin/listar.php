@@ -9,7 +9,7 @@ $this->table->set_heading('Nome','Usuario', 'Ativo','Ações');
 
 foreach($administradores->result() as $u)
 {
-  if($u->ativo){$ativo = img('assets/img/ok.png');}else{$ativo = '';}
+  if($u->ativo){$ativo = img('assets/images/ok.png');}else{$ativo = '';}
   $this->table->add_row($u->nome,$u->email, $ativo, opcoes2(
     base_url('admin/administrador/excluir/'.$u->idAdministrador),
     base_url('admin/administrador/alterar/'.$u->idAdministrador))

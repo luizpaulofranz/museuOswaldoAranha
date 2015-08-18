@@ -32,7 +32,7 @@
                     <li class="menu-item"><a href="<?php echo site_url('sobre')?>" alt="Sobre o Museu" title="Sobre o Museu">SOBRE</a></li>
                     <li class="menu-item"><a href="<?php echo site_url('eventos')?>" alt="Eventos do Museu" title="Eventos do Museu">EVENTOS</a></li>
                     <li class="menu-item"><a href="<?php echo site_url('contato')?>" alt="Fale conosco" title="Fale Conosco">CONTATO</a></li>
-                    <li class="menu-item"><a href="<?php echo site_url('conteudo/listar')?>" alt="Notícias do museu" title="Notícias do museu">NOTÍCIAS</a></li>
+                    <li class="menu-item"><a href="<?php echo site_url('conteudo/noticias')?>" alt="Notícias do museu" title="Notícias do museu">NOTÍCIAS</a></li>
                     <li class="menu-item"><a href="<?php echo site_url('aprenda')?>" alt="Aprenda" title="Aprenda">APRENDA</a></li>
                     <li class="menu-item"><a href="<?php echo site_url('amigos-do-museu')?>" alt="Amigos do Museu" title="Amigos do Museu">AMIGOS DO MUSEU</a></li>
                     <li class="menu-item"><a href="<?php echo site_url('visite')?>" alt="Visite o Museu" title="Visite o Museu">VISITE</a></li>
@@ -78,7 +78,7 @@
                         <li class="menu-separador fontsize1">/</li>
                         <li class="menu-item2 fontsize18"><a src="<?php echo site_url('contato')?>" alt="">CONTATO</a></li>
                         <li class="menu-separador fontsize1">/</li>
-                        <li class="menu-item2 fontsize18"><a src="<?php echo site_url('conteudo/listar')?>" alt="">NOTÍCIAS</a></li>
+                        <li class="menu-item2 fontsize18"><a src="<?php echo site_url('conteudo/noticias')?>" alt="">NOTÍCIAS</a></li>
                         <li class="menu-separador fontsize1">/</li>
                         <li class="menu-item2 fontsize18"><a src="<?php echo site_url('aprenda')?>" alt="">APRENDA</a></li>
                         <li class="menu-separador fontsize1">/</li>

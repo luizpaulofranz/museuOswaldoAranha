@@ -10,7 +10,7 @@ if (set_value('idConteudo', false) == false) {
 <div>
     <div class="page-header">    
         <h1>Conteúdo <small>Cadastro de Conteúdos</small></h1>
-        <a class="btn btn-primary" href="<?php echo base_url('admin/conteudo/pg') ?>"><span class="glyphicon glyphicon-arrow-left"></span> Voltar</a>&nbsp;&nbsp;
+        <a class="btn btn-primary" href="<?php echo base_url('admin/conteudo/noticias') ?>"><span class="glyphicon glyphicon-arrow-left"></span> Voltar</a>&nbsp;&nbsp;
 
     </div>
 </div>
@@ -20,20 +20,9 @@ if (set_value('idConteudo', false) == false) {
     <?php
     echo form_hidden('idConteudo', set_value('idConteudo'));
     echo form_hidden('idAdministrador', $this->session->userdata['idAdministrador']);
+    echo form_hidden('idTipoConteudo', set_value('idTipoConteudo'));
     ?>
     <fieldset>
-        <div class="form-group <?php if (form_error('idTipoConteudo') != "") echo "has-error"; ?>">
-            <label for="idTipoConteudo" class="col-sm-2 control-label">Tipo de Conteúdo</label>
-            <div class="col-sm-10">
-                <?php echo form_dropdown('idTipoConteudo', $tipoConteudo, set_value('idTipoConteudo'), array('id' => 'idTipoConteudo')); ?>
-            </div>
-        </div>
-        <div class="form-group <?php if (form_error('idEditoria') != "") echo "has-error"; ?>" style="display: none" id="selectEditoria">
-            <label for="idEditoria" class="col-sm-2 control-label">Editoria</label>
-            <div class="col-sm-10">
-                <?php echo form_dropdown('idEditoria', $editorias, set_value('idEditoria'), array('id' => 'idEditoria')) ?>
-            </div>
-        </div>
         <div class="form-group <?php if (form_error('titulo') != "") echo "has-error"; ?>">
             <label for="titulo" class="col-sm-2 control-label">Título</label>
             <div class="col-sm-10">
@@ -56,17 +45,11 @@ if (set_value('idConteudo', false) == false) {
                 <p class="help-block" id="exibeLimiteResumo">O resumo possui um limite máximo de 250 caracteres.</p>
             </div>
         </div>
-        <div class="form-group <?php if (form_error('destaque') != "") echo "has-error"; ?>">    
-            <label for="destaque" class="col-sm-2 control-label">Destaque</label>
-            <div class="col-sm-10">
-                <?php echo form_dropdown('destaque', array(null => null, 'c' => 'Carousel', 'l' => 'Lateral'), set_value('destaque'), 'id="destaque"'); ?>
-            </div>
-        </div>
         <?php if (set_value('idConteudo', false) != false) { ?>
             <div class="form-group">
                 <label for="arquivo" class="col-sm-2 control-label">Anexos</label>
                 <div class="col-sm-10 popup-gallery">
-                    <ul id="anexos"></ul>
+                    <ul id="anexos" style="list-style: none"></ul>
                     <iframe id="form_upload" style="width: 100%;height: 30px" class="<?php echo $class ?>" src="<?php echo base_url('admin/media/anexarAoConteudo?conteudo=') . set_value('idConteudo') ?>" frameborder="0" scrolling="no"></iframe>
                     <p class="help-block">A imagem em destaque apresenta o ícone verde.</p>
                 </div>
@@ -78,19 +61,6 @@ if (set_value('idConteudo', false) == false) {
         <div class="form-group">
             <div class="col-sm-12">
                 <textarea class="ckeditor" name="conteudo" rows="40"><?php echo set_value('conteudo') ?></textarea><br/>
-            </div>
-        </div>
-        <div class="form-group <?php if (form_error('tags') != "") echo "has-error"; ?>">
-            <div class="col-sm-12">
-                <ul id="myTags">
-                    <?php
-                    if (isset($tags)) {
-                        foreach ($tags as $tag) {
-                            echo '<li>' . $tag['nome'] . '</li>';
-                        }
-                    }
-                    ?>
-                </ul>
             </div>
         </div>
         <div class="form-group">

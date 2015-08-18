@@ -7,7 +7,7 @@
         <meta name="description" content="Layout para área administrativa">
         <meta name="author" content="Luiz Paulo Franz, luizpaulofranz@gmail.com">
         <!-- CSS -->
-        <link href="<?php echo base_url('assets/css/reset.css'); ?>" rel="stylesheet">
+        <link rel="stylesheet" href="<?php echo site_url('assets/css/normalize.css') ?>">
         <link href="<?php echo base_url('assets/css/admin/custom.css'); ?>" rel="stylesheet">
 
         <script src="<?php echo base_url('assets/plugins/jquery/jquery.min.js')?>" type="text/javascript" ></script>

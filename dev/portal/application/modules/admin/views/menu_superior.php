@@ -12,13 +12,9 @@
             <li><a href="<?php echo base_url('admin/administrador/alterar/' . $this->session->userdata('idAdministrador')); ?>"><span class="glyphicon glyphicon-user"></span> Meu perfil</a></li>
         </ul>
     </li>
-    
-    <li>
-        <a href="<?php echo base_url('admin/editoria/pg'); ?>"> Editoria</a>
-    </li>
 
     <li>
-        <a href="<?php echo base_url('admin/conteudo/pg'); ?>"> Conteudo</a>
+        <a href="<?php echo base_url('admin/conteudo/noticias'); ?>"> Notícias</a>
     </li>
     
 </ul>

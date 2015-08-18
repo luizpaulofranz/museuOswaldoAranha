@@ -49,6 +49,10 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 | Examples:	my-controller/index	-> my_controller/index
 |		my-controller/my-method	-> my_controller/my_method
 */
+//essa configuração permite transcrever "_" por "-" exemplo:
+//www.meusite.com/meu-modulo/uma-funcao-qualquer
+//direciona para meu_modulo na funcao uma_funcao_qualquer
+$route['translate_uri_dashes'] = TRUE;
 
 $route['default_controller'] = "frontend";
 $route['404_override'] = '';

@@ -9,8 +9,13 @@ class Media_m extends CI_Model {
     }
 
     function cadastrar($dados) {
-        //unset($dados['button'], $dados['idMedia']);
-        return $this->db->insert($this->tabela, $dados);
+        $this->db->insert($this->tabela, $dados);
+        $id = $this->db->insert_id();
+        //toda imagem inserida eh automaticamente destaque
+        $data = array('destaque' => 0);
+        $this->db->update($this->tabela, $data, array('idConteudo' => $dados['idConteudo']));
+        $data = array('destaque' => 1);
+        return $this->db->update($this->tabela, $data, array('idMedia' => $id));
     }
 
     //essa funcao vai apenas fazer o update

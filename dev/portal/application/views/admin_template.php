@@ -11,6 +11,8 @@
         <link href="<?php echo site_url('assets/plugins/bootstrap/css/bootstrap.min.css')?>" rel="stylesheet">
         <link href="<?php echo site_url('assets/plugins/magnific-popup/magnific-popup.css'); ?>" rel="stylesheet">
         <link href="<?php echo site_url('assets/css/admin/custom.css'); ?>" rel="stylesheet">
+        <!-- CSS adicionado para o icone destaque das imagens do conteudo -->
+        <link href="<?php echo site_url('assets/plugins/font-awesome/css/font-awesome.min.css')?>" rel="stylesheet" >
         <style type="text/css">
             body {
                 padding-top: 10px;
@@ -63,7 +65,7 @@
         <div class="push"><!--//--></div>
         <footer>
             <div class="container">
-                Copyright © 2014. Todos os direitos reservados. Desdigned by <a href="#">Museu Oswaldo Aranha</a>
+                <a href="https://github.com/luizpaulofranz/museuOswaldoAranha/blob/master/LICENSE">Copyright</a> © 2015. Desdigned by Museu Oswaldo Aranha.
             </div>
         </footer>        
         <!-- javascript -->

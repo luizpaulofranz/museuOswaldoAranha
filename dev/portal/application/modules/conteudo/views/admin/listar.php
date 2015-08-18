@@ -1,14 +1,14 @@
 <div id="container">
     <div class="page-header">
         <h1>Conteúdos&nbsp;<small>Listagem</small></h1><br/>
-        <a class="btn btn-success" href="<?php echo base_url('admin/conteudo/cadastrar'); ?>"><span class="glyphicon glyphicon-plus"></span> Novo</a>
+        <a class="btn btn-success" href="<?php echo base_url('admin/conteudo/cadastrar-noticia'); ?>"><span class="glyphicon glyphicon-plus"></span> Novo</a>
     </div>
     <?php
 // Cabeçalho da tabela
     $this->table->set_heading('<b>Título</b>', '<b>Autor</b>', '<b>Data</b>', '<b>Rascunho</b>', '<b>Ações</b>');
 //var_dump($categorias);exit();
     foreach ($conteudos as $conteudo) {
-        if($conteudo['rascunho']){$rascunho = img('assets/img/ok.png');}else{$rascunho = '';}
+        if($conteudo['rascunho']){$rascunho = img('assets/images/ok.png');}else{$rascunho = '';}
         $this->table->add_row(substr($conteudo['titulo'], 0, 65), $conteudo['autor'], date('d/m/Y',strtotime($conteudo['data'])), $rascunho, 
         opcoes2(
             base_url('admin/conteudo/excluir/' . $conteudo['idConteudo']), base_url('admin/conteudo/alterar/' . $conteudo['idConteudo']))
