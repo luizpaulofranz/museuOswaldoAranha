@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <title>Contato</title>
-
+        <link href="../resources/bootstrap/css/bootstrap.css" rel="stylesheet"/>      
         <link rel="stylesheet" href="../resources/css/normalize.css">
         <link rel="stylesheet" href="../resources/css/boot.css">
         <link rel="stylesheet" href="../resources/css/grid.css">
@@ -59,86 +59,109 @@
                 <div class="content">
                     <div>
                         <h2 class="font-oswald-light fontsize30 " style="text-align: center; padding-bottom: 3em" >ENTRE EM CONTATO</h2> 
-                            <section class=" al-left font-oswald-light news_description fontsize18 ds-block border-grey">                                
-                                <form name="meu_form" class="">
-                                        <p class="nome">
-                                            <label for="nome">Nome: </label> 
-                                            <input type="text" id="nomeid" placeholder="Tiago Vale" required="required" name="nome" />
-                                        </p>
-                                        <p class="idade"> <label for="idade">Idade: </label>
-                                            <input type="text" id="idade" placeholder="18" name="idade" /> 
-                                        </p> 
-                                        <p class="escolaridade"> 
-                                            <label for="escolaridade">Escolaridade: </label>
-                                            <input type="text" id="escolaridade" placeholder="Ensio Médio" name="escolaridade" /> 
-                                        </p>
-                                        <p> <label for="profissao">Profissão: </label>
-                                            <input type="text" id="profissao" placeholder="Professor" name="Profissao" /> 
-                                        </p>
-                                        <p> <label for="genero">Gênero: </label>
-                                            <input type="radio" id="genero"  name="sexo" value="masculino" /> Masculino
-                                            <input type="radio" id="genero"  name="sexo" value="feminino" /> Feminino
-                                        </p>
-                                        <p> <label for="raca">Raça: </label>
-                                            <select name="raca">
-                                                <option value="branca">Branca</option>
-                                                <option value="negro">Negro</option>
-                                                <option value="amarela">Amarela</option>
-                                                <option value="pardo">Pardo</option>
-                                            </select>
-                                        </p>
-                                        <p class="estado"> 
-                                            <label for="estado">Estado: </label>
-                                            <select name="estado">
-                                                <option value="AC">AC</option>
-                                                <option value="AL">AL</option>
-                                                <option value="AP">AP</option>
-                                                <option value="AM">AM</option>
-                                                <option value="BA">BA</option>
-                                                <option value="CE">CE</option>
-                                                <option value="DF">DF</option>
-                                                <option value="ES">ES</option>
-                                                <option value="GO">GO</option>
-                                                <option value="NA">NA</option>
-                                                <option value="MT">MT</option>
-                                                <option value="MS">MS</option>
-                                                <option value="MG">MG</option>
-                                                <option value="PA">PA</option>
-                                                <option value="PB">PB</option>
-                                                <option value="PR">PR</option>
-                                                <option value="PE">PE</option>
-                                                <option value="PI">PI</option>
-                                                <option value="RJ">RJ</option>
-                                                <option value="RM">RM</option>
-                                                <option value="RS">RS</option>
-                                                <option value="RO">RO</option>
-                                                <option value="RR">RR</option>
-                                                <option value="SC">SC</option>
-                                                <option value="SP">SP</option>
-                                                <option value="SE">SE</option>
-                                                <option value="TO">TO</option>
-                                            </select>
-                                        </p> 
-                                        <p class="cidade"> 
-                                            <label for="cidade">Cidade: </label> 
-                                            <input type="text" id="cidade" placeholder="Alegrete" name="alegrete" /> 
-                                        </p> 
-                                        <p class="fone"> 
-                                            <label for="fone">Telefone: </label> 
-                                            <input type="text" id="foneid" placeholder="(xx)xx-xx-xx-xx" name="fone" /> 
-                                        </p> 
-                                        <p class="email"> <label for="email">Email: </label>
-                                            <input type="text" id="emailid" placeholder="fulano@mail.com" name="email" /> 
-                                        </p>
-                                        <p> <label for="opiniao">Deixei sua opinião: </label>
-                                            <textarea placeholder="Deixe sua opnião">
-                                    
-                                            </textarea> </p>
-                                            <p class="submit"> <input type="submit" onclick="Enviar();" value="Enviar" /> 
-                                        </p> 
-                                    </form>
-                            </section>
-                        </body>
+                        <section class=" grid-12 font-oswald-light news_description fontsize18 ds-block border-grey">                                
+
+                            <form class="form-horizontal">
+                                <div class="form-group">
+                                    <label for="inputNome" class="col-sm-2 control-label">Nome:</label>
+                                    <div class="col-sm-6">
+                                        <input type="nome" class="form-control" id="inputNome" placeholder="ex: João Pablo">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="inputIdade" class="col-sm-2 control-label">Idade</label>
+                                    <div class="col-sm-2">
+                                        <input type="idade" class="form-control" id="inputIdade" placeholder="ex: 28">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="inputEscolaridade" class="col-sm-2 control-label">Escolaridade:</label>
+                                    <div class="col-sm-6">
+                                        <input type="escolaridade" class="form-control" id="inputEscolaridade" placeholder="ex: Ensino Médio">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="inputProfissao" class="col-sm-2 control-label">Profissão:</label>
+                                    <div class="col-sm-6">
+                                        <input type="profissao" class="form-control" id="inputProfissao" placeholder="ex: Professor">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="inputSexo" class="col-sm-2 control-label">Sexo:</label>                                    
+                                    <div class="radio">
+                                        <label><input type="radio" name="optradio">Feminino</label>
+                                        <label><input type="radio" name="optradio">Masculino</label>  
+                                    </div>                                   
+                                </div>
+                                <div class="form-group">
+                                    <label for="inputCor" class="col-sm-2 control-label">Cor/Raça/Etnia:</label>
+                                    <div class="col-sm-3">
+                                        <select class="form-control">
+                                            <option>Branco</option>
+                                            <option>Negro</option>
+                                            <option>Indigena</option>
+                                            <option>Amarelo</option>
+                                            <option>Pardo</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="inputEstado" class="col-sm-2 control-label">Estado:</label>
+                                    <div class="col-sm-3">
+                                        <select class="form-control">
+                                            <option>AC</option>
+                                            <option>AL</option>
+                                            <option>AP</option>
+                                            <option>AM</option>
+                                            <option>BA</option>
+                                            <option>CE</option>
+                                            <option>DF</option>
+                                            <option>ES</option>
+                                            <option>GO</option>
+                                            <option>NA</option>
+                                            <option>MT</option>
+                                            <option>MS</option>
+                                            <option>MG</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="inputCidade" class="col-sm-2 control-label">Cidade:</label>
+                                    <div class="col-sm-6">
+                                        <input type="cidade" class="form-control" id="inputcidade" placeholder="ex: Alegrete">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="inputTelefone" class="col-sm-2 control-label">Telefone:</label>
+                                    <div class="col-sm-6">
+                                        <input type="telefone" class="form-control" id="inputtelefone" placeholder="ex: (XX) xxxx-xxxx">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="inputEmail" class="col-sm-2 control-label">Email:</label>
+                                    <div class="col-sm-6">
+                                        <input type="email" class="form-control" id="inputEmail" placeholder="ex: pessoa@endereco.com">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="inputOpiniao" class="col-sm-2 control-label">Deixe sua Opinião:</label>
+                                    <div class="col-sm-6">
+                                       <textarea class="form-control" rows="3"></textarea>
+                                    </div>
+                                </div>
+
+                               
+                                <div class="form-group">
+                                    <div  class="col-sm-offset-2 col-sm-10">
+                                       <button type="button" class="btn btn-default btn-lg">Enviar</button>
+                                    </div>
+                                </div>
+                            </form>
+
+
+
+                        </section>
+
                     </div>
                 </div>
             </section>
@@ -194,5 +217,6 @@
                 </div>
             </div>
         </div>
+        <script src="../resources/bootstrap/js/bootstrap.min.js"></script>
     </body>
 </html>
