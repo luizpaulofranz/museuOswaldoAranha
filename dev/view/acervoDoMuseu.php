@@ -80,7 +80,8 @@
                         <div style="background-color: rgba(198, 198, 198, 0.2); border-radius: 2px; height: 230px; padding-top: 16px;">
                             <img alt="" src="../resources/images/acervoDoMuseu/acervoDoMuseu.jpg" class="ds-block grid-4">
                             <div class="grid-12">
-                                <h2 class="ds-inblock">Título qualquer</h2>
+                                <h2 class="ds-inblock">Título qualquer</h2><br>
+                                <p class="ds-inblock">05/08/2015</p>
                                 <p>Texto texto Texto texto Texto texto Texto texto Texto texto Texto texto Texto texto </p>
                             </div>
                         </div>
@@ -90,7 +91,8 @@
                         <div style="background-color: rgba(198, 198, 198, 0.2); border-radius: 2px; height: 230px; padding-top: 16px;">
                             <img alt="" src="../resources/images/acervoDoMuseu/acervoDoMuseu.jpg" class="ds-block grid-4">
                             <div class="grid-12">
-                                <h2 class="ds-inblock">Título qualquer</h2>
+                                <h2 class="ds-inblock">Título qualquer</h2><br>
+                                <p class="ds-inblock">05/08/2015</p>
                                 <p>Texto texto Texto texto Texto texto Texto texto Texto texto Texto texto Texto texto </p>
                             </div>
                         </div>

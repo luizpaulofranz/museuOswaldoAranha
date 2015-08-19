@@ -56,57 +56,81 @@
                 </div>
             </div>
         </section>
-
         <div class="regulates_position">
-
-
-            <section class="container container-padding-60 al-center" style="background: #ffffff;">
+            <section class="container container-padding-60 font-oswald-light font-light">
                 <div class="content">
-                    <header class="content" style="background: #993333; height: 5px">
-                        <h2 class="fontsize25 font-vinho font-oswald-light al-center ds-inblock news_style">EVENTOS</h2>;
-                    </header>
 
-                    <div style="margin-top: 40px; width: 100%">
-                        <article class="grid-1-3">
-                            <a href="#">
-                                <div class="box-news border-vinho" style="background: url(../resources/images/eventos/evento1.jpg) no-repeat center; background-size: cover;"></div>
-                                <p class="al-left font-oswald-light font-vinho news_description fontsize18 ds-block border-grey">ALGUM EVENTO...ALGUM EVENTO...</p>
-                            </a>
-                        </article>
-                        <article class="grid-1-3">
-                            <a href="#">
-                                <div class="box-news border-vinho" style="background: url(../resources/images/eventos/evento1.jpg) no-repeat center; background-size: cover;"></div>
-                                <p class="al-left font-oswald-light font-vinho news_description fontsize18 ds-block border-grey">ALGUM EVENTO...ALGUM EVENTO...</p>
-                            </a>
-                        </article>
-                        <article class="grid-1-3">
-                            <a href="#">
-                                <div class="box-news border-vinho" style="background: url(../resources/images/eventos/evento1.jpg) no-repeat center; background-size: cover;"></div>
-                                <p class="al-left font-oswald-light font-vinho news_description fontsize18 ds-block border-grey">ALGUM EVENTO...ALGUM EVENTO...</p>
-                            </a>
-                        </article>
-                        <article class="grid-1-3">
-                            <a href="#">
-                                <div class="box-news border-vinho" style="background: url(../resources/images/eventos/evento1.jpg) no-repeat center; background-size: cover;"></div>
-                                <p class="al-left font-oswald-light font-vinho news_description fontsize18 ds-block border-grey">ALGUM EVENTO...ALGUM EVENTO...</p>
-                            </a>
-                        </article>
-                        <article class="grid-1-3">
-                            <a href="#">
-                                <div class="box-news border-vinho" style="background: url(../resources/images/eventos/evento1.jpg) no-repeat center; background-size: cover;"></div>
-                                <p class="al-left font-oswald-light font-vinho news_description fontsize18 ds-block border-grey">ALGUM EVENTO...ALGUM EVENTO...</p>
-                            </a>
-                        </article>
-                        <article class="grid-1-3">
-                            <a href="#">
-                                <div class="box-news border-vinho" style="background: url(../resources/images/eventos/evento1.jpg) no-repeat center; background-size: cover;"></div>
-                                <p class="al-left font-oswald-light font-vinho news_description fontsize18 ds-block border-grey">ALGUM EVENTO...ALGUM EVENTO...</p>
-                            </a>
-                        </article>
+                    <header class="content" style="background: #993333; height: 5px">
+                        <h2 class="fontsize25 font-vinho font-oswald-light al-center ds-inblock news_style">TODOS EVENTOS</h2>;
+                    </header>
+                    <br><br><br>
+
+                    <div>
+                        <div style="background-color: rgba(198, 198, 198, 0.0); border-radius: 2px; height: 230px; padding-top: 16px;">
+                            <img alt=""  src="../resources/images/acervoDoMuseu/acervoDoMuseu.jpg" class="ds-block grid-4">
+                            <div class="grid-12">
+                                <h2 class="ds-inblock">Título qualquer</h2> <br>
+                                <p class="ds-inblock fontsize18">Local</p> <br>
+                                <p class="ds-inblock">05/08/2015</p>
+                                <p>Texto texto Texto texto Texto texto Texto texto Texto texto Texto texto Texto texto </p>
+                            </div>
+                            <div style="margin-top: 110px;" class="fl-left grid-9 border-grey">
+
+                                <a href="vizualizarNoticia.php" class="font-oswald-light font-bold fontsize1b" style="color: #993333">Leia mais...</a>
+                            </div>
+                        </div>
+
                     </div>
-                    
+                    <div>
+                        <div style="background-color: rgba(198, 198, 198, 0.0); border-radius: 2px; height: 230px; padding-top: 16px;">
+                            <img alt=""  src="../resources/images/acervoDoMuseu/acervoDoMuseu.jpg" class="ds-block grid-4">
+                            <div class="grid-12">
+                                <h2 class="ds-inblock">Título qualquer</h2> <br>
+                                <p class="ds-inblock fontsize18">Local</p> <br>
+                                <p class="ds-inblock">05/08/2015</p>
+                                <p>Texto texto Texto texto Texto texto Texto texto Texto texto Texto texto Texto texto </p>
+                            </div>
+                            <div style="margin-top: 110px;" class="fl-left grid-9 border-grey">
+
+                                <a href="vizualizarNoticia.php" class="font-oswald-light font-bold fontsize1b" style="color: #993333">Leia mais...</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div>
+                        <div style="background-color: rgba(198, 198, 198, 0.0); border-radius: 2px; height: 230px; padding-top: 16px;">
+                            <img alt=""  src="../resources/images/acervoDoMuseu/acervoDoMuseu.jpg" class="ds-block grid-4">
+                            <div class="grid-12">
+                                <h2 class="ds-inblock">Título qualquer</h2> <br>
+                                <p class="ds-inblock fontsize18">Local</p> <br>
+                                <p class="ds-inblock">05/08/2015</p>
+                                <p>Texto texto Texto texto Texto texto Texto texto Texto texto Texto texto Texto texto </p>
+                            </div>
+                            <div style="margin-top: 110px;" class="fl-left grid-9 border-grey">
+
+                                <a href="vizualizarNoticia.php" class="font-oswald-light font-bold fontsize1b" style="color: #993333">Leia mais...</a>
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
             </section>
+            <div id="pages" class="grid-10 container-padding-60" style="margin-left: 49.8%">
+                <ul>
+                    <li class="nolink">« Previous Page</li>
+                    <li class="current">1</li>
+                    <li><a href="#">2</a></li>
+                    <li><a href="#">3</a></li>
+                    <li><a href="#">4</a></li>
+                    <li><a href="#">5</a></li>
+                    <li><a href="#">6</a></li>
+                    <li><a href="#">7</a></li>
+                    <li><a href="#">8</a></li>
+                    <li><a href="#">9</a></li>
+                    <li><a href="#">10</a></li>
+                    <li><a href="#">Next Page »</a></li>
+                </ul>
+            </div>
 
             <section class="container container-padding-60 bg-pink-white">
                 <div class="content al-center">
@@ -161,5 +185,8 @@
         </div>
     </body>
 </html>
+
+
+
 
 

@@ -63,9 +63,45 @@
                     <header class="content" style="background: #993333; height: 5px">
                         <h2 class="fontsize25 font-vinho font-oswald-light al-center ds-inblock news_style">ACERVO DO CIENTÍFICO</h2>;
                     </header>
-                    
-                    
-                    
+                    <div>
+                        <div style="background-color: rgba(198, 198, 198, 0.0);padding-top: 34px;">
+                            <div class="grid-10">
+                                <h2 class="ds-inblock"style="margin-left:-1.6%">Título do Artigo</h2> <br>
+
+                                <div style="margin-top: 30px; margin-left:-1.6%" class="fl-left grid-10 border-grey">
+                                    <p>Link do Artigo</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <br><br>
+                    <div>
+                        <div style="background-color: rgba(198, 198, 198, 0.0);margin-top: 8%" >
+                            <div class="grid-10">
+                                <h2 class="ds-inblock"style="margin-left:-1.6%">Título do Artigo</h2> <br>
+
+                                <div style="margin-top: 30px;margin-left:-1.6%" class="fl-left grid-10 border-grey">
+                                    <p>Link do Artigo</p>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div style="background-color: rgba(198, 198, 198, 0.0);margin-top: 20%">
+                            <div class="grid-10">
+                                <h2 class="ds-inblock"style="margin-left:-1.6%">Título do Artigo</h2> <br>
+
+                                <div style="margin-top: 30px;margin-left:-1.6%" class="fl-left grid-10 border-grey">
+                                    <p>Link do Artigo</p>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+
                 </div>
             </section>
 
@@ -122,3 +158,7 @@
         </div>
     </body>
 </html>
+
+
+
+

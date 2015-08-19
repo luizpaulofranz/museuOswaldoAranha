@@ -328,5 +328,42 @@ a:active {
 }
 
 form label {
-    padding-right: 5o0px;
+    padding-right: 50px;
+}
+
+/*navegacao*/
+#pages {
+	padding: 3px;
+}
+#pages ul {
+	list-style-type: none;
+}
+#pages li {
+	float: left;
+	display: inline;
+	margin: 0 5px 0 0;
+	display: block;
+}
+#pages li a {
+	color:#000000;
+	padding: 4px;
+	border: 1px solid #ddd;
+	text-decoration: none;
+	float: left;
+}
+#pages li a:hover {
+	color: #666666;
+	background: #f1ffd6;
+	border: 1px solid #666666;
+}
+#pages li.nolink {
+	color: #CCC;
+	border: 1px solid #F3F3F3;
+	padding: 4px;
+}
+#pages li.current {
+	color: #000000;
+	border: 1px solid #666666;
+	padding: 4px;
+	background: #999;
 }
