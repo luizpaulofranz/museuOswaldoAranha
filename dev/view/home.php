@@ -2,8 +2,7 @@
 <html lang="pt-br">
     <head>
         <meta charset="UTF-8">
-        <title>Portal Museu Oswaldo Aranha</title>
-
+        <title>Portal Museu Oswaldo Aranha</title> 
         <link rel="stylesheet" href="../resources/css/normalize.css">
         <link rel="stylesheet" href="../resources/css/boot.css">
         <link rel="stylesheet" href="../resources/css/grid.css">
@@ -43,7 +42,7 @@
         <section>
             <div class="container section-1">
                 <div class="content">
-
+zz
                 </div>
             </div>
 
@@ -201,5 +200,6 @@
                 </div>
             </div>
         </div>
+       
     </body>
 </html>

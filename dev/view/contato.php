@@ -3,12 +3,14 @@
     <head>
         <meta charset="UTF-8">
         <title>Contato</title>
-        <link href="../resources/bootstrap/css/bootstrap.css" rel="stylesheet"/>      
+       
+        <link rel="stylesheet" href="../resources/bootstrap/bootstrap.css"> 
         <link rel="stylesheet" href="../resources/css/normalize.css">
         <link rel="stylesheet" href="../resources/css/boot.css">
         <link rel="stylesheet" href="../resources/css/grid.css">
 
         <link rel="shortcut icon" href="../resources/images/favicon.png"/>
+        
     </head>
     <body>
 
@@ -59,19 +61,18 @@
                 <div class="content">
                     <div>
                         <h2 class="font-oswald-light fontsize30 " style="text-align: center; padding-bottom: 3em" >ENTRE EM CONTATO</h2> 
-                        <section class=" grid-12 font-oswald-light news_description fontsize18 ds-block border-grey">                                
-
-                            <form class="form-horizontal">
+                        <section class=" grid-12 font-oswald-light news_description fontsize18 ds-block border-grey" style="margin-right: 20%">                                
+                            <form class="form-horizontal" method="post">
                                 <div class="form-group">
                                     <label for="inputNome" class="col-sm-2 control-label">Nome:</label>
-                                    <div class="col-sm-6">
-                                        <input type="nome" class="form-control" id="inputNome" placeholder="ex: João Pablo">
+                                    <div class="col-sm-6">                                      
+                                        <input class="form-control" id="inputNome" placeholder="ex: João Pablo" type="text" required value="" pattern="[a-z\s]+$">
                                     </div>
                                 </div>
                                 <div class="form-group">
                                     <label for="inputIdade" class="col-sm-2 control-label">Idade</label>
                                     <div class="col-sm-2">
-                                        <input type="idade" class="form-control" id="inputIdade" placeholder="ex: 28">
+                                        <input type="number" class="form-control" id="inputIdade" placeholder="ex: 28"max="100" min="1" >
                                     </div>
                                 </div>
                                 <div class="form-group">
@@ -83,7 +84,7 @@
                                 <div class="form-group">
                                     <label for="inputProfissao" class="col-sm-2 control-label">Profissão:</label>
                                     <div class="col-sm-6">
-                                        <input type="profissao" class="form-control" id="inputProfissao" placeholder="ex: Professor">
+                                        <input type="text" class="form-control" id="inputProfissao" placeholder="ex: Professor" pattern="[a-z\s]+$">
                                     </div>
                                 </div>
                                 <div class="form-group">
@@ -102,6 +103,7 @@
                                             <option>Indigena</option>
                                             <option>Amarelo</option>
                                             <option>Pardo</option>
+                                            <option>Outro</option>
                                         </select>
                                     </div>
                                 </div>
@@ -128,40 +130,41 @@
                                 <div class="form-group">
                                     <label for="inputCidade" class="col-sm-2 control-label">Cidade:</label>
                                     <div class="col-sm-6">
-                                        <input type="cidade" class="form-control" id="inputcidade" placeholder="ex: Alegrete">
+                                        <input type="text" class="form-control" id="inputcidade" placeholder="ex: Alegrete" pattern="[a-z\s]+$">
                                     </div>
                                 </div>
                                 <div class="form-group">
                                     <label for="inputTelefone" class="col-sm-2 control-label">Telefone:</label>
                                     <div class="col-sm-6">
-                                        <input type="telefone" class="form-control" id="inputtelefone" placeholder="ex: (XX) xxxx-xxxx">
+                                        <input onclick="telefone();" type="telefone" class="form-control" id="inputtelefone" placeholder="ex: (XX) xxxx-xxxx"  pattern="\([0-9]{2}\)[\s][0-9]{4}-[0-9]{4}">
                                     </div>
                                 </div>
+                                <script>
+                                function telefone(){
+                                    $("#inputtelefone").mask("(99) 9999-9999");
+                                }
+                                </script>
                                 <div class="form-group">
                                     <label for="inputEmail" class="col-sm-2 control-label">Email:</label>
                                     <div class="col-sm-6">
-                                        <input type="email" class="form-control" id="inputEmail" placeholder="ex: pessoa@endereco.com">
+                                        <input class="form-control" id="inputEmail" placeholder="ex: pessoa@endereco.com" type="email" required name=email>
                                     </div>
                                 </div>
                                 <div class="form-group">
                                     <label for="inputOpiniao" class="col-sm-2 control-label">Deixe sua Opinião:</label>
                                     <div class="col-sm-6">
-                                       <textarea class="form-control" rows="3"></textarea>
+                                       <textarea class="form-control" rows="3" required value=""></textarea>
                                     </div>
                                 </div>
 
                                
                                 <div class="form-group">
                                     <div  class="col-sm-offset-2 col-sm-10">
-                                       <button type="button" class="btn btn-default btn-lg">Enviar</button>
+                                        <button input type="submit" value="Submit" class="btn btn-default btn-lg">Enviar</button>
                                     </div>
                                 </div>
                             </form>
-
-
-
                         </section>
-
                     </div>
                 </div>
             </section>
@@ -169,7 +172,7 @@
             <section class="container container-padding-60 bg-pink-white">
                 <div class="content al-center">
                     <header style="background: #ffffff; height: 5px">
-                        <h2 class="fontsize25 font-oswald-light al-center ds-inblock shadow_parceiros">PARCEIROS</h2>;
+                        <h2 class="fontsize25 font-oswald-light al-center ds-inblock shadow_parceiros" style="margin-top: 0.2%;font-weight: bolder">PARCEIROS</h2>;
                     </header>
 
                     <div style="margin-top: 40px;">
