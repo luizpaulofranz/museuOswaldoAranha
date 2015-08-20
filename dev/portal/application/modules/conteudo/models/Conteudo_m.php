@@ -131,9 +131,8 @@ class Conteudo_m extends CI_Model {
      * @return array
      */
     public function getDataBySlug($slug) {
-        $this->db->select('conteudo.*, editoria.nome AS editoria, administrador.nome AS autor, media.urlPath, media.nome AS imagem');
+        $this->db->select('conteudo.*, administrador.nome AS autor, media.urlPath, media.nome AS imagem');
         $where = '(media.destaque=1 OR media.idMedia IS NULL) AND conteudo.slug = "' . $slug . '"';
-        $this->db->join('editoria', 'editoria.idEditoria = conteudo.idEditoria');
         $this->db->join('administrador', 'administrador.idAdministrador = conteudo.idAdministrador');
         $this->db->join('media', 'media.idConteudo = conteudo.idConteudo', 'LEFT OUTER');
         $query = $this->db->get_where($this->tabela, $where);

@@ -3,10 +3,9 @@
     <head>
         <meta charset="UTF-8">
         <title>Contato</title>
-        
-        <link href="../resources/bootstrap/css/bootstrap.css" rel="stylesheet">        
+
         <link rel="stylesheet" href="../resources/css/normalize.css">
-        <link rel="stylesheet" href="../resources/bootstrap/bootstrap.css"> 
+        <link rel="stylesheet" href="../resources/bootstrap/bootstrap.min.css">
         <link rel="stylesheet" href="../resources/css/boot.css">
         <link rel="stylesheet" href="../resources/css/grid.css">
 
@@ -140,9 +139,9 @@
                                     </div>
                                 </div>
                                 <script>
-                                function telefone(){
-                                    $("#inputtelefone").mask("(99) 9999-9999");
-                                }
+                                    function telefone() {
+                                        $("#inputtelefone").mask("(99) 9999-9999");
+                                    }
                                 </script>
                                 <div class="form-group">
                                     <label for="inputEmail" class="col-sm-2 control-label">Email:</label>
@@ -153,11 +152,11 @@
                                 <div class="form-group">
                                     <label for="inputOpiniao" class="col-sm-2 control-label">Deixe sua Opinião:</label>
                                     <div class="col-sm-6">
-                                       <textarea class="form-control" rows="3" required value=""></textarea>
+                                        <textarea class="form-control" rows="3" required value=""></textarea>
                                     </div>
                                 </div>
 
-                               
+
                                 <div class="form-group">
                                     <div  class="col-sm-offset-2 col-sm-10">
                                         <button input type="submit" value="Submit" class="btn btn-default btn-lg">Enviar</button>
@@ -220,7 +219,7 @@
                 </div>
             </div>
         </div>
-        <link href="../resources/jquery/jquery-2.1.4.min.js" rel="stylesheet"> 
-        <script src="../resources/bootstrap/js/bootstrap.min.js"></script>
+        <script src="../resources/jquery/jquery-2.1.4.min.js"></script>
+        <script src="../resources/bootstrap/bootstrap.min.js"></script>
     </body>
 </html>

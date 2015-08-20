@@ -46,11 +46,9 @@
 
             <?php echo ($conteudo) ? $conteudo : null ?>
 
-            <section class="container container-padding-60 font-oswald-light font-light">
-                <div class="content">
-                    <?php echo ($paginacao) ? $paginacao : null ?>
-                </div>
-            </section>
+            <div id="pages" class="grid-10 container-padding-60" style="margin-left: 49.8%">
+                <?php echo ($paginacao) ? $paginacao : null ?>
+            </div>
 
             <section class="container container-padding-60 bg-pink-white">
                 <div class="content al-center">
@@ -61,12 +59,12 @@
                     <div style="margin-top: 40px;">
                         <div class="grid-8 al-center" style="height: 180px;">
                             <div class="border-red" style="height: 180px; background: #ffffff;">
-                                <img class="ds-inline fl-none" style="margin-top: 20px;" src="../assets/images/home/unipampa.png" alt="Logotipo Unipampa">
+                                <img class="ds-inline fl-none" style="margin-top: 20px;" src="<?php echo site_url('/assets/images/home/unipampa.png')?>" alt="Logotipo Unipampa">
                             </div>
                         </div>
                         <div class="grid-8 al-center" style="height: 180px;">
                             <div class="border-red" style="height: 180px; background: #ffffff;">
-                                <img class="ds-inline fl-none" style="margin-top: 40px;" src="../assets/images/home/prefeitura.png" alt="Logotipo Unipampa">
+                                <img class="ds-inline fl-none" style="margin-top: 40px;" src="<?php echo site_url('/assets/images/home/prefeitura.png')?>" alt="Logotipo Unipampa">
                             </div>
                         </div>
                     </div>

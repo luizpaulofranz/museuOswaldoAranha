@@ -207,8 +207,8 @@ class Admin extends Admin_Controller {
                     //->round(5)
                     ->save($media, true)
 
-                    //redimensionar para 1024 se for maior do que isso
-                    ->resize(1024, 768)
+                    //redimensionar para 960 se for maior do que isso
+                    ->resize(960, 720)
                     ->save($u['file_path'] . $u['file_name'], true);
             $dado = array();
             $dado['urlPath'] = $diretorio = 'assets/uploads/'.date('Y') .'/'. date('m') . '/'. 'conteudo_' . $conteudo;
