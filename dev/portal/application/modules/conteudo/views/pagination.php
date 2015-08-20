@@ -10,7 +10,7 @@ $pg['num_links'] = 3;//numero de links antes e depois da pagina atual na paginac
 $pg['use_page_numbers'] = TRUE;
 $pg['page_query_string'] = FALSE;//trabalhar com o get, ?pg=5
 
-$pg['full_tag_open'] = '<ul class="pagination">';//abertura da div paginacao
+$pg['full_tag_open'] = '<ul>';//abertura da div paginacao
 $pg['full_tag_close'] = '</ul><!--pagination-->';//fechamento
 
 $pg['first_link'] = '<i class="fa fa-angle-double-left"></i>';//primeiro link

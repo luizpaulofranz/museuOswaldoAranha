@@ -17,6 +17,10 @@
         <a href="<?php echo base_url('admin/conteudo/noticias'); ?>"> Notícias</a>
     </li>
     
+    <li>
+        <a href="<?php echo base_url('admin/conteudo/eventos'); ?>"> Eventos</a>
+    </li>
+    
 </ul>
 <ul class="nav navbar-nav navbar-right">
     <a class="btn btn-danger btn-sair" href="<?php echo base_url('admin/logout'); ?>" role="button"><span class="glyphicon glyphicon-log-out"></span> Sair</a>

@@ -52,6 +52,19 @@ class Admin extends Admin_Controller {
         $this->template->write_view('conteudo', 'admin/pagination', array('total' => $total->num_rows()));
         $this->template->render();
     }
+    
+    public function eventos() {
+        //aqui escrevemos mensagens de erro ou sucesso nas listas
+        $this->template->write('conteudo', $this->session->flashdata('msg'));
+        $n = 10;
+        //segment sao as partes da url, primeiro parametro eh a parte e o segundo eh o default
+        $ate = $this->uri->segment(4, 0);
+        $conteudos = $this->conteudo_m->listar($n, $ate, true, 'eventos');
+        $total = $this->conteudo_m->listar(null, null, true, 'eventos');
+        $this->template->write_view('conteudo', 'admin/listar', array('conteudos' => $conteudos->result_array()));
+        $this->template->write_view('conteudo', 'admin/pagination', array('total' => $total->num_rows()));
+        $this->template->render();
+    }
 
     public function cadastrar_noticia() {
         $params = array();

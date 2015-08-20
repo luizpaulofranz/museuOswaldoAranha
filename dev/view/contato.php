@@ -6,6 +6,7 @@
         
         <link href="../resources/bootstrap/css/bootstrap.css" rel="stylesheet">        
         <link rel="stylesheet" href="../resources/css/normalize.css">
+        <link rel="stylesheet" href="../resources/bootstrap/bootstrap.css"> 
         <link rel="stylesheet" href="../resources/css/boot.css">
         <link rel="stylesheet" href="../resources/css/grid.css">
 
