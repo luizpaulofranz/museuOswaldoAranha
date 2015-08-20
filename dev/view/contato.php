@@ -3,14 +3,13 @@
     <head>
         <meta charset="UTF-8">
         <title>Contato</title>
-       
-        <link rel="stylesheet" href="../resources/bootstrap/bootstrap.css"> 
+        
+        <link href="../resources/bootstrap/css/bootstrap.css" rel="stylesheet">        
         <link rel="stylesheet" href="../resources/css/normalize.css">
         <link rel="stylesheet" href="../resources/css/boot.css">
         <link rel="stylesheet" href="../resources/css/grid.css">
 
         <link rel="shortcut icon" href="../resources/images/favicon.png"/>
-        
     </head>
     <body>
 
@@ -220,6 +219,7 @@
                 </div>
             </div>
         </div>
+        <link href="../resources/jquery/jquery-2.1.4.min.js" rel="stylesheet"> 
         <script src="../resources/bootstrap/js/bootstrap.min.js"></script>
     </body>
 </html>
