@@ -68,7 +68,7 @@ class Admin extends Admin_Controller {
 
     public function cadastrar_noticia() {
         $params = array();
-        $this->form_validation->set_default('idTipoConteudo', 1);
+        $this->form_validation->set_default('idTipoConteudo', 1);//tipo conteudo 1 sao as noticias
         //verificamos se tem algo no post
         if ($this->input->post()) {
             $this->form_validation->set_rules('titulo', 'Título', 'required|trim|max_length[80]');
@@ -90,7 +90,7 @@ class Admin extends Admin_Controller {
                 $dados['data'] = date('Y-m-d H:i:s');
                 if ($inserted_id = $this->conteudo_m->cadastrar($dados)) {
                     $params['mensagem'] = alert('Sucesso ao cadastrar o Conteudo!', 'success');
-                    $url = base_url('/admin/conteudo/alterar/' . $inserted_id);
+                    $url = base_url('/admin/conteudo/alterarNoticia/' . $inserted_id);
                     redirect($url);
                 } else {
                     $params['mensagem'] = alert('Erro de banco de dados!', 'danger');

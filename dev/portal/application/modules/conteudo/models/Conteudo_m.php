@@ -140,16 +140,40 @@ class Conteudo_m extends CI_Model {
     }
 
     /**
-     * Método responsável por fazer as buscas digitadas pelo usuário.
+     * Método responsável por recuperar as noticias.
      * @param int $limit
      * @param int $offset
      * @param boolean $apenasAtivos
-     * @param string $busca
      * @return array
      */
     public function listarNoticia($limit = NULL, $offset = NULL, $apenasAtivos = false) {
         
         $slugTipoConteudo = 'noticias';
+        
+        $where = ' (media.destaque=1 OR media.idMedia IS NULL) AND tipoConteudo.slug = "'.$slugTipoConteudo.'"';
+        if ($apenasAtivos == TRUE) {
+            $where .= ' AND conteudo.rascunho = 0';
+        }
+        
+        $this->db->where($where);
+        $this->db->select('conteudo.*, media.urlPath, media.nome AS imagem, administrador.nome as autor');
+        $this->db->join('administrador', 'administrador.idAdministrador = conteudo.idAdministrador', 'INNER OUTER');
+        $this->db->join('tipoConteudo', 'conteudo.idTipoConteudo = tipoConteudo.idTipoConteudo', 'INNER OUTER');
+        $this->db->join('media', 'media.idConteudo = conteudo.idConteudo', 'LEFT OUTER');
+        $this->db->order_by('conteudo.idConteudo', ' DESC');
+        return $this->db->get_where($this->tabela, $where, $limit, $offset);
+    }
+    
+    /**
+     * Método responsável por recuperar os eventos.
+     * @param int $limit
+     * @param int $offset
+     * @param boolean $apenasAtivos
+     * @return array
+     */
+    public function listarEvento($limit = NULL, $offset = NULL, $apenasAtivos = false) {
+        
+        $slugTipoConteudo = 'eventos';
         
         $where = ' (media.destaque=1 OR media.idMedia IS NULL) AND tipoConteudo.slug = "'.$slugTipoConteudo.'"';
         if ($apenasAtivos == TRUE) {

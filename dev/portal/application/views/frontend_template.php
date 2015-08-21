@@ -30,7 +30,7 @@
                 <ul class="font-oswald-light font-light fontsize1b fl-right">
                     <li class="menu-item"><a href="<?php echo site_url() ?>" title="Página Inícial">INÍCIO</a></li>
                     <li class="menu-item"><a href="<?php echo site_url('sobre') ?>" alt="Sobre o Museu" title="Sobre o Museu">SOBRE</a></li>
-                    <li class="menu-item"><a href="<?php echo site_url('eventos') ?>" alt="Eventos do Museu" title="Eventos do Museu">EVENTOS</a></li>
+                    <li class="menu-item"><a href="<?php echo site_url('conteudo/eventos') ?>" alt="Eventos do Museu" title="Eventos do Museu">EVENTOS</a></li>
                     <li class="menu-item"><a href="<?php echo site_url('contato') ?>" alt="Fale conosco" title="Fale Conosco">CONTATO</a></li>
                     <li class="menu-item"><a href="<?php echo site_url('conteudo/noticias') ?>" alt="Notícias do museu" title="Notícias do museu">NOTÍCIAS</a></li>
                     <li class="menu-item"><a href="<?php echo site_url('aprenda') ?>" alt="Aprenda" title="Aprenda">APRENDA</a></li>
@@ -78,7 +78,7 @@
                         <li class="menu-separador fontsize1">/</li>
                         <li class="menu-item2 fontsize18"><a src="<?php echo site_url('sobre') ?>" alt="">SOBRE</a></li>
                         <li class="menu-separador fontsize1">/</li>
-                        <li class="menu-item2 fontsize18"><a src="<?php echo site_url('eventos') ?>" alt="">EVENTOS</a></li>
+                        <li class="menu-item2 fontsize18"><a src="<?php echo site_url('conteudo/eventos') ?>" alt="">EVENTOS</a></li>
                         <li class="menu-separador fontsize1">/</li>
                         <li class="menu-item2 fontsize18"><a src="<?php echo site_url('contato') ?>" alt="">CONTATO</a></li>
                         <li class="menu-separador fontsize1">/</li>

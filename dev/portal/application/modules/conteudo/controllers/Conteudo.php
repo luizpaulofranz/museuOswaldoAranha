@@ -39,7 +39,7 @@ class Conteudo extends Site_Controller {
         
         $this->template->write_view('capa', 'conteudo/capa');
         $this->template->write_view('conteudo', 'conteudo/noticias', array('noticias' => $conteudos->result_array()));
-        $this->template->write_view('paginacao', 'conteudo/pagination', array('total' => $total->num_rows()));
+        $this->template->write_view('paginacao', 'conteudo/paginationNoticias', array('total' => $total->num_rows()));
         $this->template->render();
     }
     
@@ -50,12 +50,12 @@ class Conteudo extends Site_Controller {
         $limit = 12;
         //para a paginacao funcionar assim, o parametro $pg['use_page_numbers'] = TRUE no arquivo pagination
         $offset = ($this->uri->segment(3, 1) - 1) * $limit;
-        $conteudos = $this->conteudo_m->listarNoticia($limit, $offset, true);
-        $total = $this->conteudo_m->listarNoticia(null, null, true);
+        $conteudos = $this->conteudo_m->listarEvento($limit, $offset, true);
+        $total = $this->conteudo_m->listarEvento(null, null, true);
         
         $this->template->write_view('capa', 'conteudo/capa');
-        $this->template->write_view('conteudo', 'conteudo/noticias', array('noticias' => $conteudos->result_array()));
-        $this->template->write_view('paginacao', 'conteudo/pagination', array('total' => $total->num_rows()));
+        $this->template->write_view('conteudo', 'conteudo/eventos', array('eventos' => $conteudos->result_array()));
+        $this->template->write_view('paginacao', 'conteudo/paginationEventos', array('total' => $total->num_rows()));
         $this->template->render();
     }
 

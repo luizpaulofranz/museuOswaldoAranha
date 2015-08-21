@@ -16,11 +16,13 @@
             foreach ($noticias as $noticia) { 
                 echo '<div>';
                 echo '<div style="background-color: rgba(198, 198, 198, 0.0); border-radius: 2px; height: 230px; padding-top: 16px;">';
+                echo '<a href="'.site_url('conteudo/visualizar/'.$noticia['slug']).'">';
                 if($noticia['imagem']){
                     echo '<img alt="" src="'.site_url($noticia['urlPath'].'/'.$noticia['imagem']).'" class="ds-block grid-4">';
                 }else{
                     echo '<img alt="" src="'.site_url('assets/images/img_nao_disponivel.png').'" class="ds-block grid-4">';
                 }
+                echo '</a>';
                 echo '<div class="grid-12">';
                 echo '<h2 class="ds-inblock">'.$noticia['titulo'].'</h2> <br>';
                 echo '<p class="ds-inblock">'.date('d/m/Y', strtotime($noticia['data'])).'</p>';

@@ -65,13 +65,12 @@ if (set_value('idConteudo', false) == false) {
         </div>
         <div class="form-group">
             <div class="col-sm-12">
-                <textarea class="ckeditor" name="conteudo" rows="40"><?php echo set_value('conteudo') ?></textarea><br/>
+                <textarea class="ckeditor" name="conteudo" rows="40"><?php echo set_value('conteudo') ?></textarea>
             </div>
         </div>
         <div class="form-group">
             <div class="col-sm-12">
-                <?php echo form_button(array('type' => 'submit', 'name' => 'button', 'id' => 'publicar', 'class' => 'btn btn-success', 'value' => 'Publicar'), '<span class="glyphicon glyphicon glyphicon-globe"></span> Publicar'); ?>
-                <?php echo form_button(array('type' => 'submit', 'name' => 'button', 'id' => 'rascunho', 'class' => 'btn btn-success', 'value' => 'Rascunho'), '<span class="glyphicon glyphicon-floppy-disk"></span> Salvar como Rascunho'); ?>
+                <?php echo form_button(array('type' => 'submit', 'name' => 'button', 'id' => 'publicar', 'class' => 'btn btn-success', 'value' => 'Publicar'), '<span class="glyphicon glyphicon glyphicon-globe"></span> Salvar'); ?>
             </div>
         </div>
     </fieldset>
