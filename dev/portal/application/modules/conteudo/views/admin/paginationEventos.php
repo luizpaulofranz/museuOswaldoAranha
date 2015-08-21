@@ -1,7 +1,7 @@
 <?php
 // Paginação
 
-$pg['base_url'] = base_url('admin/conteudo/pg/');
+$pg['base_url'] = base_url('admin/conteudo/eventos/');
 $pg['total_rows'] = $total;
 $pg['per_page'] = 10; 
 $pg['uri_segment'] = 4;

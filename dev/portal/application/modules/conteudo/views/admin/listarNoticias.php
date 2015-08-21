@@ -1,6 +1,6 @@
 <div id="container">
     <div class="page-header">
-        <h1>Conteúdos&nbsp;<small>Listagem</small></h1><br/>
+        <h1>Notícias&nbsp;<small>Listagem</small></h1><br/>
         <a class="btn btn-success" href="<?php echo base_url('admin/conteudo/cadastrar-noticia'); ?>"><span class="glyphicon glyphicon-plus"></span> Novo</a>
     </div>
     <?php
@@ -11,7 +11,7 @@
         if($conteudo['rascunho']){$rascunho = img('assets/images/ok.png');}else{$rascunho = '';}
         $this->table->add_row(substr($conteudo['titulo'], 0, 65), $conteudo['autor'], date('d/m/Y',strtotime($conteudo['data'])), $rascunho, 
         opcoes2(
-            base_url('admin/conteudo/excluir/' . $conteudo['idConteudo']), base_url('admin/conteudo/alterar/' . $conteudo['idConteudo']))
+            base_url('admin/conteudo/excluirNoticia/' . $conteudo['idConteudo']), base_url('admin/conteudo/alterarNoticia/' . $conteudo['idConteudo']))
         );
     }
 

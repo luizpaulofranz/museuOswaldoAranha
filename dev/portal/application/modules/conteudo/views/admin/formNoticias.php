@@ -9,7 +9,7 @@ if (set_value('idConteudo', false) == false) {
 
 <div>
     <div class="page-header">    
-        <h1>Conteúdo <small>Cadastro de Conteúdos</small></h1>
+        <h1>Conteúdo <small>Cadastro de Notícia</small></h1>
         <a class="btn btn-primary" href="<?php echo base_url('admin/conteudo/noticias') ?>"><span class="glyphicon glyphicon-arrow-left"></span> Voltar</a>&nbsp;&nbsp;
 
     </div>

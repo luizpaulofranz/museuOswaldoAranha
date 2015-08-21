@@ -10,9 +10,10 @@
         <link href="<?php echo site_url('assets/css/normalize.css'); ?>" rel="stylesheet">
         <link href="<?php echo site_url('assets/plugins/bootstrap/css/bootstrap.min.css')?>" rel="stylesheet">
         <link href="<?php echo site_url('assets/plugins/magnific-popup/magnific-popup.css'); ?>" rel="stylesheet">
-        <link href="<?php echo site_url('assets/css/admin/custom.css'); ?>" rel="stylesheet">
         <!-- CSS adicionado para o icone destaque das imagens do conteudo -->
         <link href="<?php echo site_url('assets/plugins/font-awesome/css/font-awesome.min.css')?>" rel="stylesheet" >
+        <link rel="stylesheet" href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css" />
+        <link href="<?php echo site_url('assets/css/admin/custom.css'); ?>" rel="stylesheet">
         <style type="text/css">
             body {
                 padding-top: 10px;
@@ -70,6 +71,7 @@
         </footer>        
         <!-- javascript -->
         <script src="<?php echo site_url('assets/plugins/jquery/jquery.min.js')?>" type="text/javascript" ></script>
+        <script src="//code.jquery.com/ui/1.11.1/jquery-ui.js"></script>
         <script src="<?php echo site_url('assets/plugins/bootstrap/js/bootstrap.min.js')?>" type="text/javascript" ></script>
         <script src="<?php echo site_url('assets/plugins/magnific-popup/magnific-popup.js'); ?>" type="text/javascript" ></script>
         <script src="<?php echo site_url('assets/plugins/magnific-popup/magnific-popup-traducao.js'); ?>" type="text/javascript" ></script>

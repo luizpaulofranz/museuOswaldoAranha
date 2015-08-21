@@ -59,7 +59,7 @@ class MY_Form_validation extends CI_Form_validation {
             $this->_field_data[$fields]['postdata'] = $value;
         }
     }
-    
+
     /**
      * Verifica se a data informada está na estrutura correta do formato pt br
      *
@@ -69,7 +69,7 @@ class MY_Form_validation extends CI_Form_validation {
     public function valid_date_ptbr($date) {
         //$exp_regular = '#^([1-9]|0[1-9]|[1,2][0-9]|3[0,1])/([1-9]|1[0,1,2])/\d{4}$#';
         $exp_regular = '/^([1-9]|0[1-9]|[1,2][0-9]|3[0,1])\/(0[1-9]|1[0-2])\/[0-9]{4}$/';
-        if (preg_match($exp_regular,$date)) {
+        if (preg_match($exp_regular, $date)) {
             $arr = explode('/', $date);
 
             $dd = $arr[0];
@@ -166,14 +166,24 @@ class MY_Form_validation extends CI_Form_validation {
     public function valid_time($str) {
         //Assume $str SHOULD be entered as HH:MM
 
-        list($hh, $mm) = explode(':', $str);
+        $entradas = explode(':', $str);
 
-        if (!is_numeric($hh) || !is_numeric($mm)) {
-            return FALSE;
-        } else if ((int) $hh > 24 || (int) $mm > 59) {
-            return FALSE;
-        } else if (mktime((int) $hh, (int) $mm) === FALSE) {
-            return FALSE;
+        if(count($entradas) > 2){
+            return false;
+        }
+        
+        foreach ($entradas as $key => $entrada) {
+            if (!is_numeric($entrada)) {
+                return FALSE;
+            }elseif($key == 0){
+                if ((int) $entrada > 24){
+                    return FALSE;
+                }
+            }else{
+                if ((int) $entrada > 59) {
+                    return false;
+                }
+            }
         }
 
         return TRUE;
@@ -234,7 +244,7 @@ class MY_Form_validation extends CI_Form_validation {
         $CI->form_validation->set_message('valid_tag', 'O campo %s não contém uma tag válida.');
         if (is_array($tag)) {
             foreach ($tag as $ta) {
-                if(!preg_match('/^[A-Za-zÀ-ú0-9.\s]+$/', $tag)){
+                if (!preg_match('/^[A-Za-zÀ-ú0-9.\s]+$/', $tag)) {
                     return false;
                 }
             }

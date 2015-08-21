@@ -57,6 +57,18 @@ $(document).ready(function () {
     //$(".cpf").mask("000.000.000-00");
     //$(".telefone").mask("(00) 0000-00000");
 
+    //data picker
+    $(".date").datepicker({
+        dateFormat: 'dd/mm/yy',
+        dayNames: ['Domingo', 'Segunda', 'Terça', 'Quarta', 'Quinta', 'Sexta', 'Sábado'],
+        dayNamesMin: ['D', 'S', 'T', 'Q', 'Q', 'S', 'S', 'D'],
+        dayNamesShort: ['Dom', 'Seg', 'Ter', 'Qua', 'Qui', 'Sex', 'Sáb', 'Dom'],
+        monthNames: ['Janeiro', 'Fevereiro', 'Março', 'Abril', 'Maio', 'Junho', 'Julho', 'Agosto', 'Setembro', 'Outubro', 'Novembro', 'Dezembro'],
+        monthNamesShort: ['Jan', 'Fev', 'Mar', 'Abr', 'Mai', 'Jun', 'Jul', 'Ago', 'Set', 'Out', 'Nov', 'Dez'],
+        nextText: 'Próximo',
+        prevText: 'Anterior'
+    });
+
     //galeria para os anexos do conteudo
     $('#anexos').on('click', '.gallery-item', function (event) {
         //alert($(this).find('img-responsive').toString());
@@ -69,11 +81,11 @@ $(document).ready(function () {
     });
 
     //exibir ou esconder as editorias no cadastro de noticias/conteudo.
-    $('#idTipoConteudo').change(function(){
+    $('#idTipoConteudo').change(function () {
         //id das noticias
-        if(this.value == 11){
+        if (this.value == 11) {
             $('#selectEditoria').css('display', 'block');
-        }else{
+        } else {
             $('#selectEditoria').css('display', 'none');
         }
     });

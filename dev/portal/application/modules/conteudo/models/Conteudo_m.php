@@ -61,7 +61,6 @@ class Conteudo_m extends CI_Model {
         } else {
             $dados['rascunho'] = 0;
         }
-        $dados['data'] = date('Y-m-d H:i:s');
         unset($dados['idConteudo'], $dados['button']);
         if ($this->db->insert($this->tabela, $dados)) {
             return $this->db->insert_id();

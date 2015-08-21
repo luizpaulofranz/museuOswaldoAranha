@@ -69,7 +69,7 @@ $lang['form_validation_valid_date']           = 'O campo {field} não está em f
 $lang['form_validation_valid_date_ptbr']      = 'O campo {field} não está em formato válido de acordo com o calendário gregoriano.';
 $lang['form_validation_valid_cnpj']           = "O campo {field} nao e um CNPJ valido. Use o formato 00.000.000/0000-00";
 $lang['form_validation_valid_phone']          = "O campo {field} não contém um Telefone válido.";
-$lang['form_validation_valid_time']           = "O campo {field} não contém um Horário válido.";
+$lang['form_validation_valid_time']           = "O campo {field} não contém um Horário válido, o formato deve ser H:m.";
 
 /* End of file form_validation_lang.php */
 /* Location: ./system/language/pt-br/form_validation_lang.php */
