@@ -57,7 +57,7 @@
                 <div class="content">
                     <article class="grid-4 game_box">
                         <h2 class="al-center fontsize25"><p>COMO CHEGAR</p></h2>
-                        <p class="al-center fontsize1b" style="margin-top: 30px;">Alguma coisa, alguma coisa e alguma coisa...Alguma coisa, alguma coisa e alguma coisa...</p>
+                        <p class="al-center fontsize1b" style="margin-top: 30px;">Praça Getúlio Vargas <br> nº 585 - Centro <br> Alegrete RS <br> Ao lado do Quiosque. Diagonal com o cassino.</p>
                     </article>
                     <article class="grid-4 game_box">
                         <h2 class="al-center fontsize25"><p>REGRAS</p></h2>
@@ -65,11 +65,11 @@
                     </article>
                     <article class="grid-4 game_box">
                         <h2 class="al-center fontsize25"><p>HORÁRIO</p></h2>
-                        <p class="al-center fontsize1b" style="margin-top: 30px;">Alguma coisa, alguma coisa e alguma coisa...Alguma coisa, alguma coisa e alguma coisa...</p>
+                        <p class="al-center fontsize1b" style="margin-top: 30px;"> De segunda a sexta <br> das 9h às 16h <br> sábado das 10h às 16h</p>
                     </article>                    
                     <article class="grid-4 game_box">
-                        <h2 class="al-center fontsize25"><p>AGENDE SUA VISITA</p></h2>
-                        <p class="al-center fontsize1b" style="margin-top: 30px;">Alguma coisa, alguma coisa e alguma coisa...Alguma coisa, alguma coisa e alguma coisa...</p>
+                        <h2 class="al-center fontsize25"><p>AGENDE SUA VISITA </p></h2>
+                        <p class="al-center fontsize1b" style="margin-top: 30px;">Visitas  Monitoradas <br>(Terça e Quinta) <br>Agende pelo<br>  email ou <br> por telefone.</p>
                     </article>
                 </div>
             </section>

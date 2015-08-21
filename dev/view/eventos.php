@@ -85,12 +85,44 @@
                                 <p class="al-left font-oswald-light font-vinho news_description fontsize18 ds-block border-grey">ALGUM EVENTO...ALGUM EVENTO...</p>
                             </a>
                         </article>
+                        <article class="grid-1-3">
+                            <a href="vizualizarEvento.php">
+                                <div class="box-news border-vinho" style="background: url(../resources/images/eventos/evento1.jpg) no-repeat center; background-size: cover;"></div>
+                                <p class="al-left font-oswald-light font-vinho news_description fontsize18 ds-block border-grey">ALGUM EVENTO...ALGUM EVENTO...</p>
+                            </a>
+                        </article>
+                        <article class="grid-1-3">
+                            <a href="vizualizarEvento.php">
+                                <div class="box-news border-vinho" style="background: url(../resources/images/eventos/evento1.jpg) no-repeat center; background-size: cover;"></div>
+                                <p class="al-left font-oswald-light font-vinho news_description fontsize18 ds-block border-grey">ALGUM EVENTO...ALGUM EVENTO...</p>
+                            </a>
+                        </article>
+                        <article class="grid-1-3">
+                            <a href="vizualizarEvento.php">
+                                <div class="box-news border-vinho" style="background: url(../resources/images/eventos/evento1.jpg) no-repeat center; background-size: cover;"></div>
+                                <p class="al-left font-oswald-light font-vinho news_description fontsize18 ds-block border-grey">ALGUM EVENTO...ALGUM EVENTO...</p>
+                            </a>
+                        </article>
                     </div>
-                    <div style="margin-top: 40px;" class="fl-left grid-16">
-                        <a href="eventosTodos.php" class="font-oswald-light font-bold fontsize1b" style="color: #993333">VEJA TODOS OS EVENTOS</a>
-                    </div>
+
                 </div>
             </section>
+            <div id="pages" class="grid-10 container-padding-60" style="margin-left: 49.8%">
+                <ul>
+                    <li class="nolink">« Previous Page</li>
+                    <li class="current">1</li>
+                    <li><a href="#">2</a></li>
+                    <li><a href="#">3</a></li>
+                    <li><a href="#">4</a></li>
+                    <li><a href="#">5</a></li>
+                    <li><a href="#">6</a></li>
+                    <li><a href="#">7</a></li>
+                    <li><a href="#">8</a></li>
+                    <li><a href="#">9</a></li>
+                    <li><a href="#">10</a></li>
+                    <li><a href="#">Next Page »</a></li>
+                </ul>
+            </div>
 
             <section class="container container-padding-60 bg-pink-white">
                 <div class="content al-center">
