@@ -31,11 +31,11 @@
                     <li class="menu-item"><a href="../view/home.php" title="Página Inícial">INÍCIO</a></li>
                     <li class="menu-item"><a href="../view/sobre.php" alt="" title="Sobre o Museu">SOBRE</a></li>
                     <li class="menu-item"><a href="../view/eventos.php" alt="" title="Eventos do Museu">EVENTOS</a></li>
-                    <li class="menu-item"><a href="../view/contato.php" alt="" title="Fale Conosco">CONTATO</a></li>
                     <li class="menu-item"><a href="../view/noticias.php" alt="" title="Notícias">NOTÍCIAS</a></li>
                     <li class="menu-item"><a href="../view/aprendaMenu.php" alt=""title="Aprenda">APRENDA</a></li>
                     <li class="menu-item"><a href="../view/amigosDoMuseu.php" alt=""title="Amigos do Museu">AMIGOS DO MUSEU</a></li>
                     <li class="menu-item"><a href="../view/visite.php" alt="" title="Visite o Museu">VISITE</a></li>
+                    <li class="menu-item"><a href="../view/contato.php" alt="" title="Fale Conosco">CONTATO</a></li>
                 </ul>
             </div>
         </header>
@@ -63,23 +63,16 @@
                     <article class="grid-1-3 game_box">
                         <h2 class="al-center fontsize25"><p>DIRETORIA:</p></h2>
                         <p class="al-center fontsize1b" style="margin-top: 10px;">Presidente - Anderson Corrêa<br> Vice-Presidente - Anderson Corrêa <br>Diretor-Secretário - Anderson Corrêa<br>Vice-Diretor Secretário - Anderson <br>Diretor Tesoureiro - Anderson Corrêa<br>Vice-Diretor Financeiro - Anderson </p>
+                    </article>
+                    <article class="grid-1-3 game_box">
                         <h2 class="al-center fontsize25"><p>ESTATUTO:</p></h2>
                         <p class="al-center fontsize1b" style="margin-top: 10px;">link pdf ou ...</p>
                     </article>
-
-
-                    <article class="grid-1-3">
-                        <a href="#">
-                            <div class="box-news border-vinho" style="background: url(../resources/images/amigosMuseu/amigosEvento.jpg) no-repeat center; background-size: cover;"></div>
-                            <p class="al-left font-oswald-light font-vinho news_description fontsize18 ds-block border-grey">ALGUMA COISA...ALGUMA COISA...</p>
-                        </a>
-                    </article>
-                    <article class="grid-1-3">
-                        <a href="#">
-                            <div class="box-news border-vinho" style="background: url(../resources/images/amigosMuseu/amigosEvento1.jpg) no-repeat center; background-size: cover;"></div>
-                            <p class="al-left font-oswald-light font-vinho news_description fontsize18 ds-block border-grey">ALGUMA COISA...ALGUMA COISA...</p>
-                        </a>
-                    </article>
+                    <article class="grid-1-3 game_box">
+                        <h2 class="al-center fontsize25"><p>CONTATO:</p></h2>
+                        <p class="al-center fontsize1b" style="margin-top: 10px;">Email: <br> Telefone:</p>
+                    </article> 
+                    
 
                     <!--<article class="grid-3 game_box">
                         <h2 class="al-center fontsize25"><p>ESTATUTO:</p></h2>
@@ -97,20 +90,24 @@
                     </header>
 
                     <div style="margin-top: 40px;">
-                        <div class="grid-8 al-center" style="height: 180px;">
+                        <div class="grid-5 al-center" style="height: 180px;">
                             <div class="border-red" style="height: 180px; background: #ffffff;">
                                 <img class="ds-inline fl-none" style="margin-top: 20px;" src="../resources/images/home/unipampa.png" alt="Logotipo Unipampa">
                             </div>
                         </div>
-                        <div class="grid-8 al-center" style="height: 180px;">
+                        <div class="grid-6 al-center" style="height: 180px;">
                             <div class="border-red" style="height: 180px; background: #ffffff;">
                                 <img class="ds-inline fl-none" style="margin-top: 40px;" src="../resources/images/home/prefeitura.png" alt="Logotipo Unipampa">
+                            </div>
+                        </div>
+                        <div class="grid-5 al-center" style="height: 180px;">
+                            <div class="border-red" style="height: 180px; background: #ffffff;">
+                                <img class="ds-inline fl-none" style="margin-top: 29px;" src="../resources/images/home/Instituto Histórico e Geográfico de Alegrete.jpg" alt="Logotipo IHGA">
                             </div>
                         </div>
                     </div>
                 </div>
             </section>
-
             <footer class="container container-padding-60 bg-black">
                 <div class="content">
                     <ul class="font-oswald-light font-light fontsize1b grid-16 al-center">

@@ -31,11 +31,11 @@
                     <li class="menu-item"><a href="../view/home.php" title="Página Inícial">INÍCIO</a></li>
                     <li class="menu-item"><a href="../view/sobre.php" alt="" title="Sobre o Museu">SOBRE</a></li>
                     <li class="menu-item"><a href="../view/eventos.php" alt="" title="Eventos do Museu">EVENTOS</a></li>
-                    <li class="menu-item"><a href="../view/contato.php" alt="" title="Fale Conosco">CONTATO</a></li>
                     <li class="menu-item"><a href="../view/noticias.php" alt="" title="Notícias">NOTÍCIAS</a></li>
                     <li class="menu-item"><a href="../view/aprendaMenu.php" alt=""title="Aprenda">APRENDA</a></li>
                     <li class="menu-item"><a href="../view/amigosDoMuseu.php" alt=""title="Amigos do Museu">AMIGOS DO MUSEU</a></li>
                     <li class="menu-item"><a href="../view/visite.php"alt="" title="Visite o Museu">VISITE</a></li>
+                    <li class="menu-item"><a href="../view/contato.php" alt="" title="Fale Conosco">CONTATO</a></li>
                 </ul>
             </div>
         </header>
@@ -60,7 +60,7 @@
         <div class="regulates_position">
             <section class="container container-padding-60 font-oswald-light font-light">
                 <div class="content">
-                    
+
                     <header class="content" style="background: #993333; height: 5px">
                         <h2 class="fontsize25 font-vinho font-oswald-light al-center ds-inblock news_style">NOTÍCIAS</h2>;
                     </header>
@@ -74,62 +74,67 @@
                             <p>Texto texto Texto texto Texto texto Texto texto Texto texto Texto texto Texto texto </p>
                         </div>
                         <div style="margin-top: 110px;" class="fl-left grid-9 border-grey">
-                </div>
-            </section>
-
-            <section class="container container-padding-60 bg-pink-white">
-                <div class="content al-center">
-                    <header style="background: #ffffff; height: 5px">
-                        <h2 class="fontsize25 font-oswald-light al-center ds-inblock shadow_parceiros">PARCEIROS</h2>;
-                    </header>
-
-                    <div style="margin-top: 40px;">
-                        <div class="grid-8 al-center" style="height: 180px;">
-                            <div class="border-red" style="height: 180px; background: #ffffff;">
-                                <img class="ds-inline fl-none" style="margin-top: 20px;" src="../resources/images/home/unipampa.png" alt="Logotipo Unipampa">
-                            </div>
                         </div>
-                        <div class="grid-8 al-center" style="height: 180px;">
-                            <div class="border-red" style="height: 180px; background: #ffffff;">
-                                <img class="ds-inline fl-none" style="margin-top: 40px;" src="../resources/images/home/prefeitura.png" alt="Logotipo Unipampa">
+                        </section>
+                        <section class="container container-padding-60 bg-pink-white">
+                            <div class="content al-center">
+                                <header style="background: #ffffff; height: 5px">
+                                    <h2 class="fontsize25 font-oswald-light al-center ds-inblock shadow_parceiros">PARCEIROS</h2>;
+                                </header>
+
+                                <div style="margin-top: 40px;">
+                                    <div class="grid-5 al-center" style="height: 180px;">
+                                        <div class="border-red" style="height: 180px; background: #ffffff;">
+                                            <img class="ds-inline fl-none" style="margin-top: 20px;" src="../resources/images/home/unipampa.png" alt="Logotipo Unipampa">
+                                        </div>
+                                    </div>
+                                    <div class="grid-6 al-center" style="height: 180px;">
+                                        <div class="border-red" style="height: 180px; background: #ffffff;">
+                                            <img class="ds-inline fl-none" style="margin-top: 40px;" src="../resources/images/home/prefeitura.png" alt="Logotipo Unipampa">
+                                        </div>
+                                    </div>
+                                    <div class="grid-5 al-center" style="height: 180px;">
+                                        <div class="border-red" style="height: 180px; background: #ffffff;">
+                                            <img class="ds-inline fl-none" style="margin-top: 29px;" src="../resources/images/home/Instituto Histórico e Geográfico de Alegrete.jpg" alt="Logotipo IHGA">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+
+
+                        <footer class="container container-padding-60 bg-black">
+                            <div class="content">
+                                <ul class="font-oswald-light font-light fontsize1b grid-16 al-center">
+                                    <li class="menu-item2 fontsize18"><a src="" alt="">INÍCIO</a></li>
+                                    <li class="menu-separador fontsize1">/</li>
+                                    <li class="menu-item2 fontsize18"><a src="" alt="">SOBRE</a></li>
+                                    <li class="menu-separador fontsize1">/</li>
+                                    <li class="menu-item2 fontsize18"><a src="" alt="">EVENTOS</a></li>
+                                    <li class="menu-separador fontsize1">/</li>
+                                    <li class="menu-item2 fontsize18"><a src="" alt="">CONTATO</a></li>
+                                    <li class="menu-separador fontsize1">/</li>
+                                    <li class="menu-item2 fontsize18"><a src="" alt="">NOTÍCIAS</a></li>
+                                    <li class="menu-separador fontsize1">/</li>
+                                    <li class="menu-item2 fontsize18"><a src="" alt="">APRENDA</a></li>
+                                    <li class="menu-separador fontsize1">/</li>
+                                    <li class="menu-item2 fontsize18"><a src="" alt="">AMIGOS DO MUSEU</a></li>
+                                    <li class="menu-separador fontsize1">/</li>
+                                    <li class="menu-item2 fontsize18"><a src="" alt="">VISITE</a></li>
+                                    <li class="menu-separador fontsize1">/</li>
+                                    <li class="menu-item2 fontsize18"><a src="" alt="">MAPA DO SITE</a></li>
+                                </ul>
+                            </div>
+                        </footer>
+
+                        <div class="container" style="padding-top: 15px; padding-bottom: 15px;">
+                            <div class="content al-center">
+                                <p class="font-georgia fontsize1">MOA - Museu Oswaldo Aranha - 2015</p>
                             </div>
                         </div>
                     </div>
-                </div>
-            </section>
-
-            <footer class="container container-padding-60 bg-black">
-                <div class="content">
-                    <ul class="font-oswald-light font-light fontsize1b grid-16 al-center">
-                        <li class="menu-item2 fontsize18"><a src="" alt="">INÍCIO</a></li>
-                        <li class="menu-separador fontsize1">/</li>
-                        <li class="menu-item2 fontsize18"><a src="" alt="">SOBRE</a></li>
-                        <li class="menu-separador fontsize1">/</li>
-                        <li class="menu-item2 fontsize18"><a src="" alt="">EVENTOS</a></li>
-                        <li class="menu-separador fontsize1">/</li>
-                        <li class="menu-item2 fontsize18"><a src="" alt="">CONTATO</a></li>
-                        <li class="menu-separador fontsize1">/</li>
-                        <li class="menu-item2 fontsize18"><a src="" alt="">NOTÍCIAS</a></li>
-                        <li class="menu-separador fontsize1">/</li>
-                        <li class="menu-item2 fontsize18"><a src="" alt="">APRENDA</a></li>
-                        <li class="menu-separador fontsize1">/</li>
-                        <li class="menu-item2 fontsize18"><a src="" alt="">AMIGOS DO MUSEU</a></li>
-                        <li class="menu-separador fontsize1">/</li>
-                        <li class="menu-item2 fontsize18"><a src="" alt="">VISITE</a></li>
-                        <li class="menu-separador fontsize1">/</li>
-                        <li class="menu-item2 fontsize18"><a src="" alt="">MAPA DO SITE</a></li>
-                    </ul>
-                </div>
-            </footer>
-
-            <div class="container" style="padding-top: 15px; padding-bottom: 15px;">
-                <div class="content al-center">
-                    <p class="font-georgia fontsize1">MOA - Museu Oswaldo Aranha - 2015</p>
-                </div>
-            </div>
-        </div>
-    </body>
-</html>
+                    </body>
+                    </html>
 
 
 

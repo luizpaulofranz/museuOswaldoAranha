@@ -32,11 +32,11 @@
                     <li class="menu-item"><a href="../view/home.php" title="Página Inícial">INÍCIO</a></li>
                     <li class="menu-item"><a href="../view/sobre.php" alt="" title="Sobre o Museu">SOBRE</a></li>
                     <li class="menu-item"><a href="../view/eventos.php" alt="" title="Eventos do Museu">EVENTOS</a></li>
-                    <li class="menu-item"><a href="../view/contato.php" alt="" title="Fale Conosco">CONTATO</a></li>
                     <li class="menu-item"><a href="../view/noticias.php" alt="" title="Notícias">NOTÍCIAS</a></li>
                     <li class="menu-item"><a href="../view/aprendaMenu.php" alt=""title="Aprenda">APRENDA</a></li>
                     <li class="menu-item"><a href="../view/amigosDoMuseu.php" alt=""title="Amigos do Museu">AMIGOS DO MUSEU</a></li>
                     <li class="menu-item"><a href="../view/visite.php" alt="" title="Visite o Museu">VISITE</a></li>
+                    <li class="menu-item"><a href="../view/contato.php" alt="" title="Fale Conosco">CONTATO</a></li>
                 </ul>
             </div>
         </header>
@@ -58,8 +58,14 @@
         <div class="regulates_position">
             <section class="container container-padding-60 font-oswald-light font-light">
                 <div class="content">
+
+                    <header class="content" style="background: #993333; height: 5px; text-align: center;">
+                        <h2 class="fontsize30 font-vinho font-oswald-light al-center ds-inblock news_style">ENTRE EM CONTATO</h2>;
+                    </header>
+                    <br><br>
+
                     <div>
-                        <h2 class="font-oswald-light fontsize30 " style="text-align: center; padding-bottom: 3em" >ENTRE EM CONTATO</h2> 
+                        <!--<h2 class="font-oswald-light fontsize30 " style="text-align: center; padding-bottom: 3em" >ENTRE EM CONTATO</h2> -->
                         <section class=" grid-12 font-oswald-light news_description fontsize18 ds-block border-grey" style="margin-right: 20%">                                
                             <form class="form-horizontal" method="post">
                                 <div class="form-group">
@@ -171,18 +177,23 @@
             <section class="container container-padding-60 bg-pink-white">
                 <div class="content al-center">
                     <header style="background: #ffffff; height: 5px">
-                        <h2 class="fontsize25 font-oswald-light al-center ds-inblock shadow_parceiros" style="margin-top: 0.2%;font-weight: bolder">PARCEIROS</h2>;
+                        <h2 class="fontsize25 font-oswald-light al-center ds-inblock shadow_parceiros">PARCEIROS</h2>;
                     </header>
 
                     <div style="margin-top: 40px;">
-                        <div class="grid-8 al-center" style="height: 180px;">
+                        <div class="grid-5 al-center" style="height: 180px;">
                             <div class="border-red" style="height: 180px; background: #ffffff;">
                                 <img class="ds-inline fl-none" style="margin-top: 20px;" src="../resources/images/home/unipampa.png" alt="Logotipo Unipampa">
                             </div>
                         </div>
-                        <div class="grid-8 al-center" style="height: 180px;">
+                        <div class="grid-6 al-center" style="height: 180px;">
                             <div class="border-red" style="height: 180px; background: #ffffff;">
                                 <img class="ds-inline fl-none" style="margin-top: 40px;" src="../resources/images/home/prefeitura.png" alt="Logotipo Unipampa">
+                            </div>
+                        </div>
+                        <div class="grid-5 al-center" style="height: 180px;">
+                            <div class="border-red" style="height: 180px; background: #ffffff;">
+                                <img class="ds-inline fl-none" style="margin-top: 29px;" src="../resources/images/home/Instituto Histórico e Geográfico de Alegrete.jpg" alt="Logotipo IHGA">
                             </div>
                         </div>
                     </div>
