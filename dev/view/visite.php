@@ -65,7 +65,7 @@
                     </article>
                     <article class="grid-4 game_box">
                         <h2 class="al-center fontsize25"><p>HORÁRIO</p></h2>
-                        <p class="al-center fontsize1b" style="margin-top: 30px;"> De segunda a sexta <br> das 9h às 16h <br> Sábado das 10h às 16h</p>
+                        <p class="al-center fontsize1b" style="margin-top: 30px;"> De segunda a sexta <br> das 9h às 16h <br> Sábado das 10h às 16h.</p>
                     </article>                    
                     <article class="grid-4 game_box">
                         <h2 class="al-center fontsize25"><p>AGENDE SUA VISITA </p></h2>

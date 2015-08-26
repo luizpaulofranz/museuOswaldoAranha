@@ -70,3 +70,9 @@ table.table thead tr th{
     visibility: visible;
   }
 }
+.alteraFonte {
+    font-size: 150%;
+}
+.alteraCor {
+    color:  #2cc36b;
+}

@@ -1,7 +1,7 @@
 <div id="container">
   <div class="page-header">
     <h1>Administradores <small>Listagem</small></h1><br/>
-    <a class="btn btn-success" href="<?php echo base_url('admin/administrador/cadastrar');?>"><span class="glyphicon glyphicon-plus"></span> Novo</a>
+    <a class="btn btn-success alteraFonte" href="<?php echo base_url('admin/administrador/cadastrar');?>"><span class="glyphicon glyphicon-plus"></span> Novo</a>
   </div>
 <?php
 // Cabeçalho da tabela
