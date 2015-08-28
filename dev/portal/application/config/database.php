@@ -63,8 +63,8 @@ $active_group = 'local';
 $query_builder = TRUE;
 
 $db['local']['hostname'] = 'localhost';
-$db['local']['username'] = 'paulo';
-$db['local']['password'] = 'mpK731xS';
+$db['local']['username'] = 'anne';
+$db['local']['password'] = 'novasenha';
 $db['local']['database'] = 'museuOswaldoAranha';
 $db['local']['dbdriver'] = 'mysqli';
 $db['local']['dbprefix'] = '';
