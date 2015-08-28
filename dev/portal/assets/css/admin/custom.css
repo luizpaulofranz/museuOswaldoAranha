@@ -63,16 +63,21 @@ table.table thead tr th{
 }
 
 @media print {
-  .page-header, #enviar{
-    display: none;
-  }
-  #printable, #printable * {
-    visibility: visible;
-  }
+    .page-header, #enviar{
+        display: none;
+    }
+    #printable, #printable * {
+        visibility: visible;
+    }
 }
 .alteraFonte {
     font-size: 150%;
 }
-.alteraCor {
-    color:  #2cc36b;
+
+.navbar-inverse{
+   background-color: #449d44;
+}
+
+.navbar-inverse .navbar-nav>li>a{
+    color:  black;
 }

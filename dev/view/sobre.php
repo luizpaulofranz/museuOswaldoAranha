@@ -68,7 +68,7 @@
                     </header>
                     <br><br><br> 
                     <div>
-                        <!--<h2 class="font-oswald-light fontsize30 " style="text-align: center; padding-bottom: 40px" >SOBRE</h2>-->
+                    
 
                         <img src="../resources/images/sobre/oswaldoAranhaSobre.jpg" alt="lalala" style="width: 20em; height: 25em">
 

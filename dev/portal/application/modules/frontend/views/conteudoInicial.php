@@ -20,7 +20,7 @@
         <article class="grid-4">
             <h2 class="header_box bg-pink-white fontsize45 al-center font-oswald-light font-thin2 header_box_shadow">NOTÍCIAS</h2>
             <ul class="menu_section">
-                <li><a href="<?php echo site_url('conteudo/noticias')?>" a><img src="" alt=""><img src="../assets/images/home/eventos/events-icon.png" alt="Ícone Eventos"><p>VEJA NOSSAS </p><p>NOTÍCIAS</p></a></li>
+                <li><a href="<?php echo site_url('conteudo/noticias')?>" a><img src="" alt=""><img src="../assets/images/home/noticias/noticias-icon.png" alt="Ícone Noticias"><p>VEJA NOSSAS </p><p>NOTÍCIAS</p></a></li>
                 <li><a href="<?php echo site_url('conteudo/eventos')?>" a><img src="" alt=""><img src="../assets/images/home/eventos/events-icon.png" alt="Ícone Eventos"><p>PRÓXIMOS </p><p> EVENTOS</p></a></li>
             </ul>
         </article>

@@ -36,7 +36,7 @@
                             <span class="icon-bar"></span>
                             <span class="icon-bar"></span>
                         </button>
-                        <a class="navbar-brand alteraFonte" href="<?php echo site_url('admin')?>">Museu</a>
+                        <a class="navbar-brand alteraFonte" style="color:black" href="<?php echo site_url('admin')?>">Museu</a>
                     </div>
 
                     <!-- Collect the nav links, forms, and other content for toggling -->

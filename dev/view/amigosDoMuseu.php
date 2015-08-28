@@ -72,14 +72,7 @@
                         <h2 class="al-center fontsize25"><p>CONTATO:</p></h2>
                         <p class="al-center fontsize1b" style="margin-top: 10px;">Email: <br> Telefone:</p>
                     </article> 
-                    
-
-                    <!--<article class="grid-3 game_box">
-                        <h2 class="al-center fontsize25"><p>ESTATUTO:</p></h2>
-                        <p class="al-center fontsize1b" style="margin-top: 30px;">link...</p>
-                    </article>-->
-
-
+                  
                 </div>
             </section>
 

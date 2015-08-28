@@ -1,5 +1,5 @@
 <!-- Administrativo - Módulos -->
-<ul class="nav navbar-nav alteraCor">
+<ul class="nav navbar-nav">
 
     <li class="dropdown">
         <a href="#" class="dropdown-toggle alteraFonte" data-toggle="dropdown">
