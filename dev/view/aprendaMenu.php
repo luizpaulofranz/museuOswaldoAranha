@@ -15,7 +15,7 @@
             <div class="content">
                 <ul class="font-oswald-light font-bold fontsize090 fl-right text-uppercase">
                     <li class="list-info"><a src="" alt=""><img src="../resources/images/home/endereco-icon.png" class="fl-left img-micro" alt="Icone Encereço" title="Endereço do Museu">Praça Getúlio Vargas nº 585 - centro - Alegrete RS</a></li>
-                    <li class="list-info"><a src="" alt=""><img src="../resources/images/home/telefone-icon.png" class="fl-left img-micro" alt="Icone Telefone" title="Telefone para Contato">(55) 3422 xxxx</a></li>
+                    <li class="list-info"><a src="" alt=""><img src="../resources/images/home/telefone-icon.png" class="fl-left img-micro" alt="Icone Telefone" title="Telefone para Contato">(55) 3961-1132</a></li>
                     <li class="list-info"><a src="" alt=""><img src="../resources/images/home/facebook-icon.png" alt="Nossa Página no Facebook" title="Facebook"></a></li>
                 </ul>
             </div>

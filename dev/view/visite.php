@@ -15,7 +15,7 @@
             <div class="content">
                 <ul class="font-oswald-light font-bold fontsize090 fl-right text-uppercase">
                     <li class="list-info"><a src="" alt=""><img src="../resources/images/home/endereco-icon.png" class="fl-left img-micro" alt="Icone Encereço" title="Endereço do Museu">Praça Getúlio Vargas nº 585 - centro - Alegrete RS</a></li>
-                    <li class="list-info"><a src="" alt=""><img src="../resources/images/home/telefone-icon.png" class="fl-left img-micro" alt="Icone Telefone" title="Telefone para Contato">(55) 3422 xxxx</a></li>
+                    <li class="list-info"><a src="" alt=""><img src="../resources/images/home/telefone-icon.png" class="fl-left img-micro" alt="Icone Telefone" title="Telefone para Contato">(55) 3961-1132</a></li>
                     <li class="list-info"><a src="" alt=""><img src="../resources/images/home/facebook-icon.png" alt="Nossa Página no Facebook" title="Facebook"></a></li>
                 </ul>
             </div>
@@ -65,11 +65,11 @@
                     </article>
                     <article class="grid-4 game_box">
                         <h2 class="al-center fontsize25"><p>HORÁRIO</p></h2>
-                        <p class="al-center fontsize1b" style="margin-top: 30px;"> De segunda a sexta <br> das 9h às 16h <br> Sábado das 10h às 16h.</p>
+                        <p class="al-center fontsize1b" style="margin-top: 30px;"> O Museu Oswaldo Aranha <br>abre para visitações de Segunda à sábado,<br> das 9h às 16h.</p>
                     </article>                    
                     <article class="grid-4 game_box">
                         <h2 class="al-center fontsize25"><p>AGENDE SUA VISITA </p></h2>
-                        <p class="al-center fontsize1b" style="margin-top: 30px;">Visitas  Monitoradas <br>(Terça e Quinta) <br>Agende pelo<br>  email ou <br> por telefone.</p>
+                        <p class="al-center fontsize1b" style="margin-top: 30px;">Visitas  Monitoradas <br>(Terça e Quinta) <br>Agende pelo telefone<br> (55) 3961-1132 ou <br> por email moaalegrete@gmail.com</p>
                     </article>
                 </div>
             </section>

@@ -14,7 +14,7 @@
             <div class="content">
                 <ul class="font-oswald-light font-bold fontsize090 fl-right text-uppercase">
                     <li class="list-info"><a src="" alt=""><img src="../resources/images/home/endereco-icon.png" class="fl-left img-micro" alt="Icone Encereço" title="Endereço do Museu">Praça Getúlio Vargas nº 585 - centro - Alegrete RS</a></li>
-                    <li class="list-info"><a src="" alt=""><img src="../resources/images/home/telefone-icon.png" class="fl-left img-micro" alt="Icone Telefone" title="Telefone para Contato">(55) 3422 xxxx</a></li>
+                    <li class="list-info"><a src="" alt=""><img src="../resources/images/home/telefone-icon.png" class="fl-left img-micro" alt="Icone Telefone" title="Telefone para Contato">(55) 3961-1132</a></li>
                     <li class="list-info"><a src="" alt=""><img src="../resources/images/home/facebook-icon.png" alt="Nossa Página no Facebook" title="Facebook"></a></li>
                 </ul>
             </div>
@@ -79,7 +79,7 @@ zz
                     <article class="grid-4">
                         <h2 class="header_box bg-pink-white fontsize45 al-center font-oswald-light font-thin2 header_box_shadow">NOTÍCIAS</h2>
                         <ul class="menu_section">
-                            <li><a href="noticias.php" a><img src="" alt=""><img src="../resources/images/home/eventos/events-icon.png" alt="Ícone Eventos"><p>VEJA NOSSAS </p><p>NOTÍCIAS</p></a></li>
+                            <li><a href="noticias.php" a><img src="" alt=""><img src="../resources/images/home/noticias/noticias-icon.png" alt="Ícone Eventos"><p>VEJA NOSSAS </p><p>NOTÍCIAS</p></a></li>
                             <li><a href="eventos.php" a><img src="" alt=""><img src="../resources/images/home/eventos/events-icon.png" alt="Ícone Eventos"><p>PRÓXIMOS </p><p> EVENTOS</p></a></li>
                         </ul>
                     </article>
