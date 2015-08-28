@@ -59,17 +59,18 @@
                     <div style="margin-top: 40px;">
                         <div class="grid-5 al-center" style="height: 180px;">
                             <div class="border-red" style="height: 180px; background: #ffffff;">
-                                <<img class="ds-inline fl-none" style="margin-top: 20px;" src="<?php echo site_url('/assets/images/home/unipampa.png')?>" alt="Logotipo Unipampa">
+                                
+                               <a href="http://porteiras.unipampa.edu.br/alegrete/" target="_blank"><img class="ds-inline fl-none" style="margin-top: 20px;" src="<?php echo site_url('/assets/images/home/unipampa.png')?>" alt="Logotipo Unipampa"></a>
                             </div>
                         </div>
                         <div class="grid-6 al-center" style="height: 180px;">
                             <div class="border-red" style="height: 180px; background: #ffffff;">
-                                <img class="ds-inline fl-none" style="margin-top: 40px;" src="<?php echo site_url('/assets/images/home/prefeitura.png')?>" alt="Logotipo prefeitura">
+                                <a href="http://www.alegrete.rs.gov.br/site/" target="_blank"><img class="ds-inline fl-none" style="margin-top: 40px;" src="<?php echo site_url('/assets/images/home/prefeitura.png')?>" alt="Logotipo prefeitura"></a>
                             </div>
                         </div>
                         <div class="grid-5 al-center" style="height: 180px;">
                             <div class="border-red" style="height: 180px; background: #ffffff;">
-                                <img class="ds-inline fl-none" style="margin-top: 29px;" src="<?php echo site_url('/assets/images/home/ihga.jpg')?>"  alt="Logotipo IHGA">
+                                <a href="http://www.ihga.com.br/"target="_blank"><img class="ds-inline fl-none" style="margin-top: 29px;" src="<?php echo site_url('/assets/images/home/ihga.jpg')?>"  alt="Logotipo IHGA"></a>
                             </div>
                         </div>
                     </div>
