@@ -371,3 +371,23 @@ form label {
 .noticias{
     color:red;
 }
+
+.inicial .menu_section li a{
+    color: #333333;
+}
+
+.alert{
+    padding: 10px;
+    border-radius: 3px;
+    display: block;
+}
+
+.alert-success{
+    color: green;
+    background-color: #dff0d8; 
+}
+
+.alert-danger{
+    color: #a94442;
+    background-color: #f2dede;
+}

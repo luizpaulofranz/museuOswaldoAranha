@@ -2,13 +2,18 @@
 
 //helper htm eh do proprio Codei, para acrescentar ou alterar funcoes desse helper, devemos por nesta pasta com o prefixo MY_
 function alert($msg, $tipo = 'warning', $titulo = NULL, $fechar = TRUE) {
-
-    $retorno = '<div class="alert alert-' . $tipo . ' alert-dismissable">';
+    $retorno = '<div class="alert alert-' . $tipo;
+    if($fechar){
+        $retorno.= ' alert-dismissable">';
+    }else{
+        $retorno .= '">';
+    }
     $retorno .= (!is_null($titulo)) ? '<strong>' . $titulo . '</strong>' : '';
-    $retorno .= ($fechar) ? '<button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>' : NULL;
+    if($fechar){
+        $retorno .= '<button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>';
+    }
     $retorno .= '<p>' . $msg . '</p>';
     $retorno .= '</div>';
-
     return $retorno;
 }
 

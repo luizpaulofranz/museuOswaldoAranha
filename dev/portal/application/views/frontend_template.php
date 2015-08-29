@@ -7,7 +7,7 @@
         <link rel="stylesheet" href="<?php echo site_url('assets/css/normalize.css') ?>">
         <link rel="stylesheet" href="<?php echo site_url('assets/css/boot.css') ?>">
         <link rel="stylesheet" href="<?php echo site_url('assets/css/grid.css') ?>">
-
+        
         <link rel="shortcut icon" href="<?php echo site_url('assets/images/favicon.png') ?>"/>
     </head>
     <body>     
@@ -107,6 +107,9 @@
                     <p class="font-georgia fontsize1">MOA - Museu Oswaldo Aranha - 2015</p>
                 </div>
             </div>
+            <script src="<?php echo site_url('assets/plugins/jquery/jquery.min.js');?>"></script>
+            <script src="<?php echo site_url('assets/js/plugins/jquery.mask.js');?>"></script>
+            <script src="<?php echo site_url('assets/js/custom.js');?>"></script>
         </div>
     </body>
 </html>

@@ -10,12 +10,18 @@ class Frontend extends Site_Controller {
 
     public function __construct() {
         parent::__construct();
-        $this->form_validation->set_error_delimiters('<div class="alert alert-danger alert-dismissable"><button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button><p>', '</p></div>');
     }
 
     function index() {
+        $this->load->model('conteudo/conteudo_m');
+        $limit = 9;
+        //para a paginacao funcionar assim, o parametro $pg['use_page_numbers'] = TRUE no arquivo pagination
+        $offset = 0;
+        $conteudos = $this->conteudo_m->listarNoticia($limit, $offset, true);
+        //$total = $this->conteudo_m->listarNoticia(null, null, true);
+        
         $this->template->write_view('capa', 'capaInicial');
-        $this->template->write_view('conteudo', 'conteudoInicial');
+        $this->template->write_view('conteudo', 'conteudoInicial', array('noticias' => $conteudos->result_array()));
         $this->template->render();
     }
     
@@ -66,40 +72,48 @@ class Frontend extends Site_Controller {
 
             $ci->email->initialize($config);
 
-            $this->form_validation->set_rules('nome', 'Nome', 'trim|min_length[2]|max_length[150]');
-            $this->form_validation->set_rules('assunto', 'Assunto', 'trim|max_length[150]');
-            $this->form_validation->set_rules('email', 'Email', 'required|trim|valid_email|unique|min_length[6]|max_length[100]');
+            $this->form_validation->set_rules('nome', 'Nome', 'required|trim|min_length[2]|max_length[150]');
+            $this->form_validation->set_rules('idade', 'Idade', 'integer');
+            $this->form_validation->set_rules('escolaridade', 'Escolaridade', 'trim|max_length[150]');
+            $this->form_validation->set_rules('profissao', 'Profissao', 'trim|max_length[150]');
+            $this->form_validation->set_rules('sexo', 'Sexo', 'trim|max_length[9]');
+            $this->form_validation->set_rules('cor', 'Cor', 'trim|max_length[15]');
+            $this->form_validation->set_rules('estado', 'Estado', 'trim|max_length[2]');
+            $this->form_validation->set_rules('cidade', 'Cidade', 'trim|max_length[55]');
+            $this->form_validation->set_rules('telefone', 'Telefone', 'valid_phone');
+            //$this->form_validation->set_rules('assunto', 'Assunto', 'trim|max_length[150]');
+            $this->form_validation->set_rules('email', 'Email', 'required|trim|valid_email|min_length[6]|max_length[100]');
             $this->form_validation->set_rules('mensagem', 'Mensagem', 'required|trim');
-            $this->form_validation->set_rules('telefone', 'Telefone', 'integer');
-
+            //var_dump($this->form_validation->run(), validation_errors());exit();
             if ($this->form_validation->run()) {
                 $email = $this->input->post('email', TRUE);
                 $nome = $this->input->post('nome', TRUE);
                 $telefone = $this->input->post('telefone', TRUE);
                 $mensagem = $this->input->post('mensagem', TRUE);
-                $assunto = $this->input->post('assunto', TRUE);
 
                 $ci->email->from($email, $nome);
-                $ci->email->to('cea@feitiodoalegrete.com.br');
+                $ci->email->to('moaalegrete@gmail.com');
 
-                $ci->email->subject($assunto);
+                $ci->email->subject('Contato pelo site.');
                 $ci->email->message('<html><head></head><body>
                 Nome:       ' . $nome . ' <br />
                 E-mail:     ' . $email . ' <br />
                 Telefone:   ' . $telefone . ' <br />
-                Assunto:    ' . $assunto . ' <br />
+                Assunto:    Contato pelo site. <br />
                 Mensagem:   ' . $mensagem . ' <br />
                 </body></html>');
 
                 $em = $ci->email->send();
                 if ($em) {
-                    $data['mensagem'] = alert('E-mail enviado com sucesso. Aguarde contato.', 'success');
+                    $data['mensagem'] = alert('E-mail enviado com sucesso. Aguarde contato.', 'success', null, false);
                     //limpamos os campos do form, para nao repopular nos casos de sucesso
                     //essa funcao esta no MY_Form_validation
                     $this->form_validation->clear_fields();
                 } else {
-                    $data['mensagem'] = alert('Erro ao enviar o email. Favor enviar um e-mail para cea@feitiodoalegrete.com.br', 'danger');
+                    $data['mensagem'] = alert('Erro ao enviar o email. Favor enviar um e-mail para cea@feitiodoalegrete.com.br', 'danger', null, false);
                 }
+            }else{
+                $data['mensagem'] = alert(validation_errors(), 'danger', null, false);
             }
             //$data['action'] = site_url('contato/enviaEmail');
             //$this->load->view('contato', $data);

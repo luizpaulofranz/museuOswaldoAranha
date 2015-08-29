@@ -1,5 +1,5 @@
 <section class="container container-padding-60 font-oswald-light font-light">
-    <div class="content">
+    <div class="content inicial">
         <article class="grid-4">
             <h2 class="header_box bg-pink-white fontsize45 al-center font-oswald-light font-thin2 header_box_shadow">VISITE</h2>
             <ul class="menu_section">
@@ -48,24 +48,22 @@
         </header>
 
         <div style="margin-top: 40px; width: 100%">
-            <article class="grid-1-3">
-                <a href="#">
-                    <div class="box-news border-pink" style="background: url(../assets/images/home/img.jpg) no-repeat center; background-size: cover;"></div>
-                    <p class="al-left font-oswald-light font-pink news_description fontsize18 ds-block border-grey">ALUNOS DA APAE VISITAM MUSEU OSWALDO ARANHA</p>
-                </a>
-            </article>
-            <article class="grid-1-3">
-                <a href="#">
-                    <div class="box-news border-pink" style="background: url(../assets/images/home/img.jpg) no-repeat center; background-size: cover;"></div>
-                    <p class="al-left font-oswald-light font-pink news_description fontsize18 ds-block border-grey">ALUNOS DA APAE VISITAM MUSEU OSWALDO ARANHA</p>
-                </a>
-            </article>
-            <article class="grid-1-3">
-                <a href="#">
-                    <div class="box-news border-pink" style="background: url(../assets/images/home/img.jpg) no-repeat center; background-size: cover;"></div>
-                    <p class="al-left font-oswald-light font-pink news_description fontsize18 ds-block border-grey">ALUNOS DA APAE VISITAM MUSEU OSWALDO ARANHA</p>
-                </a>
-            </article>
+            <?php
+            //var_dump($noticias);exit();
+            foreach ($noticias as $noticia) {
+                echo '<article class="grid-1-3">';
+                echo '<a href="'.site_url('conteudo/visualizar/'.$noticia['slug']).'">';
+                if($noticia['imagem']){
+                    echo '<div class="box-news border-pink" style="background: url('.site_url($noticia['urlPath'].'/'.'med_'.$noticia['imagem']).') no-repeat center; background-size: cover;"></div>';
+                }else{
+                    echo '<div class="box-news border-pink" style="background: url('.site_url('assets/images/img_nao_disponivel.png').') no-repeat center; background-size: cover;"></div>';
+                }
+                echo '<p class="al-left font-oswald-light font-pink news_description fontsize18 ds-block border-grey">'.substr($noticia['titulo'], 0, 38).'</p>';
+                echo '</a>';
+                echo '</article>';
+            }
+            ?>
+            
         </div>
         <div style="margin-top: 40px;" class="fl-left">
             <article class="grid-1-3">
