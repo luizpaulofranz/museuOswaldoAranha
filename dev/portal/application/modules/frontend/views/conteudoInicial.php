@@ -58,32 +58,12 @@
                 }else{
                     echo '<div class="box-news border-pink" style="background: url('.site_url('assets/images/img_nao_disponivel.png').') no-repeat center; background-size: cover;"></div>';
                 }
-                echo '<p class="al-left font-oswald-light font-pink news_description fontsize18 ds-block border-grey">'.substr($noticia['titulo'], 0, 38).'</p>';
+                echo '<p class="al-left font-oswald-light font-pink news_description fontsize18 ds-block border-grey" style="min-height:58px;">'.substr($noticia['titulo'], 0, 70).'</p>';
                 echo '</a>';
                 echo '</article>';
             }
             ?>
-            
         </div>
-        <div style="margin-top: 40px;" class="fl-left">
-            <article class="grid-1-3">
-                <a href="#">
-                    <div class="box-news border-pink" style="background: url(../assets/images/home/img.jpg) no-repeat center; background-size: cover;"></div>
-                    <p class="al-left font-oswald-light font-pink news_description fontsize18 ds-block border-grey">ALUNOS DA APAE VISITAM MUSEU OSWALDO ARANHA</p>
-                </a>
-            </article>
-            <article class="grid-1-3">
-                <a href="#">
-                    <div class="box-news border-pink" style="background: url(../assets/images/home/img.jpg) no-repeat center; background-size: cover;"></div>
-                    <p class="al-left font-oswald-light font-pink news_description fontsize18 ds-block border-grey">ALUNOS DA APAE VISITAM MUSEU OSWALDO ARANHA</p>
-                </a>
-            </article>
-            <article class="grid-1-3">
-                <a href="#">
-                    <div class="box-news border-pink" style="background: url(../assets/images/home/img.jpg) no-repeat center; background-size: cover;"></div>
-                    <p class="al-left font-oswald-light font-pink news_description fontsize18 ds-block border-grey">ALUNOS DA APAE VISITAM MUSEU OSWALDO ARANHA</p>
-                </a>
-            </article>
-        </div>
+        
     </div>
 </section>
