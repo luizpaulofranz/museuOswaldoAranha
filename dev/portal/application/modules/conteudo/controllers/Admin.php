@@ -53,7 +53,8 @@ class Admin extends Admin_Controller {
         $this->template->render();
     }
 
-    public function eventos() {
+    public function acervo_museu() {
+        exit('sdjcnsdjkc');
         //aqui escrevemos mensagens de erro ou sucesso nas listas
         $this->template->write('conteudo', $this->session->flashdata('msg'));
         $n = 10;
@@ -63,6 +64,45 @@ class Admin extends Admin_Controller {
         $total = $this->conteudo_m->listar(null, null, true, 'eventos');
         $this->template->write_view('conteudo', 'admin/listarEventos', array('conteudos' => $conteudos->result_array()));
         $this->template->write_view('conteudo', 'admin/paginationEventos', array('total' => $total->num_rows()));
+        $this->template->render();
+    }
+    
+    /**
+     * Acervo cientifico eh uma única pagina, assim esse metodo insere e altera
+     * um unico registro no banco, contendo o conteudo desta pagina.
+     */
+    public function acervo_cientifico() {
+        $params = array();
+        $dados = array();
+        $this->form_validation->set_default('idTipoConteudo', 4);//tipo conteudo 4 acervo cientifico
+        //verificamos se tem algo no post
+        if ($this->input->post()) {
+            $this->form_validation->set_rules('conteudo', 'Conteúdo', 'required|trim');
+            $this->form_validation->set_rules('idAdministrador', 'Autor', 'required|integer');
+            $this->form_validation->set_rules('idTipoConteudo', 'Tipo de Conteúdo', 'required|integer');
+            //executamos a validacao
+            if ($this->form_validation->run()) {
+                $dados = $this->input->post();
+                //verificamos o slug
+                $dados['data'] = date('Y-m-d H:i:s');
+                $dados['titulo'] = 'Acervo Científico';
+                $dados['slug'] = 'acervo-cientifico';
+                $dados['idTipoConteudo'] = 4;
+                if ($this->conteudo_m->salvarAcervoCientifico($dados)) {
+                    $params['mensagem'] = alert('Sucesso ao cadastrar o Conteudo!', 'success');
+                    $url = base_url('/admin/conteudo/acervo-cientifico');
+                    redirect($url);
+                } else {
+                    $params['mensagem'] = alert('Erro de banco de dados!', 'danger');
+                }
+            } else {
+                $params['mensagem'] = alert(validation_errors(), 'danger');
+            }
+        } else {
+            $dados = $this->conteudo_m->getDataBySlug('acervo-cientifico');
+        }
+        $this->form_validation->set_default($dados);
+        $this->template->write_view('conteudo', 'admin/formAcervoCientifico', $params);
         $this->template->render();
     }
 

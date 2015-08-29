@@ -147,14 +147,14 @@ class Conteudo_m extends CI_Model {
      * @return array
      */
     public function listarNoticia($limit = NULL, $offset = NULL, $apenasAtivos = false) {
-        
+
         $slugTipoConteudo = 'noticias';
-        
-        $where = ' (media.destaque=1 OR media.idMedia IS NULL) AND tipoConteudo.slug = "'.$slugTipoConteudo.'"';
+
+        $where = ' (media.destaque=1 OR media.idMedia IS NULL) AND tipoConteudo.slug = "' . $slugTipoConteudo . '"';
         if ($apenasAtivos == TRUE) {
             $where .= ' AND conteudo.rascunho = 0';
         }
-        
+
         $this->db->where($where);
         $this->db->select('conteudo.*, media.urlPath, media.nome AS imagem, administrador.nome as autor');
         $this->db->join('administrador', 'administrador.idAdministrador = conteudo.idAdministrador', 'INNER OUTER');
@@ -163,7 +163,7 @@ class Conteudo_m extends CI_Model {
         $this->db->order_by('conteudo.idConteudo', ' DESC');
         return $this->db->get_where($this->tabela, $where, $limit, $offset);
     }
-    
+
     /**
      * Método responsável por recuperar os eventos.
      * @param int $limit
@@ -172,14 +172,14 @@ class Conteudo_m extends CI_Model {
      * @return array
      */
     public function listarEvento($limit = NULL, $offset = NULL, $apenasAtivos = false) {
-        
+
         $slugTipoConteudo = 'eventos';
-        
-        $where = ' (media.destaque=1 OR media.idMedia IS NULL) AND tipoConteudo.slug = "'.$slugTipoConteudo.'"';
+
+        $where = ' (media.destaque=1 OR media.idMedia IS NULL) AND tipoConteudo.slug = "' . $slugTipoConteudo . '"';
         if ($apenasAtivos == TRUE) {
             $where .= ' AND conteudo.rascunho = 0';
         }
-        
+
         $this->db->where($where);
         $this->db->select('conteudo.*, media.urlPath, media.nome AS imagem, administrador.nome as autor');
         $this->db->join('administrador', 'administrador.idAdministrador = conteudo.idAdministrador', 'INNER OUTER');
@@ -211,6 +211,25 @@ class Conteudo_m extends CI_Model {
         $this->db->join('media', 'media.idConteudo = conteudo.idConteudo', 'LEFT OUTER');
         $this->db->order_by('conteudo.idConteudo', ' DESC');
         return $this->db->get_where($this->tabela, $where, $limit, $offset)->result_array();
+    }
+
+    /**
+     * Método responsável por inserir e alterar dados da pagina de acervo cientifico.
+     * @param array $dados
+     */
+    public function salvarAcervoCientifico($dados = array()) {
+        if ($dados['button'] == 'Rascunho') {
+            $dados['rascunho'] = 1;
+        } else {
+            $dados['rascunho'] = 0;
+        }
+        $row = $this->getDataBySlug($dados['slug']);
+        unset($dados['idConteudo'], $dados['button']);
+        if ($row) {
+            return $this->db->update($this->tabela, $dados, array('slug' => $dados['slug']));
+        } else {
+            return $this->db->insert($this->tabela, $dados);
+        }
     }
 
 }

@@ -71,3 +71,4 @@ $route['eventos'] = 'frontend/eventos';
 $route['aprenda'] = 'frontend/aprenda';
 $route['amigos-do-museu'] = 'frontend/amigosDoMuseu';
 $route['visite'] = 'frontend/visite';
+$route['acervo-cientifico'] = 'frontend/acervo_cientifico';

@@ -12,9 +12,9 @@
         <article class="grid-4">
             <h2 class="header_box bg-pink-white fontsize45 al-center font-oswald-light font-thin2 header_box_shadow">APRENDA</h2>
             <ul class="menu_section">
-                <li><a href="<?php echo site_url('aprenda')?>" a><img src="" alt=""><img src="../assets/images/home/aprenda/history-icon.png" alt="Ícone História de Oswaldo Aranha"><p>HISTÓRIA DE </p><p>OSWALDO A.</p></a></li>
+                <li><a href="<?php echo site_url('sobre')?>" a><img src="" alt=""><img src="../assets/images/home/aprenda/history-icon.png" alt="Ícone História de Oswaldo Aranha"><p>HISTÓRIA DE </p><p>OSWALDO A.</p></a></li>
                 <li><a href="<?php echo site_url('aprenda')?>" a><img src="" alt=""><img src="../assets/images/home/aprenda/acervo-icon.png" alt="Ícone Acervo do Museu"><p>ACERVO DO</p><p> MUSEU</p></a></li>
-                <li><a href="<?php echo site_url('aprenda')?>" a><img src="" alt=""><img src="../assets/images/home/aprenda/article-icon.png" alt="Ícone Acervo Científico"><p>ACERVO </p><p>CIENTÍFICO</p></a></li>
+                <li><a href="<?php echo site_url('acervo-cientifico')?>" a><img src="" alt=""><img src="../assets/images/home/aprenda/article-icon.png" alt="Ícone Acervo Científico"><p>ACERVO </p><p>CIENTÍFICO</p></a></li>
             </ul>
         </article>
         <article class="grid-4">

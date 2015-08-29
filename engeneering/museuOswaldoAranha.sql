@@ -169,7 +169,7 @@ ALTER TABLE `media`
 ADD CONSTRAINT `fk_media_conteudo1` FOREIGN KEY (`idConteudo`) REFERENCES `conteudo` (`idConteudo`) ON DELETE NO ACTION ON UPDATE NO ACTION;
 
 
-INSERT INTO `tipoConteudo` (idTipoConteudo, descricao, slug) VALUES (1, 'Notícias', 'noticias'), (2, 'Eventos', 'eventos');
+INSERT INTO `tipoConteudo` (idTipoConteudo, descricao, slug) VALUES (1, 'Notícias', 'noticias'), (2, 'Eventos', 'eventos'), (3, 'Acervo do Museu', 'acervo-do-museu'), (4, 'Acervo Científico', 'acervo-cientifico');
 INSERT INTO `administrador` (idAdministrador, nome, email, senha, ativo) VALUES (1, 'Admin', 'admin@gmail.com', '6367c48dd193d56ea7b0baad25b19455e529f5ee', 1);
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

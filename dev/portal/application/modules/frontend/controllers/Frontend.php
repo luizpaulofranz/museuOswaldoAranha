@@ -7,7 +7,6 @@ class Frontend extends Site_Controller {
 
     public $agendaEventos;
 
-
     public function __construct() {
         parent::__construct();
     }
@@ -19,36 +18,47 @@ class Frontend extends Site_Controller {
         $offset = 0;
         $conteudos = $this->conteudo_m->listarNoticia($limit, $offset, true);
         //$total = $this->conteudo_m->listarNoticia(null, null, true);
-        
+
         $this->template->write_view('capa', 'capaInicial');
         $this->template->write_view('conteudo', 'conteudoInicial', array('noticias' => $conteudos->result_array()));
         $this->template->render();
     }
-    
+
     function sobre() {
         $this->template->write_view('capa', 'capaSobre');
         $this->template->write_view('conteudo', 'conteudoSobre');
         $this->template->render();
     }
-    
+
     function eventos() {
         $this->template->write_view('capa', 'capaEventos');
         $this->template->write_view('conteudo', 'conteudoEventos');
         $this->template->render();
     }
-    
+
     function aprenda() {
         $this->template->write_view('capa', 'capaAprenda');
         $this->template->write_view('conteudo', 'conteudoAprenda');
         $this->template->render();
     }
-    
+
+    function acervo_cientifico() {
+        $this->load->model('conteudo/conteudo_m');
+
+        $slug = 'acervo-cientifico';
+        $noticia = $this->conteudo_m->getDataBySlug($slug);
+        $params = array('noticia' => $noticia);
+        $this->template->write_view('conteudo', 'conteudo/visualizar', $params);
+        $this->template->write_view('capa', 'conteudo/capa');
+        $this->template->render();
+    }
+
     function amigosDoMuseu() {
         $this->template->write_view('capa', 'capaAmigos');
         $this->template->write_view('conteudo', 'conteudoAmigos');
         $this->template->render();
     }
-    
+
     function visite() {
         $this->template->write_view('capa', 'capaVisite');
         $this->template->write_view('conteudo', 'conteudoVisite');
@@ -112,7 +122,7 @@ class Frontend extends Site_Controller {
                 } else {
                     $data['mensagem'] = alert('Erro ao enviar o email. Favor enviar um e-mail para cea@feitiodoalegrete.com.br', 'danger', null, false);
                 }
-            }else{
+            } else {
                 $data['mensagem'] = alert(validation_errors(), 'danger', null, false);
             }
             //$data['action'] = site_url('contato/enviaEmail');
