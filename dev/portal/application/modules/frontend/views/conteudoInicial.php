@@ -1,5 +1,5 @@
 <section class="container container-padding-60 font-oswald-light font-light">
-    <div class="content inicial">
+    <div class="content inicial" style="margin-top: -470px">
         <article class="grid-4">
             <h2 class="header_box bg-pink-white fontsize45 al-center font-oswald-light font-thin2 header_box_shadow">VISITE</h2>
             <ul class="menu_section">

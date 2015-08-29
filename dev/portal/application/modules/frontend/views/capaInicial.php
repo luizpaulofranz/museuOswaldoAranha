@@ -1,15 +1,15 @@
 <section>
-    
+
 
     <div class="container">
         <div class="slider-container">
             <div class="slider">
                 <div class="image_reel">
-                    <a href="#"><img src="<?php echo site_url('assets/images/home/carrossel/imagemCarrossel1.jpg')?>" alt="Oswaldo Aranha" style="height:480px"></a>
-                    <a href="#"><img src="<?php echo site_url('assets/images/home/carrossel/imagemCarrossel2.jpg')?>" alt="Oswaldo Aranha" style="height:480px"></a>
-                    <a href="#"><img src="<?php echo site_url('assets/images/home/carrossel/imagemCarrossel3.jpg')?>" alt="Oswaldo Aranha" style="height:480px"></a>
-                    <a href="#"><img src="<?php echo site_url('assets/images/home/carrossel/imagemCarrossel4.jpg')?>" alt="Oswaldo Aranha" style="height:480px"></a>
-                    <a href="#"><img src="<?php echo site_url('assets/images/home/carrossel/imagemCarrossel5.jpg')?>" alt="Oswaldo Aranha" style="height:480px"></a>                  
+                    <a href="#"><img src="<?php echo site_url('assets/images/home/carrossel/imagemCarrossel1.jpg') ?>" alt="Oswaldo Aranha" style="height:481px"></a>
+                    <a href="#"><img src="<?php echo site_url('assets/images/home/carrossel/imagemCarrossel2.jpg') ?>" alt="Oswaldo Aranha" style="height:676px"></a>
+                    <a href="#"><img src="<?php echo site_url('assets/images/home/carrossel/imagemCarrossel3.jpg') ?>" alt="Oswaldo Aranha" style="height:592px"></a>
+                    <a href="#"><img src="<?php echo site_url('assets/images/home/carrossel/imagemCarrossel4.jpg') ?>" alt="Oswaldo Aranha" style="height:798px"></a>
+                    <a href="#"><img src="<?php echo site_url('assets/images/home/carrossel/imagemCarrossel5.jpg') ?>" alt="Oswaldo Aranha" style="height:901px"></a>                  
                 </div>
             </div>
             <div class="paging">
