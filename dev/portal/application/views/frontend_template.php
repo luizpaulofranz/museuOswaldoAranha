@@ -3,12 +3,13 @@
     <head>
         <meta charset="UTF-8">
         <title>Portal Museu Oswaldo Aranha</title>
-
+        <link rel="stylesheet" href="<?php echo site_url('assets/css/carrossel.css') ?>">
         <link rel="stylesheet" href="<?php echo site_url('assets/css/normalize.css') ?>">
         <link rel="stylesheet" href="<?php echo site_url('assets/css/boot.css') ?>">
-        <link rel="stylesheet" href="<?php echo site_url('assets/css/grid.css') ?>">
+        <link rel="stylesheet" href="<?php echo site_url('assets/css/grid.css') ?>">       
+        <link rel="shortcut icon" href="<?php echo site_url('assets/images/favicon.png') ?>">
         
-        <link rel="shortcut icon" href="<?php echo site_url('assets/images/favicon.png') ?>"/>
+
     </head>
     <body>     
         <div class="container bg-white-grey menu-height2">
@@ -59,22 +60,22 @@
                     <div style="margin-top: 40px;">
                         <div class="grid-5 al-center" style="height: 180px;">
                             <div class="border-red" style="height: 180px; background: #ffffff;">
-                                
-                               <a href="http://porteiras.unipampa.edu.br/alegrete/" target="_blank"><img class="ds-inline fl-none" style="margin-top: 20px;" src="<?php echo site_url('/assets/images/home/unipampa.png')?>" alt="Logotipo Unipampa"></a>
+
+                                <a href="http://porteiras.unipampa.edu.br/alegrete/" target="_blank"><img class="ds-inline fl-none" style="margin-top: 20px;" src="<?php echo site_url('/assets/images/home/unipampa.png') ?>" alt="Logotipo Unipampa"></a>
                             </div>
                         </div>
                         <div class="grid-6 al-center" style="height: 180px;">
                             <div class="border-red" style="height: 180px; background: #ffffff;">
-                                <a href="http://www.alegrete.rs.gov.br/site/" target="_blank"><img class="ds-inline fl-none" style="margin-top: 40px;" src="<?php echo site_url('/assets/images/home/prefeitura.png')?>" alt="Logotipo prefeitura"></a>
+                                <a href="http://www.alegrete.rs.gov.br/site/" target="_blank"><img class="ds-inline fl-none" style="margin-top: 40px;" src="<?php echo site_url('/assets/images/home/prefeitura.png') ?>" alt="Logotipo prefeitura"></a>
                             </div>
                         </div>
                         <div class="grid-5 al-center" style="height: 180px;">
                             <div class="border-red" style="height: 180px; background: #ffffff;">
-                                <a href="http://www.ihga.com.br/"target="_blank"><img class="ds-inline fl-none" style="margin-top: 29px;" src="<?php echo site_url('/assets/images/home/ihga.jpg')?>"  alt="Logotipo IHGA"></a>
+                                <a href="http://www.ihga.com.br/"target="_blank"><img class="ds-inline fl-none" style="margin-top: 29px;" src="<?php echo site_url('/assets/images/home/ihga.jpg') ?>"  alt="Logotipo IHGA"></a>
                             </div>
                         </div>
                     </div>
-                   
+
                 </div>
             </section>
 
@@ -107,9 +108,12 @@
                     <p class="font-georgia fontsize1">MOA - Museu Oswaldo Aranha - 2015</p>
                 </div>
             </div>
-            <script src="<?php echo site_url('assets/plugins/jquery/jquery.min.js');?>"></script>
-            <script src="<?php echo site_url('assets/js/plugins/jquery.mask.js');?>"></script>
-            <script src="<?php echo site_url('assets/js/custom.js');?>"></script>
-        </div>
+            <script src="<?php echo site_url('assets/plugins/jquery/jquery.min.js'); ?>"></script>
+            <script src="<?php echo site_url('assets/js/plugins/jquery.mask.js'); ?>"></script>
+            <script src="<?php echo site_url('assets/js/custom.js'); ?>"></script>
+            <script type="text/javascript" src="<?php echo site_url('http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js')?>"></script>
+
+        </div>  
+        
     </body>
 </html>

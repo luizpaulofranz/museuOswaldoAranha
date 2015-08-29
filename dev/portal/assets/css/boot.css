@@ -139,7 +139,7 @@ a:visited{text-decoration: none;}
 /*Home*/
 .section-1{
     height: 560px;
-    background: url(../images/home/img-topo.jpg) no-repeat center;
+   // background: url(../images/home/img-topo.jpg) no-repeat center;
     background-size: cover;
     position: absolute;
     top: 35px;
