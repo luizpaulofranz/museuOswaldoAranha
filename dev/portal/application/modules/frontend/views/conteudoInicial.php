@@ -1,5 +1,5 @@
-<section class="container container-padding-60 font-oswald-light font-light">
-    <div class="content inicial" style="margin-top: -470px">
+<section class="container container-padding-60 font-oswald-light font-light" style="margin-top: -470px">
+    <div class="content inicial">
         <article class="grid-4">
             <h2 class="header_box bg-pink-white fontsize45 al-center font-oswald-light font-thin2 header_box_shadow">VISITE</h2>
             <ul class="menu_section">
@@ -32,7 +32,7 @@
     </div>
 </section>
 
-<section class="container container-padding-60 section-2">
+<section class="container container-padding-60 section-2" style="margin-top: -1px">
     <div class="content al-center">
         <blockquote class="font-georgia" style="color: #ffffff;">
             <p class="fontsize1b" style="margin-bottom: 20px;">"A tradição é a experiência dos povos consagrada pelo tempo."</p>
