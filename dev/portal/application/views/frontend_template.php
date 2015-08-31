@@ -5,11 +5,11 @@
         <title>Portal Museu Oswaldo Aranha</title>
         <link rel="stylesheet" href="<?php echo site_url('assets/css/carrossel.css') ?>">
         <link rel="stylesheet" href="<?php echo site_url('assets/css/normalize.css') ?>">
+        <link href="<?php echo site_url('assets/plugins/magnific-popup/magnific-popup.css'); ?>" rel="stylesheet">
         <link rel="stylesheet" href="<?php echo site_url('assets/css/boot.css') ?>">
-        <link rel="stylesheet" href="<?php echo site_url('assets/css/grid.css') ?>">       
-        <link rel="shortcut icon" href="<?php echo site_url('assets/images/favicon.png') ?>">
-        
+        <link rel="stylesheet" href="<?php echo site_url('assets/css/grid.css') ?>">
 
+        <link rel="shortcut icon" href="<?php echo site_url('assets/images/favicon.png') ?>"/>
     </head>
     <body>     
         <div class="container bg-white-grey menu-height2">
@@ -110,10 +110,9 @@
             </div>
             <script src="<?php echo site_url('assets/plugins/jquery/jquery.min.js'); ?>"></script>
             <script src="<?php echo site_url('assets/js/plugins/jquery.mask.js'); ?>"></script>
+            <script src="<?php echo site_url('assets/plugins/magnific-popup/magnific-popup.js'); ?>" type="text/javascript" ></script>
+            <script src="<?php echo site_url('assets/plugins/magnific-popup/magnific-popup-traducao.js'); ?>" type="text/javascript" ></script>
             <script src="<?php echo site_url('assets/js/custom.js'); ?>"></script>
-            <script type="text/javascript" src="<?php echo site_url('http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js')?>"></script>
-
-        </div>  
-        
+        </div>
     </body>
 </html>

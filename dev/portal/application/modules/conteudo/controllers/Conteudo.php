@@ -72,56 +72,20 @@ class Conteudo extends Site_Controller {
         $this->template->render();
     }
 
-    public function buscar() {
-        $busca = $this->input->post('busca');
-        $limit = 12;
-        $limitTopNews = 5;
-        //para a paginacao funcionar assim, o parametro $pg['use_page_numbers'] = TRUE no arquivo pagination
-        $offset = ($this->uri->segment(4, 1) - 1) * $limit;
-        //quando nao passamos a categoria
-
-
-        $conteudosTopNews = $this->conteudo_m->listarTopNewsPorEditoria($limitTopNews, true);
-        $conteudos = $this->conteudo_m->buscarNoticia($limit, $offset, true, $busca);
-        $this->template->write_view('capa', 'frontend/capaBusca', array('busca' => $busca));
-        $this->template->write_view('conteudo', 'conteudo/noticias', array('noticias' => $conteudos, 'topNews' => $conteudosTopNews, 'usuarioLogado' => $this->logado()));
-        $this->template->render();
-    }
-
     /**
-     * Método responsável por fazer a exibição das noticias por tag.
+     * Método responsável por recuperar as noticias.
      */
-    public function tag() {
-        $slugTag = $this->uri->segment(3, false);
-        $limit = 12;
-        $limitTopNews = 5;
+    public function acervo_museu() {
+        $limit = 15;
         //para a paginacao funcionar assim, o parametro $pg['use_page_numbers'] = TRUE no arquivo pagination
-        $offset = ($this->uri->segment(4, 1) - 1) * $limit;
-        //quando nao passamos a categoria
-
-        if ($slugTag) {
-            $conteudos = $this->conteudo_m->buscarByTag($limit, $offset, true, $slugTag);
-            $tag = $this->tag_m->getDataByIdOrSlug($slugTag);
-        } else {
-            $conteudos = array();
-            $tag['nome'] = 'Sem tag =/';
-        }
-        $conteudosTopNews = $this->conteudo_m->listarTopNewsPorEditoria($limitTopNews, true);
-        //$conteudos = $this->conteudo_m->buscarNoticia($limit, $offset, true, $busca);
-        $this->template->write_view('capa', 'frontend/capaBuscaTag', array('tag' => $tag['nome']));
-        $this->template->write_view('conteudo', 'conteudo/noticias', array('noticias' => $conteudos, 'topNews' => $conteudosTopNews, 'usuarioLogado' => $this->logado()));
+        $offset = ($this->uri->segment(3, 1) - 1) * $limit;
+        $conteudos = $this->conteudo_m->listarAcervoMuseu($limit, $offset, true);
+        $total = $this->conteudo_m->listarAcervoMuseu(null, null, true);
+        
+        $this->template->write_view('capa', 'conteudo/capa');
+        $this->template->write_view('conteudo', 'conteudo/acervoMuseu', array('itens' => $conteudos->result_array()));
+        $this->template->write_view('paginacao', 'conteudo/paginationAcervo', array('total' => $total->num_rows()));
         $this->template->render();
-    }
-
-    /**
-     * Método responsável por guardar as avaliações dos usuários.
-     */
-    public function avaliar() {
-        $slug = $this->input->post('slug');
-        $idConteudo = $this->conteudo_m->getIdBySlug($slug);
-        $idUsuario = $this->session->userdata('idUsuario');
-        $this->conteudo_m->avaliar(array('avaliacao' => $this->input->post('avaliacao'), 'idUsuario' => $idUsuario, 'idConteudo' => $idConteudo));
-        redirect(base_url('conteudo/visualizar/' . $slug));
     }
 
 }

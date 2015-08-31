@@ -58,7 +58,7 @@ CREATE TABLE IF NOT EXISTS `conteudo` (
   `titulo` varchar(80) NOT NULL,
   `slug` varchar(80) NOT NULL,
   `data` datetime NOT NULL,
-  `conteudo` longtext NOT NULL,
+  `conteudo` longtext DEFAULT NULL,
   `resumo` varchar(255) DEFAULT NULL,
   `idTipoConteudo` int(11) NOT NULL,
   `idAdministrador` int(11) NOT NULL,

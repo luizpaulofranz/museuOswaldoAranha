@@ -3,7 +3,7 @@
         <article class="grid-1-3 game_box">
             <h2 class="al-center fontsize25"><p>ACERVO DO MUSEU</p></h2>
             <p class="al-center fontsize1b" style="margin-top: 10px;">Descrição <br> Descrição <br>Descrição<br>Descrição<br>Descrição<br>Descrição</p>
-            <a href="acervoDoMuseu.php" class="btn_game2 bg-pink-white header_box_shadow ds-block al-center fontsize30 font-bold">ACESSE</a>
+            <a href="<?php echo site_url('conteudo/acervo-museu')?>" class="btn_game2 bg-pink-white header_box_shadow ds-block al-center fontsize30 font-bold">ACESSE</a>
         </article>
         <article class="grid-1-3 game_box">
             <h2 class="al-center fontsize25"><p>ACERVO CIENTÍFICO</p></h2>
