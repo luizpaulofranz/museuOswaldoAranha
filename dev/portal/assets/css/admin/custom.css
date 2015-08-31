@@ -1,0 +1,83 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 10/04/2014, 21:04:35
+    Author     : paulo
+*/
+
+.btn-sair{
+    margin-top: 9px; 
+}
+
+html, body {
+    height: 100%;
+}
+
+footer {
+    color: #666;
+    background: #222222;
+    padding: 17px 0 18px 0;
+    border-top: 1px solid #000;
+}
+
+footer a {
+    color: #999;
+}
+
+footer a:hover {
+    color: #efefef;
+}
+
+.wrapper {
+    min-height: 100% !important;
+    height: auto !important;
+    height: 100%;
+    margin: 0 auto -63px;
+}
+
+.push {
+    height: 63px;
+}
+
+/* not required for sticky footer; just pushes hero down a bit */
+.wrapper > .container {
+    padding-top: 60px;
+}
+
+#table-produtos{
+    width: 100%;
+}
+
+table.table thead tr th{
+    font-weight: bold;
+}
+
+/*Imagens anexadas nas noticias*/
+#anexos a.gallery-item .img-responsive{
+    height: 100px;
+    display: inline;
+    margin-bottom: 10px;
+}
+
+@media print {
+    .page-header, #enviar{
+        display: none;
+    }
+    #printable, #printable * {
+        visibility: visible;
+    }
+}
+.alteraFonte {
+    font-size: 150%;
+}
+
+.navbar-inverse{
+   background-color: #449d44;
+}
+
+.navbar-inverse .navbar-nav>li>a{
+    color:  black;
+}

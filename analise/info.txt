@@ -1,0 +1,3 @@
+O acervo utilizará um upload de um única imagem e um resumo.
+
+Eventos é um cadastro de noticias sem resumo. 

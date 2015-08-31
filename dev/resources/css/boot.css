@@ -1,0 +1,369 @@
+@font-face {
+    font-family: 'Oswald Light';
+    src: url('../fonts/oswald-light-webfont.eot');
+    src: url('../fonts/oswald-light-webfont.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/oswald-light-webfont.woff2') format('woff2'),
+        url('../fonts/oswald-light-webfont.woff') format('woff'),
+        url('../fonts/oswald-light-webfont.ttf') format('truetype'),
+        url('../fonts/oswald-light-webfont.svg#oswaldlight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Oswald Medium';
+    src: url('../fonts/oswald-medium-webfont.eot');
+    src: url('../fonts/oswald-medium-webfont.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/oswald-medium-webfont.woff2') format('woff2'),
+        url('../fonts/oswald-medium-webfont.woff') format('woff'),
+        url('../fonts/oswald-medium-webfont.ttf') format('truetype'),
+        url('../fonts/oswald-medium-webfont.svg#oswaldmedium') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Oswald';
+    src: url('../fonts/oswald-regular-webfont.eot');
+    src: url('../fonts/oswald-regular-webfont.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/oswald-regular-webfont.woff2') format('woff2'),
+        url('../fonts/oswald-regular-webfont.woff') format('woff'),
+        url('../fonts/oswald-regular-webfont.ttf') format('truetype'),
+        url('../fonts/oswald-regular-webfont.svg#oswald_regularregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/*RESET*/
+*, *:before, *:after{
+    margin: 0;
+    padding: 0;
+    outline: 0;
+
+    line-height: 1.2;
+    letter-spacing: 0em;
+    vertical-align: middle;
+
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+
+body{background: #fbfbfb;}
+p:last-child{margin-bottom: 0;}
+mark{padding: 5px 10px; background-color: #eee;}
+ul{list-style: none;}
+img{float: left; border: none;}
+a{text-decoration: none;}
+a img{border: 0;}
+a:visited{text-decoration: none;}
+
+/* PALETA */
+/* BACKGROUND */
+.bg-black{background-color: #000000; color: #ffffff;}
+.bg-white-grey{background-color: #ffffff; color: #666666;}
+.bg-brown-white{background-color: #493b36; color: #ffffff;}
+.bg-pink-white{background-color: #ff6666; color: #ffffff;}
+
+/* PALETA */
+/* FONTES */
+.font-pink{color: #ff6666;}
+.font-vinho{color:#993333;}
+
+/* fonts */
+.font{font-family: Oswald;}
+.font-oswald-medium{font-family: Oswald Medium;}
+.font-oswald-light{font-family: Oswald Light;}
+.font-georgia{font-family: Georgia, "Times New Roman", serif;}
+
+/*font size*/
+.fontzero{font-size: 0em !important;}
+.fontsize090{font-size: .90em;}
+.fontsize1{font-size: 1em;}
+.fontsize1b{font-size: 1.4em;}
+.fontsize60{font-size: 60px;}
+.fontsize45{font-size: 45px;}
+.fontsize30{font-size: 30px;}
+.fontsize25{font-size: 25px;}
+.fontsize18{font-size: 19px;}
+
+/* font weight */
+.font-thin{font-weight: 100 !important;}
+.font-thin2{font-weight: 200 !important;}
+.font-light{font-weight: 300 !important;}
+.font-normal{font-weight: 400 !important;}
+.font-bold{font-weight: 700 !important;}
+/*formatacao fonte visite*/
+.fontvisite{
+    top:10%;
+}
+
+
+/*text*/
+.text-uppercase{text-transform: uppercase;}
+
+/*text align*/
+.al-left{text-align: left;}
+.al-right{text-align: right;}
+.al-center{text-align: center;}
+
+/*float*/
+.fl-left{float: left;}
+.fl-right{float: right !important;}
+.fl-none{float: none;}
+
+/*display*/
+.ds-block{display: block;}
+.ds-inblock{display: inline-block;}
+.ds-inline{display: inline;}
+.ds-none{display: none;}
+
+/*box*/
+.box-news{width: 300px; height: 250px;}
+
+/* clear */
+.clear{clear: both;}
+
+/*images*/
+.img-micro{padding: 3px 10px 0 0}
+
+/*helpers*/
+.transparence-85{background-color: rgba(0,0,0,.85) !important;}
+.transparence-70{background-color: rgba(73,59,54,.70) !important;}
+.border-pink{-webkit-box-shadow: inset 0 0 0 3px #ff6666; box-shadow: inset 0 0 0 3px #ff6666;}
+.border-vinho{-webkit-box-shadow: inset 0 0 0 3px #993333; box-shadow: inset 0 0 0 3px #993333;}
+.border-grey{-webkit-box-shadow: 0px 1px 0px 0px rgba(204,204,204,.9); box-shadow: 0px 1px 0px 0px rgba(204,204,204,.9);}
+.border-red{-webkit-box-shadow: 0px 3px 0px 0px rgba(153,0,0,1); -moz-box-shadow: 0px 3px 0px 0px rgba(153,0,0,1); box-shadow: 0px 3px 0px 0px rgba(153,0,0,1);}
+
+/*sections*/
+/*Home*/
+.section-1{
+    height: 560px;
+    background: url(../images/home/img-topo.jpg) no-repeat center;
+    background-size: cover;
+    position: absolute;
+    top: 35px;
+}
+.section-Sobre-1{
+    height: 560px;
+    background: url(../images/sobre/cabecalhoSobre.jpg) no-repeat center;
+    background-size: cover;
+    position: absolute;
+    top: 35px;
+}
+.section-Contato-1{
+    height: 560px;
+    background: url(../images/contato/contatocabecalho.jpg) no-repeat center;
+    background-size: cover;
+    position: absolute;
+    top: 35px;
+}
+.section-Visite-1{
+    height: 560px;
+    background: url(../images/visite/mapaCabecalho.jpg) no-repeat center;
+    background-size: contain;
+    position: absolute;
+    top: 40px;
+    width: 100%;
+}
+.section-AmigosMuseu-1{
+    height: 560px;
+    background:url(../images/amigosMuseu/amigosMuseu.jpg) no-repeat center;
+    background-size: cover;
+    position: absolute;
+    top: 35px;
+    width: 100%;
+}
+.section-Evento-1{
+    height: 560px;
+    background: url(../images/eventos/eventoCabecalho.jpg) no-repeat center;
+    background-size: cover;
+    position: absolute;
+    top: 35px;
+}
+.section-Aprenda-1{
+    height: 560px;
+    background: url(../images/aprenda/aprendaCabecalho.jpg) no-repeat center;
+    background-size: cover;
+    position: absolute;
+    top: 35px;
+}
+.section-Noticia-1{
+    height: 560px;
+    background: url(../images/noticias/noticiaCabecalho.jpg) no-repeat center;
+    background-size: cover;
+    position: absolute;
+    top: 35px;
+}
+.section-header {
+    z-index: 1;
+    position: relative
+}
+
+.header_box{height: 73px; width: 220px; padding-top: 9px; margin-bottom: 20px}
+.header_box_shadow{
+    -webkit-box-shadow: 0px 3px 0px 0px rgba(255,153,153,1);
+    -moz-box-shadow: 0px 3px 0px 0px rgba(255,153,153,1);
+    box-shadow: 0px 3px 0px 0px rgba(255,153,153,1);
+}
+
+.section-2{
+    height: 200px;
+    background: url(../images/home/img-citacao.jpg) no-repeat center;
+    background-size: cover;
+}
+
+.game_box {
+    height: 363px;
+    width: 220px;
+    background-color: #993333;
+    color: #ffffff;
+    -webkit-box-shadow: 0px 3px 0px 0px rgba(153,0,0,1);
+    -moz-box-shadow: 0px 3px 0px 0px rgba(153,0,0,1);
+    box-shadow: 0px 3px 0px 0px rgba(153,0,0,1);
+}
+
+.game_box h2 p {
+    margin-top: 10px;
+    line-height: 60px;
+}
+
+.btn_game {
+    width: 190px;
+    height: 63px;
+    padding: 15px;
+    margin: 40px 15px 20px 15px;
+}
+
+.btn_game2 {
+    width: 190px;
+    height: 63px;
+    padding: 15px;
+    margin: 40px 15px 20px 55px;
+}
+
+.position_image_text_info {
+    padding: 31px 0 31px 0;
+    position: absolute;
+    top: 495px;
+}
+
+.regulates_position {
+    position: relative;
+    top: 470px;
+}
+
+.menu-height{height: 90px; padding-top: 7px;}
+.menu-item{display: inline-block; margin-left: 18px; margin-top: 20px; padding-top: 2px;}
+.menu-item2{display: inline-block; margin-left: 10px; margin-top: 20px; padding-top: 2px;}
+.menu-separador{display: inline-block; color: #666666; margin-left: 10px; margin-top: 20px; padding-top: 2px;}
+.list-info{display: inline-block; margin-left: 75px;}
+
+.menu_section li {
+    height: 60px;
+    width: 220px;
+    display: inline-block;
+    color: #333333;
+    font-size: 25px;
+    font-family: Oswald Light;
+    font-weight: bold;
+    -webkit-box-shadow: 0px 1px 0px 0px rgba(204,204,204,1);
+    -moz-box-shadow: 0px 1px 0px 0px rgba(204,204,204,1);
+    box-shadow: 0px 1px 0px 0px rgba(204,204,204,1);
+    margin-bottom: 8px;
+}
+
+.menu_section p {
+    line-height: 28px;
+}
+
+.menu_section img {
+    padding-right: 13px;
+    padding-top: 2px;
+}
+
+.menu_section li a:visited {
+    text-decoration: none;
+    color: #333333;
+}
+
+.news_description {
+    width: 300px;
+    margin-top: 8px;
+    font-weight: bold !important;
+    padding-bottom: 14px;
+}
+
+.news_style {
+    top: -12px; position: relative;
+    -webkit-box-shadow: 0px 0px 0px 20px rgba(255,255,255,1), inset 0px 0px 0px 20px rgba(255,255,255,1);
+    box-shadow: 0px 0px 0px 20px rgba(255,255,255,1), inset 0px 0px 0px 20px rgba(255,255,255,1);
+}
+
+.shadow_parceiros {
+    top: -12px; position: relative;
+    -webkit-box-shadow: 0px 0px 0px 20px rgba(255,102,102,1), inset 0px 0px 0px 20px rgba(255,102,102,1);
+    box-shadow: 0px 0px 0px 20px rgba(255,102,102,1), inset 0px 0px 0px 20px rgba(255,102,102,1);
+}
+#posicao-imagens-sobre {
+    background-image: url(../images/sobre/oswaldoAranhaSobre.jpg);
+    width:40%;
+    height:40%;    
+    position: absolute;       
+}
+a:link, a:visited {
+    text-decoration: none;
+    color: white;
+
+}
+a:hover {
+    text-decoration: underline; 
+    color: white;
+}
+a:active {
+    text-decoration: none
+}
+.form {
+    line-height:200%;
+}
+
+form label {
+    padding-right: 50px;
+}
+
+/*navegacao*/
+#pages {
+	padding: 3px;
+}
+#pages ul {
+	list-style-type: none;
+}
+#pages li {
+	float: left;
+	display: inline;
+	margin: 0 5px 0 0;
+	display: block;
+}
+#pages li a {
+	color:#000000;
+	padding: 4px;
+	border: 1px solid #ddd;
+	text-decoration: none;
+	float: left;
+}
+#pages li a:hover {
+	color: #666666;
+	background: #f1ffd6;
+	border: 1px solid #666666;
+}
+#pages li.nolink {
+	color: #CCC;
+	border: 1px solid #F3F3F3;
+	padding: 4px;
+}
+#pages li.current {
+	color: #000000;
+	border: 1px solid #666666;
+	padding: 4px;
+	background: #999;
+}
