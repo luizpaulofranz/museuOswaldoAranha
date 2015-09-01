@@ -13,11 +13,10 @@
             <p class="al-center fontsize1b" style="margin-top: 10px;"><br>Primeiro Tesoureiro<br> José Rubens Rosa Pillar<br>Advogado - OAB/RS 60.705<br>Segundo Tesoureiro <br> Batista Gardineli Alvarenga<br><br>Conselho Fiscal<br> Edegar de Oliveira Lopes<br>Diego Garcia Braga<br> Andressa Anhaia Benites</p>
         </article>
         <article class="grid-1-3 game_box">
+            <h2 class="al-center fontsize25"><p>ESTATUTO SOCIAL:</p></h2>
+            <a target="_blank" href="assets/images/amigosMuseu/Estatuto.pdf" title="Leia o estatuto da associação"> <p class="al-center fontsize1b" style="margin-top: 10px;">Clique aqui e leia o estatuto.</p></a>
             <h2 class="al-center fontsize25"><p>CONTATO:</p></h2>
             <p class="al-center fontsize1b" style="margin-top: 10px;">Thiago Araújo Vaucher <br>(Presidente da Associação)<br>Telefone: (55)91 56 16 52 <br>E-mail: vaucher.jur@hotmail.com</p>
-            <h2 class="al-center fontsize25"><p>ESTATUTO SOCIAL:</p></h2>
-            <a target="_blank" href="assets/images/amigosMuseu/Estatuto.pdf" title="leia"</a>
-            <p class="al-center fontsize1b" style="margin-top: 10px;">Clique aqui e leia o estatuto.</p>
         </article> 
     </div>
 </section>
