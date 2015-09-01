@@ -188,6 +188,27 @@ class Conteudo_m extends CI_Model {
         $this->db->order_by('conteudo.idConteudo', ' DESC');
         return $this->db->get_where($this->tabela, $where, $limit, $offset);
     }
+    
+    /**
+     * Método responsável por recuperar as noticias.
+     * @param int $limit
+     * @param int $offset
+     * @return array
+     */
+    public function listarAcervoMuseu($limit = NULL, $offset = NULL) {
+
+        $slugTipoConteudo = 'acervo-do-museu';
+
+        $where = ' (media.destaque=1 OR media.idMedia IS NULL) AND tipoConteudo.slug = "' . $slugTipoConteudo . '"';
+
+        //$this->db->where($where);
+        $this->db->select('conteudo.*, media.urlPath, media.nome AS imagem, administrador.nome as autor');
+        $this->db->join('administrador', 'administrador.idAdministrador = conteudo.idAdministrador', 'INNER OUTER');
+        $this->db->join('tipoConteudo', 'conteudo.idTipoConteudo = tipoConteudo.idTipoConteudo', 'INNER OUTER');
+        $this->db->join('media', 'media.idConteudo = conteudo.idConteudo', 'LEFT OUTER');
+        $this->db->order_by('conteudo.idConteudo', ' DESC');
+        return $this->db->get_where($this->tabela, $where, $limit, $offset);
+    }
 
     /**
      * Método responsável por fazer as buscas digitadas pelo usuário.

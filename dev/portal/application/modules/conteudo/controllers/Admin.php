@@ -54,16 +54,15 @@ class Admin extends Admin_Controller {
     }
 
     public function acervo_museu() {
-        exit('sdjcnsdjkc');
         //aqui escrevemos mensagens de erro ou sucesso nas listas
         $this->template->write('conteudo', $this->session->flashdata('msg'));
         $n = 10;
         //segment sao as partes da url, primeiro parametro eh a parte e o segundo eh o default
         $ate = $this->uri->segment(4, 0);
-        $conteudos = $this->conteudo_m->listar($n, $ate, true, 'eventos');
-        $total = $this->conteudo_m->listar(null, null, true, 'eventos');
-        $this->template->write_view('conteudo', 'admin/listarEventos', array('conteudos' => $conteudos->result_array()));
-        $this->template->write_view('conteudo', 'admin/paginationEventos', array('total' => $total->num_rows()));
+        $conteudos = $this->conteudo_m->listar($n, $ate, true, 'acervo-do-museu');
+        $total = $this->conteudo_m->listar(null, null, true, 'acervo-do-museu');
+        $this->template->write_view('conteudo', 'admin/listarAcervo', array('conteudos' => $conteudos->result_array()));
+        $this->template->write_view('conteudo', 'admin/paginationAcervo', array('total' => $total->num_rows()));
         $this->template->render();
     }
     
@@ -186,6 +185,43 @@ class Admin extends Admin_Controller {
         $this->template->write_view('conteudo', 'admin/formEventos', $params);
         $this->template->render();
     }
+    
+    public function cadastrar_acervo() {
+        $params = array();
+        $this->form_validation->set_default('idTipoConteudo', 3); //tipoConteudo 2 acervo-do-museu
+        //verificamos se tem algo no post
+        if ($this->input->post()) {
+            $this->form_validation->set_rules('titulo', 'Título', 'required|trim|max_length[80]');
+            $this->form_validation->set_rules('slug', 'Slug', 'trim|max_length[80]');
+            $this->form_validation->set_rules('resumo', 'Resumo', 'required|trim|max_length[255]');
+            $this->form_validation->set_rules('rascunho', 'Rascunho', 'integer');
+            $this->form_validation->set_rules('idAdministrador', 'Autor', 'required|integer');
+            $this->form_validation->set_rules('idTipoConteudo', 'Tipo de Conteúdo', 'required|integer');
+            //executamos a validacao
+            if ($this->form_validation->run()) {
+                $dados = $this->input->post();
+                //verificamos o slug
+                if ($dados['slug'] == '') {
+                    $dados['slug'] = $this->slug->create_uri($dados);
+                } else {
+                    $dados['slug'] = $this->slug->create_uri($dados['slug']);
+                }
+                $dados['data'] = date('Y-m-d H:i:s');
+                if ($inserted_id = $this->conteudo_m->cadastrar($dados)) {
+                    $params['mensagem'] = alert('Sucesso ao cadastrar o Item!', 'success');
+                    $url = base_url('/admin/conteudo/alterarAcervo/' . $inserted_id);
+                    redirect($url);
+                } else {
+                    $params['mensagem'] = alert('Erro de banco de dados!', 'danger');
+                }
+            } else {
+                $params['mensagem'] = alert(validation_errors(), 'danger');
+            }
+        }
+
+        $this->template->write_view('conteudo', 'admin/formAcervoMuseu', $params);
+        $this->template->render();
+    }
 
     public function alterarNoticia() {
         $params = array();
@@ -277,6 +313,48 @@ class Admin extends Admin_Controller {
         $this->template->write_view('conteudo', 'admin/formEventos', $params);
         $this->template->render();
     }
+    
+    public function alterarAcervo() {
+        $params = array();
+        $dados = array();
+        //aqui so vai entrar quando clcar no form
+        if ($this->input->post()) {
+            $this->form_validation->set_rules('titulo', 'Título', 'required|trim|max_length[80]');
+            $this->form_validation->set_rules('slug', 'Slug', 'trim|max_length[80]');
+            $this->form_validation->set_rules('resumo', 'Resumo', 'required|trim|max_length[255]');
+            $this->form_validation->set_rules('rascunho', 'Rascunho', 'integer');
+            $this->form_validation->set_rules('idAdministrador', 'Autor', 'required|integer');
+            $this->form_validation->set_rules('idTipoConteudo', 'Tipo de Conteúdo', 'required|integer');
+
+            $this->form_validation->set_rules('idConteudo', 'Id', 'required|integer');
+            if ($this->form_validation->run()) {
+                $dados = $this->input->post();
+                //verificamos o slug
+                if ($dados['slug'] == '') {
+                    $dados['slug'] = $this->slug->create_uri($dados, $dados['idConteudo']);
+                } else {
+                    $dados['slug'] = $this->slug->create_uri($dados['slug'], $dados['idConteudo']);
+                }
+                $dados['data'] = date('Y-m-d H:i:s');
+                if ($this->conteudo_m->alterar($dados)) {
+                    $params['mensagem'] = alert('Sucesso ao alterar o Item!', 'success');
+                } else {
+                    $params['mensagem'] = alert('Erro de banco de dados!', 'danger');
+                }
+            } else {
+                $params['mensagem'] = alert(validation_errors(), 'danger');
+            }
+        } else {
+            $dados = $this->conteudo_m->getDataById($this->uri->segment(4));
+        }
+        $this->form_validation->set_default($dados);
+        $params['medias'] = $this->media_m->listar($this->uri->segment(4));
+        $params['tipoConteudo'] = $this->tipoConteudo_m->getCombo();
+
+        $this->template->write('conteudo', $this->session->flashdata('msg'));
+        $this->template->write_view('conteudo', 'admin/formAcervoMuseu', $params);
+        $this->template->render();
+    }
 
     public function excluirNoticia() {
         $id = $this->uri->segment(4);
@@ -293,11 +371,22 @@ class Admin extends Admin_Controller {
         $id = $this->uri->segment(4);
         $del = $this->conteudo_m->excluir(array('idConteudo' => $id));
         if ($del) {
-            $this->session->set_flashdata('msg', alert('Evento excluida com sucesso!', 'success'));
+            $this->session->set_flashdata('msg', alert('Evento excluido com sucesso!', 'success'));
         } else {
             $this->session->set_flashdata('msg', alert('Erro ao excluir Evento!', 'danger'));
         }
         redirect(base_url('admin/conteudo/eventos'));
+    }
+    
+    public function excluirAcervo() {
+        $id = $this->uri->segment(4);
+        $del = $this->conteudo_m->excluir(array('idConteudo' => $id));
+        if ($del) {
+            $this->session->set_flashdata('msg', alert('Item excluido com sucesso!', 'success'));
+        } else {
+            $this->session->set_flashdata('msg', alert('Erro ao excluir Item!', 'danger'));
+        }
+        redirect(base_url('admin/conteudo/acervo-museu'));
     }
 
 }
