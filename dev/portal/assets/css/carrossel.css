@@ -1,29 +1,31 @@
 /*--Main Container--*/
 .slider-container {
-    max-width: 2000px;
-    position: relative;   
-    background: #000;
-    overflow: hidden;
+   // max-width: 2000px;
+    //position: relative;   
+   // background: #000;
+    //overflow: hidden;
 }
 /*--Window/Masking Styles--*/
 .slider {
-	height:470px;        
-        max-width: 2000px;
-	overflow: hidden; /*--Hides anything outside of the set width/height--*/
-	position: relative;
+	//height:470px;        
+       // max-width: 2000px;
+	//overflow: hidden; /*--Hides anything outside of the set width/height--*/
+	//position: relative;
 }
 .image_reel {
-	position: absolute;
-	top: 0; left: 0;
+        
+	//position: absolute;
+	//top: 0; left: 0;
 }
 .image_reel img {float: left;}
 
 /*--Paging Styles--*/
 .paging {
+        
 	position: absolute;
 	bottom: 40px; right: -7px;
 	width: 178px; height:47px;
-	z-index: 100; /*--Assures the paging stays on the top layer--*/
+	z-index: 1000; /*--Assures the paging stays on the top layer--*/
 	text-align: center;
 	line-height: 47px;
 	background: #222;
