@@ -1,46 +1,33 @@
-/*--Main Container--*/
-.slider-container {
-    max-width: 2000px;
-    position: relative;   
-    background: #000;
-    overflow: hidden;
-}
-/*--Window/Masking Styles--*/
-.slider {
-	height:470px;        
-        max-width: 2000px;
-	overflow: hidden; /*--Hides anything outside of the set width/height--*/
-	position: relative;
-}
-.image_reel {
-	position: absolute;
-	top: 0; left: 0;
-}
-.image_reel img {float: left;}
+* { 
+    margin:0; 
+    padding:0;
+} 
 
-/*--Paging Styles--*/
-.paging {
-	position: absolute;
-	bottom: 40px; right: -7px;
-	width: 178px; height:47px;
-	z-index: 100; /*--Assures the paging stays on the top layer--*/
-	text-align: center;
-	line-height: 47px;
-	background: #222;
-	display: none; /*--Hidden by default, will be later shown with jQuery--*/
-      
+#slide { 
+    width: 100%; 
+    overflow: hidden; 
+    height: 559px; 
+    margin: 0 auto; 
+    box-shadow: 0 0 8px #000; 
+    position: relative; 
+} 
+
+#slide img { 
+    position: absolute; 
+    z-index: 1; 
+    display: none; 
+    left: 0; 
+} 
+
+#slide p { 
+    z-index:2; 
+    position: absolute; 
+    bottom: 0; 
+    left: 0; 
+    width: 100%; 
+    padding: 10px; 
+    font-family: Arial; 
+    font-size: 14px; 
+    background: rgba(0,0,0,0.5); 
+    color: #fff; 
 }
-.paging a {
-	padding: 5px;
-	text-decoration: none;
-	color: #fff;
-}
-.paging a.active {
-	font-weight: bold;
-	background: #aaa;
-	border: 1px solid #ccc;
-	-moz-border-radius: 3px;
-	-khtml-border-radius: 3px;
-	-webkit-border-radius: 3px;
-}
-.paging a:hover {font-weight: bold;}

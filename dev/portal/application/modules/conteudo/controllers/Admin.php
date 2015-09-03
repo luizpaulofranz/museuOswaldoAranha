@@ -53,6 +53,19 @@ class Admin extends Admin_Controller {
         $this->template->render();
     }
 
+    public function eventos() {
+        //aqui escrevemos mensagens de erro ou sucesso nas listas
+        $this->template->write('conteudo', $this->session->flashdata('msg'));
+        $n = 10;
+        //segment sao as partes da url, primeiro parametro eh a parte e o segundo eh o default
+        $ate = $this->uri->segment(4, 0);
+        $conteudos = $this->conteudo_m->listar($n, $ate, true, 'eventos');
+        $total = $this->conteudo_m->listar(null, null, true, 'eventos');
+        $this->template->write_view('conteudo', 'admin/listarEventos', array('conteudos' => $conteudos->result_array()));
+        $this->template->write_view('conteudo', 'admin/paginationEventos', array('total' => $total->num_rows()));
+        $this->template->render();
+    }
+
     public function acervo_museu() {
         //aqui escrevemos mensagens de erro ou sucesso nas listas
         $this->template->write('conteudo', $this->session->flashdata('msg'));
@@ -65,7 +78,7 @@ class Admin extends Admin_Controller {
         $this->template->write_view('conteudo', 'admin/paginationAcervo', array('total' => $total->num_rows()));
         $this->template->render();
     }
-    
+
     /**
      * Acervo cientifico eh uma única pagina, assim esse metodo insere e altera
      * um unico registro no banco, contendo o conteudo desta pagina.
@@ -73,7 +86,8 @@ class Admin extends Admin_Controller {
     public function acervo_cientifico() {
         $params = array();
         $dados = array();
-        $this->form_validation->set_default('idTipoConteudo', 4);//tipo conteudo 4 acervo cientifico
+        $this->template->write('conteudo', $this->session->flashdata('msg'));
+        $this->form_validation->set_default('idTipoConteudo', 4); //tipo conteudo 4 acervo cientifico
         //verificamos se tem algo no post
         if ($this->input->post()) {
             $this->form_validation->set_rules('conteudo', 'Conteúdo', 'required|trim');
@@ -88,7 +102,7 @@ class Admin extends Admin_Controller {
                 $dados['slug'] = 'acervo-cientifico';
                 $dados['idTipoConteudo'] = 4;
                 if ($this->conteudo_m->salvarAcervoCientifico($dados)) {
-                    $params['mensagem'] = alert('Sucesso ao cadastrar o Conteudo!', 'success');
+                    $this->session->set_flashdata('msg', alert('Sucesso ao cadastrar o Conteudo!', 'success'));
                     $url = base_url('/admin/conteudo/acervo-cientifico');
                     redirect($url);
                 } else {
@@ -107,7 +121,7 @@ class Admin extends Admin_Controller {
 
     public function cadastrar_noticia() {
         $params = array();
-        $this->form_validation->set_default('idTipoConteudo', 1);//tipo conteudo 1 sao as noticias
+        $this->form_validation->set_default('idTipoConteudo', 1); //tipo conteudo 1 sao as noticias
         //verificamos se tem algo no post
         if ($this->input->post()) {
             $this->form_validation->set_rules('titulo', 'Título', 'required|trim|max_length[80]');
@@ -185,7 +199,7 @@ class Admin extends Admin_Controller {
         $this->template->write_view('conteudo', 'admin/formEventos', $params);
         $this->template->render();
     }
-    
+
     public function cadastrar_acervo() {
         $params = array();
         $this->form_validation->set_default('idTipoConteudo', 3); //tipoConteudo 2 acervo-do-museu
@@ -313,7 +327,7 @@ class Admin extends Admin_Controller {
         $this->template->write_view('conteudo', 'admin/formEventos', $params);
         $this->template->render();
     }
-    
+
     public function alterarAcervo() {
         $params = array();
         $dados = array();
@@ -377,7 +391,7 @@ class Admin extends Admin_Controller {
         }
         redirect(base_url('admin/conteudo/eventos'));
     }
-    
+
     public function excluirAcervo() {
         $id = $this->uri->segment(4);
         $del = $this->conteudo_m->excluir(array('idConteudo' => $id));
