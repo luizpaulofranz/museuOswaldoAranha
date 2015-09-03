@@ -22,7 +22,7 @@
             </div>
         </div>
 
-        <header class="container bg-black menu-height section-header transparence-85">
+        <header class="container bg-black menu-height section-header transparence-85" style="z-index: 100">
             <div class="content">
                 <h1 class="fontzero" >
                     Portal Museu Oswaldo Aranha
@@ -113,6 +113,31 @@
             <script src="<?php echo site_url('assets/plugins/magnific-popup/magnific-popup.js'); ?>" type="text/javascript" ></script>
             <script src="<?php echo site_url('assets/plugins/magnific-popup/magnific-popup-traducao.js'); ?>" type="text/javascript" ></script>
             <script src="<?php echo site_url('assets/js/custom.js'); ?>"></script>
+            <script>
+                $(document).ready(function() {
+                    $("#slide img:eq(0)").addClass("ativo").show();
+                });
+                var cont = 0; //recebe o numero de slides
+                var texto = $("#slide img:eq("+cont+")").attr("alt");
+                $("#slide").prepend("<p>" + texto + "</p>");
+                setInterval(slide, 3000);
+
+                function slide() {
+                    if ($(".ativo").next().size()) {
+                        $(".ativo").fadeOut().removeClass("ativo").next().fadeIn().addClass("ativo");
+                    } else { //se não, irá retornar ao estado inicial do slide 
+                        $(".ativo").fadeOut().removeClass("ativo");
+                        $("#slide img:eq(0)").fadeIn().addClass("ativo");
+                    }
+                    if(cont === 5){
+                        cont = 0
+                    }else{
+                        cont++;
+                    }
+                    texto = $("#slide img:eq("+cont+")").attr("alt");
+                    $("#slide p").hide().html(texto).delay(500).fadeIn();
+                }
+            </script>
         </div>
     </body>
 </html>
