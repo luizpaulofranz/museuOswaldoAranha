@@ -13,7 +13,7 @@
             <h2 class="header_box bg-pink-white fontsize45 al-center font-oswald-light font-thin2 header_box_shadow">APRENDA</h2>
             <ul class="menu_section">
                 <li><a href="<?php echo site_url('sobre') ?>" a><img src="" alt=""><img src="../assets/images/home/aprenda/history-icon.png" alt="Ícone História de Oswaldo Aranha"><p>HISTÓRIA DE </p><p>OSWALDO A.</p></a></li>
-                <li><a href="<?php echo site_url('aprenda') ?>" a><img src="" alt=""><img src="../assets/images/home/aprenda/acervo-icon.png" alt="Ícone Acervo do Museu"><p>ACERVO DO</p><p> MUSEU</p></a></li>
+                <li><a href="<?php echo site_url('conteudo/acervo-museu') ?>" a><img src="" alt=""><img src="../assets/images/home/aprenda/acervo-icon.png" alt="Ícone Acervo do Museu"><p>ACERVO DO</p><p> MUSEU</p></a></li>
                 <li><a href="<?php echo site_url('acervo-cientifico') ?>" a><img src="" alt=""><img src="../assets/images/home/aprenda/article-icon.png" alt="Ícone Acervo Científico"><p>ACERVO </p><p>CIENTÍFICO</p></a></li>
             </ul>
         </article>
@@ -26,7 +26,7 @@
         </article>
         <article class="grid-4 game_box">
             <h2 class="al-center fontsize60"><p>JOGO DO MUSEU</p></h2>
-            <p class="al-center fontsize1b" style="margin-top: 30px;">Confira o jogo feito em homenagem ao museu Oswaldo Aranha.</p>
+            <p class="al-center fontsize1b" style="margin-top: 30px;">Confira o jogo feito em homenagem ao <br>Oswaldo Aranha.</p>
             <a href="aprenda_jogo_museu.php" class="btn_game bg-pink-white header_box_shadow ds-block al-center fontsize30 font-bold">JOGUE AGORA</a>
         </article>
     </div>
