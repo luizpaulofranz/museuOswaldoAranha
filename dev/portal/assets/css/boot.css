@@ -320,6 +320,11 @@ a:hover {
     text-decoration: underline; 
     color: white;
 }
+.list-info a:hover{
+    text-decoration: none;
+    color:#666666;
+    
+}
 a:active {
     text-decoration: none
 }
@@ -386,4 +391,9 @@ form label {
 .alert-danger{
     color: #a94442;
     background-color: #f2dede;
+}
+[tabindex]:focus{
+    border-width: medium;
+    border-style: solid;
+    border-color: #fbe54e;
 }

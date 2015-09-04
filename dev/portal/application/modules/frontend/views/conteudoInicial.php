@@ -3,25 +3,25 @@
         <article class="grid-4">
             <h2 class="header_box bg-pink-white fontsize45 al-center font-oswald-light font-thin2 header_box_shadow">VISITE</h2>
             <ul class="menu_section">
-                <li><a href="<?php echo site_url('visite')?>" a><img src="" alt=""><img src="../assets/images/home/visite/map-icon.png" alt="Ícone Como Chegar"><p>SAIBA COMO </p><p>CHEGAR</p></a></li>
-                <li><a href="<?php echo site_url('visite')?>" a><img src="" alt=""><img src="../assets/images/home/visite/horarios-icon.png" alt="Ícone Como Horários"><p>VEJA OS</p><p> HORÁRIOS</p></a></li>
-                <li><a href="<?php echo site_url('visite')?>" a><img src="" alt=""><img src="../assets/images/home/visite/regras-icon.png" alt="Ícone Regras"><p>REGRAS </p><p>DO MUSEU</p></a></li>
-                <li><a href="<?php echo site_url('visite')?>" a><img src="" alt=""><img src="../assets/images/home/visite/agende-icon.png" alt="Ícone Agende Sua Visita"><p>AGENDE SUA</p><p> VISITA</p></a></li>
+                <li><a href="<?php echo site_url('visite') ?>" a><img src="" alt="" tabindex="21"><img src="../assets/images/home/visite/map-icon.png" alt="Ícone Como Chegar "><p>SAIBA COMO </p><p>CHEGAR</p></a></li>
+                <li><a href="<?php echo site_url('visite') ?>" a><img src="" alt="" tabindex="22"><img src="../assets/images/home/visite/horarios-icon.png" alt="Ícone Como Horários"><p>VEJA OS</p><p> HORÁRIOS</p></a></li>
+                <li><a href="<?php echo site_url('visite') ?>" a><img src="" alt=""tabindex="23"><img src="../assets/images/home/visite/regras-icon.png" alt="Ícone Regras"><p>REGRAS </p><p>DO MUSEU</p></a></li>
+                <li><a href="<?php echo site_url('visite') ?>" a><img src="" alt=""tabindex="24"><img src="../assets/images/home/visite/agende-icon.png" alt="Ícone Agende Sua Visita"><p>AGENDE SUA</p><p> VISITA</p></a></li>
             </ul>
         </article>
         <article class="grid-4">
             <h2 class="header_box bg-pink-white fontsize45 al-center font-oswald-light font-thin2 header_box_shadow">APRENDA</h2>
             <ul class="menu_section">
-                <li><a href="<?php echo site_url('sobre')?>" a><img src="" alt=""><img src="../assets/images/home/aprenda/history-icon.png" alt="Ícone História de Oswaldo Aranha"><p>HISTÓRIA DE </p><p>OSWALDO A.</p></a></li>
-                <li><a href="<?php echo site_url('aprenda')?>" a><img src="" alt=""><img src="../assets/images/home/aprenda/acervo-icon.png" alt="Ícone Acervo do Museu"><p>ACERVO DO</p><p> MUSEU</p></a></li>
-                <li><a href="<?php echo site_url('acervo-cientifico')?>" a><img src="" alt=""><img src="../assets/images/home/aprenda/article-icon.png" alt="Ícone Acervo Científico"><p>ACERVO </p><p>CIENTÍFICO</p></a></li>
+                <li><a href="<?php echo site_url('sobre') ?>" a><img src="" alt=""><img src="../assets/images/home/aprenda/history-icon.png" alt="Ícone História de Oswaldo Aranha"><p>HISTÓRIA DE </p><p>OSWALDO A.</p></a></li>
+                <li><a href="<?php echo site_url('aprenda') ?>" a><img src="" alt=""><img src="../assets/images/home/aprenda/acervo-icon.png" alt="Ícone Acervo do Museu"><p>ACERVO DO</p><p> MUSEU</p></a></li>
+                <li><a href="<?php echo site_url('acervo-cientifico') ?>" a><img src="" alt=""><img src="../assets/images/home/aprenda/article-icon.png" alt="Ícone Acervo Científico"><p>ACERVO </p><p>CIENTÍFICO</p></a></li>
             </ul>
         </article>
         <article class="grid-4">
             <h2 class="header_box bg-pink-white fontsize45 al-center font-oswald-light font-thin2 header_box_shadow">NOTÍCIAS</h2>
             <ul class="menu_section">
-                <li><a href="<?php echo site_url('conteudo/noticias')?>" a><img src="" alt=""><img src="../assets/images/home/noticias/noticias-icon.png" alt="Ícone Noticias"><p>VEJA NOSSAS </p><p>NOTÍCIAS</p></a></li>
-                <li><a href="<?php echo site_url('conteudo/eventos')?>" a><img src="" alt=""><img src="../assets/images/home/eventos/events-icon.png" alt="Ícone Eventos"><p>PRÓXIMOS </p><p> EVENTOS</p></a></li>
+                <li><a href="<?php echo site_url('conteudo/noticias') ?>" a><img src="" alt=""><img src="../assets/images/home/noticias/noticias-icon.png" alt="Ícone Noticias"><p>VEJA NOSSAS </p><p>NOTÍCIAS</p></a></li>
+                <li><a href="<?php echo site_url('conteudo/eventos') ?>" a><img src="" alt=""><img src="../assets/images/home/eventos/events-icon.png" alt="Ícone Eventos"><p>PRÓXIMOS </p><p> EVENTOS</p></a></li>
             </ul>
         </article>
         <article class="grid-4 game_box">
@@ -52,18 +52,18 @@
             //var_dump($noticias);exit();
             foreach ($noticias as $noticia) {
                 echo '<article class="grid-1-3">';
-                echo '<a href="'.site_url('conteudo/visualizar/'.$noticia['slug']).'">';
-                if($noticia['imagem']){
-                    echo '<div class="box-news border-pink" style="background: url('.site_url($noticia['urlPath'].'/'.'med_'.$noticia['imagem']).') no-repeat center; background-size: cover;"></div>';
-                }else{
-                    echo '<div class="box-news border-pink" style="background: url('.site_url('assets/images/img_nao_disponivel.png').') no-repeat center; background-size: cover;"></div>';
+                echo '<a href="' . site_url('conteudo/visualizar/' . $noticia['slug']) . '">';
+                if ($noticia['imagem']) {
+                    echo '<div class="box-news border-pink" style="background: url(' . site_url($noticia['urlPath'] . '/' . 'med_' . $noticia['imagem']) . ') no-repeat center; background-size: cover;"></div>';
+                } else {
+                    echo '<div class="box-news border-pink" style="background: url(' . site_url('assets/images/img_nao_disponivel.png') . ') no-repeat center; background-size: cover;"></div>';
                 }
-                echo '<p class="al-left font-oswald-light font-pink news_description fontsize18 ds-block border-grey" style="min-height:58px;">'.substr($noticia['titulo'], 0, 70).'</p>';
+                echo '<p class="al-left font-oswald-light font-pink news_description fontsize18 ds-block border-grey" style="min-height:58px;">' . substr($noticia['titulo'], 0, 70) . '</p>';
                 echo '</a>';
                 echo '</article>';
             }
             ?>
         </div>
-        
+
     </div>
 </section>
