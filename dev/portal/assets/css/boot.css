@@ -148,21 +148,21 @@ a:visited{text-decoration: none;}
     top: 35px;
 }
 .section-Sobre-1{
-    height: 555px;
+    height: 515px;
     background: url(../images/sobre/cabecalhoSobre.jpg) no-repeat center;
     background-size: cover;
     position: absolute;
     top: 40px;
 }
 .section-Contato-1{
-    height: 555px;
+    height: 515px;
     background: url(../images/contato/contatocabecalho.jpg) no-repeat center;
     background-size: cover;
     position: absolute;
     top: 40px;
 }
 .section-Visite-1{
-    height: 551px;
+    height: 511px;
     background: url(../images/visite/mapaCabecalho.jpg) no-repeat center;
     background-size: contain;
     position: absolute;
@@ -170,7 +170,7 @@ a:visited{text-decoration: none;}
     width: 100%;
 }
 .section-AmigosMuseu-1{
-    height: 555px;
+    height: 515px;
     background:url(../images/amigosMuseu/amigosMuseu.jpg) no-repeat center;
     background-size: cover;
     position: absolute;
@@ -178,21 +178,21 @@ a:visited{text-decoration: none;}
     width: 100%;
 }
 .section-Evento-1{
-    height: 555px;
+    height: 400px;
     background: url(../images/eventos/eventoCabecalho.jpg) no-repeat center;
     background-size: cover;
     position: absolute;
     top: 40px;
 }
 .section-Aprenda-1{
-    height: 555px;
+    height: 515px;
     background: url(../images/aprenda/aprendaCabecalho.jpg) no-repeat center;
     background-size: cover;
     position: absolute;
     top: 40px;
 }
 .section-Noticia-1{
-    height: 555px;
+    height: 515px;
     background: url(../images/noticias/noticiaCabecalho.jpg) no-repeat center;
     background-size: cover;
     position: absolute;
