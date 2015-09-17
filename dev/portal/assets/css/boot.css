@@ -75,6 +75,9 @@ a:visited{text-decoration: none;}
 .font-oswald-medium{font-family: Oswald Medium;}
 .font-oswald-light{font-family: Oswald Light;}
 .font-georgia{font-family: Georgia, "Times New Roman", serif;}
+.font-arial {font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;}
+.font-verdana{font-family: Verdana, "Geneva", sans-serif;}
+
 
 /*font size*/
 .fontzero{font-size: 0em !important;}
@@ -145,55 +148,55 @@ a:visited{text-decoration: none;}
     top: 35px;
 }
 .section-Sobre-1{
-    height: 560px;
+    height: 555px;
     background: url(../images/sobre/cabecalhoSobre.jpg) no-repeat center;
     background-size: cover;
     position: absolute;
-    top: 35px;
+    top: 40px;
 }
 .section-Contato-1{
-    height: 560px;
+    height: 555px;
     background: url(../images/contato/contatocabecalho.jpg) no-repeat center;
     background-size: cover;
     position: absolute;
-    top: 35px;
+    top: 40px;
 }
 .section-Visite-1{
-    height: 560px;
+    height: 551px;
     background: url(../images/visite/mapaCabecalho.jpg) no-repeat center;
     background-size: contain;
+    position: absolute;
+    top: 45px;
+    width: 100%;
+}
+.section-AmigosMuseu-1{
+    height: 555px;
+    background:url(../images/amigosMuseu/amigosMuseu.jpg) no-repeat center;
+    background-size: cover;
     position: absolute;
     top: 40px;
     width: 100%;
 }
-.section-AmigosMuseu-1{
-    height: 560px;
-    background:url(../images/amigosMuseu/amigosMuseu.jpg) no-repeat center;
-    background-size: cover;
-    position: absolute;
-    top: 35px;
-    width: 100%;
-}
 .section-Evento-1{
-    height: 560px;
+    height: 555px;
     background: url(../images/eventos/eventoCabecalho.jpg) no-repeat center;
     background-size: cover;
     position: absolute;
-    top: 35px;
+    top: 40px;
 }
 .section-Aprenda-1{
-    height: 560px;
+    height: 555px;
     background: url(../images/aprenda/aprendaCabecalho.jpg) no-repeat center;
     background-size: cover;
     position: absolute;
-    top: 35px;
+    top: 40px;
 }
 .section-Noticia-1{
-    height: 560px;
+    height: 555px;
     background: url(../images/noticias/noticiaCabecalho.jpg) no-repeat center;
     background-size: cover;
     position: absolute;
-    top: 35px;
+    top: 40px;
 }
 .section-header {
     z-index: 1;
