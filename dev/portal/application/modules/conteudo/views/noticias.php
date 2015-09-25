@@ -29,7 +29,7 @@
                 echo '<p>' . $noticia['resumo'] . '</p>';
                 echo '</div>';
                 echo '<div style="margin-top: 5px;" class="fl-left grid-2">';
-                echo '<a href="' . site_url('conteudo/visualizar/' . $noticia['slug']) . '" class="font-oswald-light font-bold fontsize1b" style="color: #993333">Leia mais...</a>';
+                echo '<a href="' . site_url('conteudo/visualizar/' . $noticia['slug']) . '" class="font-oswald-light font-bold fontsize1b"tabindex="22" style="color: #993333">Leia mais...</a>';
                 echo '<div style="margin-top: -25px;" class="fl-left grid-14 border-grey">';
                 echo '<a class="font-oswald-light font-bold fontsize1b" style="color: #993333; padding-left: 30em"><br></a>';
                 echo '</div>';
