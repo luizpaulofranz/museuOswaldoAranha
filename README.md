@@ -3,8 +3,12 @@ Códigos de um site institucional para museu.
 
 <p>Esse repositório contém todos os artefatos utilizados no desenvolvimento do site institucional do museu Oswaldo Aranha, localizado em Alegrete - RS Brasil.</p>
 <br>
-<b>INFORMAÇÕES ÚTEIS</b><br>
+<b>INFORMAÇÕES ÚTEIS E PRÉ-REQUISITOS</b><br>
 <p>O Site foi desenvolvido com o <b>Framework Codeigniter</b> (versão 3.0, com HMVC). Conhecimentos em codeigniter são recomendados.</p>
+<p>O site usa mod_rewrite para montar as URLs amigáveis, para tal o mesmo deve estar habilitado em seu servidor, para habilitar no linux use: "sudo a2enmod rewrite"</p>
+<p>PHP 5.3 +</p>
+<p>MySQL 5 +</p>
+<br>
 <br>
 A seguinte estrutura de diretórios foi utilizada:<br>
 <b>-dev</b><br>
