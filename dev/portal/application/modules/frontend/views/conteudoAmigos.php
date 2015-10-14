@@ -1,5 +1,9 @@
 <section class="container container-padding-60 font-oswald-light font-light">
     <div class="content">
+        <header class="content" style="background: #993333; height: 5px; text-align: center;">
+            <h2 class="fontsize30 font-vinho font-oswald-light al-center ds-inblock news_style">ASSOCIAÇÃO DOS AMIGOS DO MUSEU</h2>;
+        </header>
+        <br><br><br>
 
         <header class="content" style="background: #993333; height: 5px; text-align: center;">
             <h2 class="fontsize30 font-vinho font-oswald-light al-center ds-inblock news_style">ASSOCIAÇÃO DOS AMIGOS DO MUSEU OSWALDO ARANHA</h2>;

@@ -1,4 +1,4 @@
-<section class="container container-padding-60 font-oswald-light font-light">
+<section class="container container-padding-60">
     <div class="content">
         <div>
             <header class="content" style="background: #993333; height: 5px; text-align: center;">
@@ -7,7 +7,7 @@
             <br><br><br> 
             <img src="<?php echo site_url('assets/images/sobre/oswaldoAranhaSobre.jpg') ?>" alt="Pintura de oswaldo aranha" style="width: 20em; height: 25em">
 
-            <blockquote class="font-georgia" >
+            <blockquote class="font-arial" >
 
                 <p class="fontsize1b" style="padding-left: 15em; color: #666666" >
                     Oswaldo Euclides de Souza Aranha nasceu a 15 de fevereiro de 1894 em Alegrete – RS. Filho de Euclydes Egydio de Souza Aranha e de Luiza Jacques de Freitas Valle Aranha. 
@@ -24,7 +24,7 @@
             </blockquote>
 
             <img src="<?php echo site_url('assets/images/sobre/museusobre.jpg') ?>" alt="Pintura do museu oswaldo aranha" style="width: 20em; height: 25em; padding-top:2em">
-            <blockquote class="font-georgia" >
+            <blockquote class="font-arial" >
 
                 <p class="fontsize1b" style="padding-left: 15em; padding-top: 1em;  color: #666666">
 

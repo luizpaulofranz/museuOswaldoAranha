@@ -1,7 +1,7 @@
 <?php
 //var_dump($noticia);exit();
 ?>
-<section class="container container-padding-60 font-oswald-light font-light">
+<section class="container container-padding-60 font-arial">
     <div class="content">
 
         <header class="content" style="background: #993333; height: 5px">

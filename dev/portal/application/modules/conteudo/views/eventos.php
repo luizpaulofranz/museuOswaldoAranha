@@ -13,11 +13,11 @@
                 echo '<article class="grid-1-3">';
                 echo '<a href="'.site_url('conteudo/visualizar/'.$evento['slug']).'">';
                 if($evento['imagem']){
-                    echo '<div class="box-news border-vinho" style="background: url('.site_url($evento['urlPath'].'/'.'med_'.$evento['imagem']).') no-repeat center; background-size: cover;"></div>';
+                    echo '<div class="box-news border-vinho" tabindex="21" style="background: url('.site_url($evento['urlPath'].'/'.'med_'.$evento['imagem']).') no-repeat center; background-size: cover;"></div>';
                 }else{
-                    echo '<div class="box-news border-vinho" style="background: url('.site_url('assets/images/img_nao_disponivel.png').') no-repeat center; background-size: cover;"></div>';
+                    echo '<div class="box-news border-vinho" tabindex="22"style="background: url('.site_url('assets/images/img_nao_disponivel.png').') no-repeat center; background-size: cover;"></div>';
                 }
-                echo '<p class="al-left font-oswald-light font-vinho news_description fontsize18 ds-block border-grey">'.substr($evento['titulo'], 0, 38).'<br>';
+                echo '<p class="al-left font-arial font-vinho news_description fontsize18 ds-block border-grey">'.substr($evento['titulo'], 0, 38).'<br>';
                 echo date('d/m/Y - H:s', strtotime($evento['data']));
                 echo '</p>';
                 echo '</a>';

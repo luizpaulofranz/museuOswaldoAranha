@@ -1,7 +1,7 @@
 <?php
 //var_dump($noticias);exit();
 ?>
-<section class="container container-padding-60 font-oswald-light font-light">
+<section class="container container-padding-60 al-center">
     <div class="content">
 
         <header class="content" style="background: #993333; height: 5px">
@@ -30,7 +30,7 @@
                 echo '<p class="ds-inblock">'.date('d/m/Y', strtotime($item['data'])).'</p>';
                 echo '<p>'.$item['resumo'].'</p>';
                 echo '</div>';
-                echo '<div style="margin-top: 110px;" class="fl-left grid-9 border-grey">';
+                echo '<div style="margin-top: 80px;" class="fl-left grid-9 border-grey">';
                 echo '<div class="font-oswald-light font-bold fontsize1b" style="color: #993333">&nbsp;</div>';
                 //echo '<a href="'.site_url('conteudo/visualizar/'.$item['slug']).'" class="font-oswald-light font-bold fontsize1b" style="color: #993333">Leia mais...</a>';
                 echo '</div>';
