@@ -78,7 +78,7 @@ class Admin extends Admin_Controller {
         $this->template->write_view('conteudo', 'admin/form', $params);
         $this->template->render();
     }
-    
+
     /**
      * Método responsável por fazer o anexo de imagens em um conteudo.
      */
@@ -106,12 +106,12 @@ class Admin extends Admin_Controller {
         }
 
         $params['arquivos'] = $arrayRetorno->result_array();
-        
+
         $this->template->set_template('upload');
         $this->template->write_view('conteudo', 'admin/form_anexos', $params);
         $this->template->render();
     }
-    
+
     /**
      * Método responsável por excluir um anexo de um conteúdo.
      */
@@ -121,10 +121,26 @@ class Admin extends Admin_Controller {
         if ($id_media) {
             $this->media_m->excluir(array('idMedia' => $id_media));
         }
-        $url = base_url('/admin/conteudo/alterar/' . $id_conteudo);
+        $page = $this->conteudo_m->getTipoConteudo($id_conteudo);
+        //Encaminhamos para a pagina de edicao correspondente ao tipo do conteudo
+        if ($page) {
+            switch ($page['slug']) {
+                case 'noticias':
+                    $url = base_url('/admin/conteudo/alterarNoticia/' . $id_conteudo);
+                    break;
+                case 'eventos':
+                    $url = base_url('/admin/conteudo/alterarEvento/' . $id_conteudo);
+                    break;
+                case 'acervo-do-museu':
+                    $url = base_url('/admin/conteudo/alterarAcervo/' . $id_conteudo);
+                    break;
+            }
+        } else {
+            $url = base_url('/admin/conteudo/alterar/' . $id_conteudo);
+        }
         redirect($url);
     }
-    
+
     /**
      * Método responsável por excluir um anexo de um conteúdo.
      */
@@ -134,7 +150,23 @@ class Admin extends Admin_Controller {
         if ($id_media) {
             $this->media_m->destacar(array('idMedia' => $id_media, 'idConteudo' => $id_conteudo));
         }
-        $url = base_url('/admin/conteudo/alterar/' . $id_conteudo);
+        $page = $this->conteudo_m->getTipoConteudo($id_conteudo);
+        //Encaminhamos para a pagina de edicao correspondente ao tipo do conteudo
+        if ($page) {
+            switch ($page['slug']) {
+                case 'noticias':
+                    $url = base_url('/admin/conteudo/alterarNoticia/' . $id_conteudo);
+                    break;
+                case 'eventos':
+                    $url = base_url('/admin/conteudo/alterarEvento/' . $id_conteudo);
+                    break;
+                case 'acervo-do-museu':
+                    $url = base_url('/admin/conteudo/alterarAcervo/' . $id_conteudo);
+                    break;
+            }
+        } else {
+            $url = base_url('/admin/conteudo/alterar/' . $id_conteudo);
+        }
         redirect($url);
     }
 
@@ -181,9 +213,9 @@ class Admin extends Admin_Controller {
         $ups = $this->upload->data();
         //controle para fazer o upload tanto de uma imagem, como de multiplas imagens
         $uploads = array();
-        if(!isset($ups[0])){
+        if (!isset($ups[0])) {
             $uploads[0] = $ups;
-        }else{
+        } else {
             $uploads = $ups;
         }
         foreach ($uploads as $u) {
@@ -211,7 +243,7 @@ class Admin extends Admin_Controller {
                     ->resize(960, 720)
                     ->save($u['file_path'] . $u['file_name'], true);
             $dado = array();
-            $dado['urlPath'] = $diretorio = 'assets/uploads/'.date('Y') .'/'. date('m') . '/'. 'conteudo_' . $conteudo;
+            $dado['urlPath'] = $diretorio = 'assets/uploads/' . date('Y') . '/' . date('m') . '/' . 'conteudo_' . $conteudo;
             $dado['nome'] = $u['file_name'];
             $dado['dataUpload'] = date('Y-m-d');
             $dado['idConteudo'] = $conteudo;

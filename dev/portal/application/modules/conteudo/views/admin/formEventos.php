@@ -31,13 +31,6 @@ if (set_value('idConteudo', false) == false) {
 
             </div>
         </div>
-        <div class="form-group <?php if (form_error('slug') != "") echo "has-error"; ?>">    
-            <label for="slug" class="col-sm-2 control-label alteraFonte">Slug</label>
-            <div class="col-sm-10">
-                <?php echo form_input(array('name' => 'slug', 'class' => 'form-control', 'value' => set_value('slug'), 'id' => 'slug', 'placeholder' => 'meu-evento')); ?>
-                <p class="help-block">Ao deixar em branco, o slug será gerado de acordo com o título.</p>
-            </div>
-        </div>
         <div class="form-group">
             <label for="data" class="col-sm-2 control-label alteraFonte">Data</label>
             <div class="col-sm-10">
