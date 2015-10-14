@@ -134,12 +134,9 @@ class Admin extends Admin_Controller {
             //executamos a validacao
             if ($this->form_validation->run()) {
                 $dados = $this->input->post();
-                //verificamos o slug
-                if ($dados['slug'] == '') {
-                    $dados['slug'] = $this->slug->create_uri($dados);
-                } else {
-                    $dados['slug'] = $this->slug->create_uri($dados['slug']);
-                }
+                //criamos a slug
+                $dados['slug'] = $this->slug->create_uri($dados);
+
                 $dados['data'] = date('Y-m-d H:i:s');
                 if ($inserted_id = $this->conteudo_m->cadastrar($dados)) {
                     $params['mensagem'] = alert('Sucesso ao cadastrar o Conteudo!', 'success');
@@ -174,12 +171,8 @@ class Admin extends Admin_Controller {
             //executamos a validacao
             if ($this->form_validation->run()) {
                 $dados = $this->input->post();
-                //verificamos o slug
-                if ($dados['slug'] == '') {
-                    $dados['slug'] = $this->slug->create_uri($dados);
-                } else {
-                    $dados['slug'] = $this->slug->create_uri($dados['slug']);
-                }
+                //criamos a slug
+                $dados['slug'] = $this->slug->create_uri($dados);
                 //transformamos a data para o formato do banco (jah foi validada);
                 $myDateTime = DateTime::createFromFormat('d/m/Y H:i:s', $dados['data'] . ' ' . $dados['hora'] . ':00');
                 $dados['data'] = $myDateTime->format('Y-m-d H:i:s');
@@ -214,12 +207,8 @@ class Admin extends Admin_Controller {
             //executamos a validacao
             if ($this->form_validation->run()) {
                 $dados = $this->input->post();
-                //verificamos o slug
-                if ($dados['slug'] == '') {
-                    $dados['slug'] = $this->slug->create_uri($dados);
-                } else {
-                    $dados['slug'] = $this->slug->create_uri($dados['slug']);
-                }
+                //criamos a slug
+                $dados['slug'] = $this->slug->create_uri($dados);
                 $dados['data'] = date('Y-m-d H:i:s');
                 if ($inserted_id = $this->conteudo_m->cadastrar($dados)) {
                     $params['mensagem'] = alert('Sucesso ao cadastrar o Item!', 'success');
@@ -253,12 +242,8 @@ class Admin extends Admin_Controller {
             $this->form_validation->set_rules('idConteudo', 'Id', 'required|integer');
             if ($this->form_validation->run()) {
                 $dados = $this->input->post();
-                //verificamos o slug
-                if ($dados['slug'] == '') {
-                    $dados['slug'] = $this->slug->create_uri($dados, $dados['idConteudo']);
-                } else {
-                    $dados['slug'] = $this->slug->create_uri($dados['slug'], $dados['idConteudo']);
-                }
+                //criamos a slug
+                $dados['slug'] = $this->slug->create_uri($dados);
                 if ($this->conteudo_m->alterar($dados)) {
                     $params['mensagem'] = alert('Sucesso ao alterar o Conteudo!', 'success');
                 } else {
@@ -297,12 +282,8 @@ class Admin extends Admin_Controller {
             $this->form_validation->set_rules('idConteudo', 'Id', 'required|integer');
             if ($this->form_validation->run()) {
                 $dados = $this->input->post();
-                //verificamos o slug
-                if ($dados['slug'] == '') {
-                    $dados['slug'] = $this->slug->create_uri($dados, $dados['idConteudo']);
-                } else {
-                    $dados['slug'] = $this->slug->create_uri($dados['slug'], $dados['idConteudo']);
-                }
+                //criamos a slug
+                $dados['slug'] = $this->slug->create_uri($dados);
                 //transformamos a data para o formato do banco (jah foi validada);
                 $myDateTime = DateTime::createFromFormat('d/m/Y H:i:s', $dados['data'] . ' ' . $dados['hora'] . ':00');
                 $dados['data'] = $myDateTime->format('Y-m-d H:i:s');
@@ -343,12 +324,8 @@ class Admin extends Admin_Controller {
             $this->form_validation->set_rules('idConteudo', 'Id', 'required|integer');
             if ($this->form_validation->run()) {
                 $dados = $this->input->post();
-                //verificamos o slug
-                if ($dados['slug'] == '') {
-                    $dados['slug'] = $this->slug->create_uri($dados, $dados['idConteudo']);
-                } else {
-                    $dados['slug'] = $this->slug->create_uri($dados['slug'], $dados['idConteudo']);
-                }
+                //criamos a slug
+                $dados['slug'] = $this->slug->create_uri($dados);
                 $dados['data'] = date('Y-m-d H:i:s');
                 if ($this->conteudo_m->alterar($dados)) {
                     $params['mensagem'] = alert('Sucesso ao alterar o Item!', 'success');

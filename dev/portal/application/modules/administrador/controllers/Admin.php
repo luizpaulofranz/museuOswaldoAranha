@@ -32,7 +32,7 @@ class Admin extends Admin_Controller {
         $txt = array();
         //verificamos se tem algo no post
         if ($this->input->post()) {
-            $this->form_validation->set_rules('nome', 'Nome', 'trim|min_length[2]|max_length[80]');
+            $this->form_validation->set_rules('nome', 'Nome', 'required|trim|min_length[2]|max_length[80]');
             $this->form_validation->set_rules('email', 'Email', 'required|trim|valid_email|min_length[5]|max_length[80]');
             $this->form_validation->set_rules('senha', 'Senha', 'required|trim');
             $this->form_validation->set_rules('ativo', 'Ativo', 'integer');
@@ -60,7 +60,7 @@ class Admin extends Admin_Controller {
         $params = array();
         //aqui so vai entrar quando clcar no form
         if ($this->input->post()) {
-            $this->form_validation->set_rules('nome', 'Nome', 'trim|min_length[2]|max_length[80]');
+            $this->form_validation->set_rules('nome', 'Nome', 'required|trim|min_length[2]|max_length[80]');
             $this->form_validation->set_rules('email', 'Email', 'required|trim|valid_email|min_length[5]|max_length[80]');
             $this->form_validation->set_rules('senha', 'Senha', 'required|trim');
             $this->form_validation->set_rules('ativo', 'Ativo', 'integer');

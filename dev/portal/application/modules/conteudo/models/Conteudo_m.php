@@ -252,6 +252,17 @@ class Conteudo_m extends CI_Model {
             return $this->db->insert($this->tabela, $dados);
         }
     }
+    
+    /**
+     * Retorna um array contendo o tipo conteudo deste objeto;
+     * @param int $id_conteudo
+     */
+    public function getTipoConteudo($id_conteudo){
+        $this->db->select('tipoConteudo.*');
+        $this->db->join('tipoConteudo', 'tipoConteudo.idTipoConteudo = conteudo.idTipoConteudo', 'INNER OUTER');
+        
+        return $this->db->get_where($this->tabela, array('conteudo.idConteudo' => $id_conteudo))->row_array();
+    }
 
 }
 
