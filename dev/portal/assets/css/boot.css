@@ -319,9 +319,18 @@ a:link, a:visited {
     color: white;
 
 }
+.noticias a{
+    color: blue;
+}
+.noticias a:visited{
+    color:#330099;
+}
+.noticias a:hover{
+    color:blue;
+}
 a:hover {
     text-decoration: underline; 
-    color: white;
+    color:white;
 }
 .list-info a:hover{
     text-decoration: none;

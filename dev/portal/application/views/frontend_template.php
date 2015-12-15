@@ -61,17 +61,17 @@
                         <div class="grid-5 al-center" style="height: 180px;">
                             <div class="border-red" style="height: 180px; background: #ffffff;">
 
-                                <a href="http://porteiras.unipampa.edu.br/alegrete/"  target="_blank"><img class="ds-inline fl-none" tabindex="23" style="margin-top: 20px;" src="<?php echo site_url('/assets/images/home/unipampa.png') ?>"  alt="Logotipo Unipampa"></a>
+                                <a  href="http://porteiras.unipampa.edu.br/alegrete/" tabindex="26" target="_blank"><img class="ds-inline fl-none"  style="margin-top: 20px;" src="<?php echo site_url('/assets/images/home/unipampa.png') ?>"  alt="Logotipo Unipampa"></a>
                             </div>
                         </div>
                         <div class="grid-6 al-center" style="height: 180px;">
                             <div class="border-red" style="height: 180px; background: #ffffff;">
-                                <a href="http://www.alegrete.rs.gov.br/site/" target="_blank"><img class="ds-inline fl-none" tabindex="24" style="margin-top: 40px;" src="<?php echo site_url('/assets/images/home/prefeitura.png') ?>" alt="Logotipo prefeitura"></a>
+                                <a href="http://www.alegrete.rs.gov.br/site/" tabindex="27"  target="_blank"><img class="ds-inline fl-none" style="margin-top: 40px;" src="<?php echo site_url('/assets/images/home/prefeitura.png') ?>" alt="Logotipo prefeitura"></a>
                             </div>
                         </div>
                         <div class="grid-5 al-center" style="height: 180px;">
                             <div class="border-red" style="height: 180px; background: #ffffff;">
-                                <a href="http://www.ihga.com.br/"target="_blank"><img class="ds-inline fl-none" tabindex="25" style="margin-top: 29px;" src="<?php echo site_url('/assets/images/home/ihga.jpg') ?>" alt="Logotipo IHGA"></a>
+                                <a href="http://www.ihga.com.br/" tabindex="28"target="_blank"><img class="ds-inline fl-none"  style="margin-top: 29px;" src="<?php echo site_url('/assets/images/home/ihga.jpg') ?>" alt="Logotipo IHGA"></a>
                             </div>
                         </div>
                     </div>
@@ -82,21 +82,21 @@
             <footer class="container container-padding-60 bg-black">
                 <div class="content">
                     <ul class="font-oswald-light font-light fontsize1b grid-16 al-center">
-                        <li class="menu-item2 fontsize18"><a href="<?php echo site_url() ?>"tabindex="26" alt="pagina inicial">INÍCIO</a></li>
+                        <li class="menu-item2 fontsize18"><a href="<?php echo site_url() ?>"tabindex="29" alt="pagina inicial">INÍCIO</a></li>
                         <li class="menu-separador fontsize1">/</li>
-                        <li class="menu-item2 fontsize18"><a href="<?php echo site_url('sobre') ?>"tabindex="27" alt="sobre">SOBRE</a></li>
+                        <li class="menu-item2 fontsize18"><a href="<?php echo site_url('sobre') ?>"tabindex="30" alt="sobre">SOBRE</a></li>
                         <li class="menu-separador fontsize1">/</li>
-                        <li class="menu-item2 fontsize18"><a href="<?php echo site_url('conteudo/eventos') ?>" tabindex="28"alt="eventos">EVENTOS</a></li>
+                        <li class="menu-item2 fontsize18"><a href="<?php echo site_url('conteudo/eventos') ?>" tabindex="31"alt="eventos">EVENTOS</a></li>
                         <li class="menu-separador fontsize1">/</li>
-                        <li class="menu-item2 fontsize18"><a href="<?php echo site_url('contato') ?>"tabindex="29" alt="contato">CONTATO</a></li>
+                        <li class="menu-item2 fontsize18"><a href="<?php echo site_url('contato') ?>"tabindex="32" alt="contato">CONTATO</a></li>
                         <li class="menu-separador fontsize1">/</li>
-                        <li class="menu-item2 fontsize18"><a href="<?php echo site_url('conteudo/noticias') ?>"tabindex="30" alt="noticias">NOTÍCIAS</a></li>
+                        <li class="menu-item2 fontsize18"><a href="<?php echo site_url('conteudo/noticias') ?>"tabindex="33" alt="noticias">NOTÍCIAS</a></li>
                         <li class="menu-separador fontsize1">/</li>
-                        <li class="menu-item2 fontsize18"><a href="<?php echo site_url('aprenda') ?>"tabindex="31" alt="aprenda">APRENDA</a></li>
+                        <li class="menu-item2 fontsize18"><a href="<?php echo site_url('aprenda') ?>"tabindex="34" alt="aprenda">APRENDA</a></li>
                         <li class="menu-separador fontsize1">/</li>
-                        <li class="menu-item2 fontsize18"><a href="<?php echo site_url('amigos-do-museu') ?>" tabindex="32" alt="amigos do museu">AMIGOS DO MUSEU</a></li>
+                        <li class="menu-item2 fontsize18"><a href="<?php echo site_url('amigos-do-museu') ?>" tabindex="35" alt="amigos do museu">AMIGOS DO MUSEU</a></li>
                         <li class="menu-separador fontsize1">/</li>
-                        <li class="menu-item2 fontsize18"><a href="<?php echo site_url('visite') ?>" tabindex="33 alt="visite">VISITE</a></li>
+                        <li class="menu-item2 fontsize18"><a href="<?php echo site_url('visite') ?>" tabindex="36" alt="visite">VISITE</a></li>
                         <li class="menu-separador fontsize1">/</li>
                         <li class="menu-item2 fontsize18"><a src="#" alt="mapa do site">MAPA DO SITE</a></li>
                     </ul>
