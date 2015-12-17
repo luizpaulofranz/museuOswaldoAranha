@@ -149,7 +149,7 @@ a:visited{text-decoration: none;}
 }
 .section-Sobre-1{
     height: 515px;
-    background: url(../images/sobre/cabecalhoSobre.JPG) no-repeat center;
+    background: url(../images/sobre/cabecalhoSobre.jpg) no-repeat center;
     background-size: cover;
     position: absolute;
     top: 40px;
@@ -193,7 +193,7 @@ a:visited{text-decoration: none;}
 }
 .section-Noticia-1{
     height: 515px;
-    background: url(../images/noticias/noticiaCabecalho.JPG) no-repeat center;
+    background: url(../images/noticias/noticiaCabecalho.jpg) no-repeat center;
     background-size: cover;
     position: absolute;
     top: 40px;
