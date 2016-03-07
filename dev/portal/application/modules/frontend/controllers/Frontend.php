@@ -81,7 +81,7 @@ class Frontend extends Site_Controller {
             $config['newline'] = "\r\n";
 
             $ci->email->initialize($config);
-
+            
             $this->form_validation->set_rules('nome', 'Nome', 'required|trim|min_length[2]|max_length[150]');
             $this->form_validation->set_rules('idade', 'Idade', 'integer');
             $this->form_validation->set_rules('escolaridade', 'Escolaridade', 'trim|max_length[150]');
@@ -101,7 +101,7 @@ class Frontend extends Site_Controller {
                 $telefone = $this->input->post('telefone', TRUE);
                 $mensagem = $this->input->post('mensagem', TRUE);
 
-                $ci->email->from($email, $nome);
+                $ci->email->from("luizpaulofranz.sites@gmail.com", $nome);
                 $ci->email->to('moaalegrete@gmail.com');
 
                 $ci->email->subject('Contato pelo site.');
@@ -112,15 +112,17 @@ class Frontend extends Site_Controller {
                 Assunto:    Contato pelo site. <br />
                 Mensagem:   ' . $mensagem . ' <br />
                 </body></html>');
-
+                
                 $em = $ci->email->send();
+                //var_dump($ci->email->get_debugger_messages());
+                //var_dump($em);exit();
                 if ($em) {
                     $data['mensagem'] = alert('E-mail enviado com sucesso. Aguarde contato.', 'success', null, false);
                     //limpamos os campos do form, para nao repopular nos casos de sucesso
                     //essa funcao esta no MY_Form_validation
                     $this->form_validation->clear_fields();
                 } else {
-                    $data['mensagem'] = alert('Erro ao enviar o email. Favor enviar um e-mail para cea@feitiodoalegrete.com.br', 'danger', null, false);
+                    $data['mensagem'] = alert('Erro ao enviar o email. Favor enviar um e-mail para moaalegrete@gmail.com', 'danger', null, false);
                 }
             } else {
                 $data['mensagem'] = alert(validation_errors(), 'danger', null, false);
