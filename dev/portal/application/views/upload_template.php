@@ -2,17 +2,17 @@
 <html lang="pt">
     <head>
         <meta charset="utf-8">
-        <title>Administração Smartpampa</title>
+        <title>Administração Museu Oswaldo Aranha</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="description" content="Layout para área administrativa">
         <meta name="author" content="Luiz Paulo Franz, luizpaulofranz@gmail.com">
         <!-- CSS -->
         <link rel="stylesheet" href="<?php echo site_url('assets/css/normalize.css') ?>">
-        <link href="<?php echo base_url('assets/css/admin/custom.css'); ?>" rel="stylesheet">
+        <link href="<?php echo site_url('assets/css/admin/custom.css'); ?>" rel="stylesheet">
 
-        <script src="<?php echo base_url('assets/plugins/jquery/jquery.min.js')?>" type="text/javascript" ></script>
-        <script src="<?php echo base_url('assets/plugins/bootstrap/js/bootstrap.min.js')?>" type="text/javascript" ></script>
-        <script src="<?php echo base_url('assets/js/admin/custom.js'); ?>" type="text/javascript" ></script>
+        <script src="<?php echo site_url('assets/plugins/jquery/jquery.min.js')?>" type="text/javascript" ></script>
+        <script src="<?php echo site_url('assets/plugins/bootstrap/js/bootstrap.min.js')?>" type="text/javascript" ></script>
+        <script src="<?php echo site_url('assets/js/admin/custom.js'); ?>" type="text/javascript" ></script>
     </head>
 
     <body>

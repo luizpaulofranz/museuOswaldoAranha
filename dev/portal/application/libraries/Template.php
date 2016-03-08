@@ -2,37 +2,37 @@
 /**
  * CodeIgniter
  *
- * An open source application development framework for PHP 4.3.2 or newer
+ * An open source application development framework for PHP 5.4 or newer
  *
  * @package CodeIgniter
  * @author  ExpressionEngine Dev Team
  * @copyright  Copyright (c) 2006, EllisLab, Inc.
  * @license http://codeigniter.com/user_guide/license.html
  * @link http://codeigniter.com
- * @since   Version 1.0
+ * @since   Version 3.0
  * @filesource
  */
-
 // --------------------------------------------------------------------
-
 /**
  * CodeIgniter Template Class
  *
  * This class is and interface to CI's View class. It aims to improve the
  * interaction between controllers and views. Follow @link for more info
+ * The 2.0 version works with CI 3.0
  *
  * @package		CodeIgniter
  * @author		Colin Williams
+ * @author		Marie Kuntz
  * @subpackage	Libraries
  * @category	Libraries
- * @link		http://www.williamsconcepts.com/ci/libraries/template/index.html
- * @copyright  Copyright (c) 2008, Colin Williams.
- * @version 1.4.1
+ * @link		https://github.com/lezardrouge/williamsconcepts-template
+ * @copyright   Copyright (c) 2008, Colin Williams.
+ * @version 	2.0
  * 
  */
 class Template {
    
-   var $CI;
+   protected $CI;
    var $config;
    var $template;
    var $master;
@@ -56,15 +56,15 @@ class Template {
 	 * @access	public
 	 */
    
-   function __construct()
+   function Template()
    {
       // Copy an instance of CI so we can use the entire framework.
       $this->CI =& get_instance();
       
       // Load the template config file and setup our master template and regions
-      include(APPPATH.'config/template'.EXT);
+      include(APPPATH.'config/template.php');
       if (isset($template))
-      { 
+      {
          $this->config = $template;
          $this->set_template($template['active_template']);
       }
@@ -105,7 +105,7 @@ class Template {
    
    function set_master_template($filename)
    {
-      if (file_exists(APPPATH .'views/'. $filename) or file_exists(APPPATH .'views/'. $filename . EXT))
+      if (file_exists(APPPATH .'views/'. $filename) or file_exists(APPPATH .'views/'. $filename . '.php'))
       {
          $this->master = $filename;
       }
@@ -156,7 +156,7 @@ class Template {
    {
       // Set master template
       if (isset($props['template']) 
-         && (file_exists(APPPATH .'views/'. $props['template']) or file_exists(APPPATH .'views/'. $props['template'] . EXT)))
+         && (file_exists(APPPATH .'views/'. $props['template']) or file_exists(APPPATH .'views/'. $props['template'] . '.php')))
       {
          $this->master = $props['template'];
       }
@@ -304,7 +304,6 @@ class Template {
    {
       $this->parser_method = $method;
    }
-
    // --------------------------------------------------------------------
    
    /**
@@ -361,7 +360,7 @@ class Template {
       {
          foreach ($args as $suggestion)
          {
-            if (file_exists(APPPATH .'views/'. $suggestion . EXT) or file_exists(APPPATH .'views/'. $suggestion))
+            if (file_exists(APPPATH .'views/'. $suggestion . '.php') or file_exists(APPPATH .'views/'. $suggestion))
             {
                // Just change the $view arg so the rest of our method works as normal
                $view = $suggestion;
@@ -372,7 +371,6 @@ class Template {
       
       $content = $this->CI->load->view($view, $data, TRUE);
       $this->write($region, $content, $overwrite);
-
    }
    
    // --------------------------------------------------------------------
@@ -402,7 +400,7 @@ class Template {
       {
          foreach ($args as $suggestion)
          {
-            if (file_exists(APPPATH .'views/'. $suggestion . EXT) or file_exists(APPPATH .'views/'. $suggestion))
+            if (file_exists(APPPATH .'views/'. $suggestion . '.php') or file_exists(APPPATH .'views/'. $suggestion))
             {
                // Just change the $view arg so the rest of our method works as normal
                $view = $suggestion;
@@ -413,9 +411,7 @@ class Template {
       
       $content = $this->CI->{$this->parser}->{$this->parser_method}($view, $data, TRUE);
       $this->write($region, $content, $overwrite);
-
    }
-
    // --------------------------------------------------------------------
    
    /**
@@ -427,31 +423,20 @@ class Template {
     * @param   string   script to import or embed
     * @param   string  'import' to load external file or 'embed' to add as-is
     * @param   boolean  TRUE to use 'defer' attribute, FALSE to exclude it
-    * @param   boolean  TRUE to use 'version' attribute, FALSE to exclude it
     * @return  TRUE on success, FALSE otherwise
     */
    
-   function add_js($script, $type = 'import', $defer = FALSE, $version = TRUE)
+   function add_js($script, $type = 'import', $defer = FALSE)
    {
       $success = TRUE;
       $js = NULL;
       
       $this->CI->load->helper('url');
-
       
       switch ($type)
       {
          case 'import':
-
             $filepath = base_url() . $script;
-
-            if ($version && $file_version)
-            {
-              $file_version = filemtime($script);
-              $filepath .= '?v='.$file_version;
-            }  
-
-
             $js = '<script type="text/javascript" src="'. $filepath .'"';
             if ($defer)
             {
@@ -468,26 +453,8 @@ class Template {
             }
             $js .= ">";
             $js .= $script;
-
-            if ($version && $file_version)
-            {
-              $file_version = filemtime($script);
-              $script .= '?v='.$file_version;
-            }  
-
-            
             $js .= '</script>';
             break;
-
-         case 'external':
-            $js = '<script type="text/javascript" src="'. $script .'"';
-            if ($defer)
-            {
-               $js .= ' defer="defer"';
-            }
-            $js .= "></script>";
-            break;            
-
             
          default:
             $success = FALSE;
@@ -515,25 +482,16 @@ class Template {
     * @param   string   CSS file to link, import or embed
     * @param   string  'link', 'import' or 'embed'
     * @param   string  media attribute to use with 'link' type only, FALSE for none
-    * @param   boolean  TRUE to use 'version' attribute, FALSE to exclude it
     * @return  TRUE on success, FALSE otherwise
     */
    
-   function add_css($style, $type = 'link', $media = FALSE, $version = TRUE)
+   function add_css($style, $type = 'link', $media = FALSE)
    {
       $success = TRUE;
       $css = NULL;
       
       $this->CI->load->helper('url');
-
-      $file_version = filemtime($style);
-
       $filepath = base_url() . $style;
-
-      if ($version && $file_version)
-      {
-        $filepath .= '?v='.$file_version;
-      }  
       
       switch ($type)
       {
@@ -712,6 +670,5 @@ class Template {
    
 }
 // END Template Class
-
 /* End of file Template.php */
 /* Location: ./system/application/libraries/Template.php */
