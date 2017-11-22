@@ -3,25 +3,25 @@
         <article class="grid-4">
             <h2 class="header_box bg-pink-white fontsize45 al-center font-oswald-light font-thin2 header_box_shadow">VISITE</h2>
             <ul class="menu_section">
-                <li><a href="<?php echo site_url('visite') ?>" a><img src="" alt=""><img src="../assets/images/home/visite/map-icon.png" tabindex="10" alt="Ícone Como Chegar "><p>SAIBA COMO </p><p>CHEGAR</p></a></li>
-                <li><a href="<?php echo site_url('visite') ?>" a><img src="" alt=""><img src="../assets/images/home/visite/horarios-icon.png" tabindex="11" alt="Ícone Como Horários"><p>VEJA OS</p><p> HORÁRIOS</p></a></li>
-                <li><a href="<?php echo site_url('visite') ?>" a><img src="" alt=""><img src="../assets/images/home/visite/regras-icon.png"  tabindex="12" alt="Ícone Regras"><p>REGRAS </p><p>DO MUSEU</p></a></li>
-                <li><a href="<?php echo site_url('visite') ?>" a><img src="" alt=""><img src="../assets/images/home/visite/agende-icon.png"  tabindex="13" alt="Ícone Agende Sua Visita"><p>AGENDE SUA</p><p> VISITA</p></a></li>
+                <li><a href="<?php echo site_url('visite') ?>" tabindex="10" a><img alt=""><img src="../assets/images/home/visite/map-icon.png"  alt="Ícone Como Chegar "> SAIBA COMO CHEGAR</a></li>
+                <li><a href="<?php echo site_url('visite') ?>" tabindex="11" a><img  alt=""><img src="../assets/images/home/visite/horarios-icon.png"  alt="Ícone Como Horários">VEJA OS HORÁRIOS</a></li>
+                <li><a href="<?php echo site_url('visite') ?>" tabindex="12" a><img src="" alt=""><img src="../assets/images/home/visite/regras-icon.png"   alt="Ícone Regras">REGRAS DO MUSEU</a></li>
+                <li><a href="<?php echo site_url('visite') ?>" tabindex="13" a><img src="" alt=""><img src="../assets/images/home/visite/agende-icon.png"  alt="Ícone Agende Sua Visita">AGENDE SUA VISITA</a></li>
             </ul>
         </article>
         <article class="grid-4">
             <h2 class="header_box bg-pink-white fontsize45 al-center font-oswald-light font-thin2 header_box_shadow">APRENDA</h2>
             <ul class="menu_section">
-                <li><a href="<?php echo site_url('sobre') ?>" a><img src="" alt=""><img src="../assets/images/home/aprenda/history-icon.png" tabindex="14" alt="Ícone História de Oswaldo Aranha"><p>HISTÓRIA DE </p><p>OSWALDO A.</p></a></li>
-                <li><a href="<?php echo site_url('conteudo/acervo-museu') ?>" a><img src="" alt=""><img src="../assets/images/home/aprenda/acervo-icon.png" tabindex="15" alt="Ícone Acervo do Museu"><p>ACERVO DO</p><p> MUSEU</p></a></li>
-                <li><a href="<?php echo site_url('acervo-cientifico') ?>" a><img src="" alt=""><img src="../assets/images/home/aprenda/article-icon.png" tabindex="16" alt="Ícone Acervo Científico"><p>ACERVO </p><p>CIENTÍFICO</p></a></li>
+                <li><a href="<?php echo site_url('sobre') ?>" tabindex="14" a><img src="" alt=""><img src="../assets/images/home/aprenda/history-icon.png"  alt="Ícone História de Oswaldo Aranha">HISTÓRIA DE OSWALDO A.</a></li>
+                <li><a href="<?php echo site_url('conteudo/acervo-museu') ?>" tabindex="15" a><img src="" alt=""><img src="../assets/images/home/aprenda/acervo-icon.png"  alt="Ícone Acervo do Museu">ACERVO DO MUSEU</a></li>
+                <li><a href="<?php echo site_url('acervo-cientifico') ?>" tabindex="16" a><img src="" alt=""><img src="../assets/images/home/aprenda/article-icon.png"  alt="Ícone Acervo Científico">ACERVO CIENTÍFICO</a></li>
             </ul>
         </article>
         <article class="grid-4">
             <h2 class="header_box bg-pink-white fontsize45 al-center font-oswald-light font-thin2 header_box_shadow">NOTÍCIAS</h2>
             <ul class="menu_section">
-                <li><a href="<?php echo site_url('conteudo/noticias') ?>" a><img src="" alt=""><img src="../assets/images/home/noticias/noticias-icon.png" tabindex="17" alt="Ícone Noticias"><p>VEJA NOSSAS </p><p>NOTÍCIAS</p></a></li>
-                <li><a href="<?php echo site_url('conteudo/eventos') ?>" a><img src="" alt=""><img src="../assets/images/home/eventos/events-icon.png" tabindex="18" alt="Ícone Eventos"><p>PRÓXIMOS </p><p> EVENTOS</p></a></li>
+                <li><a href="<?php echo site_url('conteudo/noticias') ?>" tabindex="17" a><img src="" alt=""><img src="../assets/images/home/noticias/noticias-icon.png"  alt="Ícone Noticias">VEJA NOSSAS NOTÍCIAS</a></li>
+                <li><a href="<?php echo site_url('conteudo/eventos') ?>" tabindex="18" a><img src="" alt=""><img src="../assets/images/home/eventos/events-icon.png"  alt="Ícone Eventos">PRÓXIMOS  EVENTOS</a></li>
             </ul>
         </article>
         <article class="grid-4 game_box">

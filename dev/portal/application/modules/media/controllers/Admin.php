@@ -106,10 +106,11 @@ class Admin extends Admin_Controller {
         }
 
         $params['arquivos'] = $arrayRetorno->result_array();
-
+        
         $this->template->set_template('upload');
         $this->template->write_view('conteudo', 'admin/form_anexos', $params);
         $this->template->render();
+        //var_dump($params);exit();
     }
 
     /**

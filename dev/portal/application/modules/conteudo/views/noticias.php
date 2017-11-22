@@ -16,11 +16,11 @@
             foreach ($noticias as $noticia) {
                 echo '<div>';
                 echo '<div style="background-color: rgba(198, 198, 198, 0.0); border-radius: 2px; height: 230px; padding-top: 16px;">';
-                echo '<a href="' . site_url('conteudo/visualizar/' . $noticia['slug']) . '">';
+                echo '<a href="' . site_url('conteudo/visualizar/' . $noticia['slug']) . ' ">';
                 if ($noticia['imagem']) {
-                    echo '<img alt="" src="' . site_url($noticia['urlPath'] . '/' . $noticia['imagem']) . '" class="ds-block grid-4" tabindex="21">';
+                    echo '<img alt="" src="' . site_url($noticia['urlPath'] . '/' . $noticia['imagem']) . '" class="ds-block grid-4">';
                 } else {
-                    echo '<img alt="" src="' . site_url('assets/images/img_nao_disponivel.png') . '" class="ds-block grid-4"tabindex="21">';
+                    echo '<img alt="" src="' . site_url('assets/images/img_nao_disponivel.png') . '" class="ds-block grid-4">';
                 }
                 echo '</a>';
                 echo '<div class="grid-12">';
@@ -29,7 +29,7 @@
                 echo '<p>' . $noticia['resumo'] . '</p>';
                 echo '</div>';
                 echo '<div style="margin-top: 5px;" class="fl-left grid-2">';
-                echo '<a href="' . site_url('conteudo/visualizar/' . $noticia['slug']) . '" class="font-oswald-light font-bold fontsize1b"tabindex="22" style="color: #993333">Leia mais...</a>';
+                echo '<a href="' . site_url('conteudo/visualizar/' . $noticia['slug']) . '" tabindex="21" class="font-oswald-light font-bold fontsize1b" style="color: #993333">Leia mais...</a>';
                 echo '<div style="margin-top: -25px;" class="fl-left grid-14 border-grey">';
                 echo '<a class="font-oswald-light font-bold fontsize1b" style="color: #993333; padding-left: 30em"><br></a>';
                 echo '</div>';
